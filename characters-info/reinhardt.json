@@ -1,0 +1,152 @@
+{
+    "name": "Reinhardt",
+    "mainImage": {
+        "img": "imagens/tank/reinhardt/reinhardt-image.png",
+        "alt": "Reinhardt image"
+    },
+    "difficulty": "1",
+    "role": {
+        "img": "imagens/tanque.png",
+        "alt": "Tank icon"
+    },
+    "life": [
+        "300"
+    ],
+    "armour": [
+        "200"
+    ],
+    "shield": [],
+    "description": "Protegido por uma armadura poderosa e brandindo seu martelo, Reinhardt lidera os campos de batalha com uma investida propulsora e defende seus aliados com uma enorme barreira de energia.",
+    "skills": [
+        {
+            "skillImg": "imagens/tank/reinhardt/steadfast.png",
+            "name": "Steadfast (Passiva)",
+            "description": "Resistente a impactos",
+            "data": {
+                "stats": [],
+                "details": [
+                    "Reduz o efeito de impacto em 30%."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/reinhardt/martelo-propulsor.png",
+            "name": "Martelo Propulsor",
+            "description": "O Martelo Propulsor de Reinhardt é uma arma corpo-a-corpo exemplar, podendo causar dano em um arco amplo com cada balanço do martelo.",
+            "data": {
+                "stats": [
+                    "Tipo: Corpo a corpo",
+                    "Dano: 75",
+                    "Distância máxima: 5 metros",
+                    "Taxa de disparo: 1 balanço de um lado para o outro por 0,9 segundos",
+                    "Duração: 0.42 segundos (balanço inicial | apenas um lado)",
+                    "Headshot: Não"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/tank/reinhardt/campo-de-barreira.png",
+            "name": "Campo de Barreira",
+            "description": "Reinhardt projeta uma barreira frontal ampla, que pode absorver uma quantidade substancial de dano antes de ser destruída. Apesar de Reinhardt poder proteger a si mesmo e seus companheiros com a barreira, ele não pode atacar enquanto a mantém.",
+            "data": {
+                "stats": [
+                    "Vida: 2000 escudo",
+                    "Regeneração: 200 por segundo | depois de ficar inativo por 2 segundos",
+                    "Velocidade de movimentação: -50% de penalidade",
+                    "Tempo de carregamento da habilidade: 5 segundos depois de ser quebrado"
+                ],
+                "details": [
+                    "Segurando a tecla de disparo principal, Reinhardt pode olhar ao redor sem se virar.",
+                    "O campo de barreira começa visualmente mostrando dano quando cai abaixo de 1000 pontos de vida e exibe mais danos quando cai abaixo de 500 pontos de vida. Reinhardt dirá que uma linha de voz sobre a barreira falha quando cai abaixo de 400 pontos de vida."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/reinhardt/investida.png",
+            "name": "Barreira Protetora",
+            "description": "Reinhardt avança em linha reta, carregando o primeiro inimigo que aparecer na sua frente e tirando os outros do caminho. Se ele colidir com uma parede, o adversário que estiver carregando sofrerá dano extremo.",
+            "data": {
+                "stats": [
+                    "Dano: Pin: 1 segundo de atordoamento | Colisão com a parede: 300 de dano | Colisão: 50 de dano",
+                    "Velocidade de movimento: +200% buff",
+                    "Distância máxima: 49.5 metros",
+                    "Tempo até a ativação da habilidade: 0.6 segundos",
+                    "Duração: 3 segundos",
+                    "Tempo de carregamento da habilidade: 10 segundos | 3 segundos se a ativação for interrompida"
+                ],
+                "details": [
+                    "Reinhardt pode virar enquanto carrega, mas seu controle é reduzido.",
+                    "A investida é afetada pelos modificadores de velocidade de movimento.",
+                    "Se a investida colidir diretamente com um inimigo, ele será 'imobilizado' e, se atingir uma parede, o alvo imobilizado sofrerá 300 de dano. Se a investida terminar antes de bater em uma parede, nenhum dano será causado. Apenas um inimigo pode ser imobilizado por vez.",
+                    "Se a investida colidir indiretamente com um inimigo, ou se já houver um alvo preso, o inimigo será derrubado e sofrerá 50 de dano.",
+                    "Se a investida colidir com o soco foguete, golpe de escudo, o b.o.b. ou outra investida, ambos os participantes serão derrubados por 2 segundos. Quaisquer alvos entre esse impacto serão danificados como se atingissem uma parede."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/reinhardt/tiro-flamejante.png",
+            "name": "Tiro Flamejante",
+            "description": "Ao brandir seu Martelo Propulsor, Reinhardt lança um projétil flamejante que perfura e inflige dano a qualquer inimigo que tocar.",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis",
+                    "Dano: 100",
+                    "Velocidade de projétil: 25 metros por segundo",
+                    "Tempo até a ativação da habilidade: 0.5 segundos | 0.6 segundos de recuperação",
+                    "Tempo de recarga da habilidade: 6 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Atravessa barreiras, inimigos e outras entidades danificáveis.",
+                    "Essa habilidade pode cancelar a animação do martelo propulsor, permitindo ataques mais rápidos."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/reinhardt/abalo-terrestre.png",
+            "name": "Abalo Terrestre (Habilidade Final)",
+            "description": "Reinhardt bate seu martelo propulsor no chão com força, infligindo dano e derrubando todos os inimigos a sua frente.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Dano: 50",
+                    "Distância máxima: 20 metros",
+                    "Tempo até a ativação da habilidade: 0.45 segundos | 0.5 segundos de recuperação",
+                    "Duração: os inimigos ficam 3 segundos derrubados",
+                    "Custo da habilidade final: 1540 pontos"
+                ],
+                "details": [
+                    "Reinhardt gera passivamente 1% de habilidade final a cada 3,08 segundos.",
+                    "Ativa quando o martelo bate no chão.",
+                    "Requer linha de visão.",
+                    "Abalo terrestre tem uma pequena quantidade de altura vertical (2 metros), permitindo que ele afete os inimigos no ar ou na carga útil."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Reinhardt Wilhelm, Idade: 61",
+        "Ocupação: Aventureiro",
+        "Base de operações: Estugarda, Alemanha",
+        "Afiliação: Overwatch (anteriormente)",
+        "A JUSTIÇA SERÁ FEITA",
+        "Reinhardt Wilhelm se veste como um herói de eras passadas que vive pelos nobres códigos do valor, da justiça e da coragem. Mais de trinta anos atrás, Overwatch foi fundada para resistir à ameaça das rebeliões de robôs ao redor do mundo. Reinhardt, um soldado alemão altamente condecorado, foi inserido como parte da equipe de ataque original da Overwatch, que pôs fim à Crise Ômnica. Após a decisão do conflito, Overwatch se tornou uma instituição global, mantenedora da paz em um mundo castigado pela guerra. Reinhardt provou ser um dos seus heróis mais leais. A ética incomparável e a personalidade fortíssima de Reinhardt conquistaram a admiração dos seus companheiros e superiores. Sem nunca ter medo de falar o que pensava, ele era o defensor mais vigoroso da Overwatch e, quando necessário, seu crítico mais duro, lembrando constantemente que a Overwatch havia sido criada para ser uma força do bem. Tendo servido até quase os sessenta anos, Reinhardt teve que encarar a aposentadoria obrigatória das operações de combate. Desanimado por ter sido tirado do seu dever, Reinhardt temia que seus dias de propósito e glória haviam terminado. Conforme os tempos ficavam mais sombrios e a Overwatch se tornava suspeita de corrupção e rebelião, Reinhardt só podia assistir enquanto a causa pela qual ele havia dedicado sua vida para defender era cercada de desgraça. Apesar da Overwatch ter sido eventualmente dissolvida, Reinhardt não estava feliz em ficar sentado enquanto o mundo caía em desordem. Colocando mais uma vez sua armadura de Cruzado, ele fez votos de lutar pela justiça por toda a Europa como um cavaleiro dos tempos antigos, defendendo os inocentes e conquistando corações e mentes com a promessa de dias melhores pela frente."
+    ],
+    "counters": [
+        { "urlImage": "imagens/damage/ashe/ashe-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/hanzo/hanzo-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/soldado76/soldado76-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/doomfist/doomfist-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/junkrat/junkrat-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mei/mei-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/support/moira/moira-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/symmetra/symmetra-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "weak-against"}
+    ]
+}

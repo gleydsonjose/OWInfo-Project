@@ -1,0 +1,146 @@
+{
+    "name": "McCree",
+    "mainImage": {
+        "img": "imagens/damage/mccree/mccree-image.png",
+        "alt": "McCree image"
+    },
+    "difficulty": "2",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "Armado com seu Pacificador, McCree elimina seus alvos com a precisão do Tiro Certeiro enquanto se lança no combate com a agilidade de uma águia.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/mccree/pacificador.png",
+            "name": "Pacificador",
+            "description": "McCree dispara um cartucho de seu confiável revólver de seis balas. Ele pode bater rapidamente no cão do Pacificador para descarregar o tambor inteiro.",
+            "data": {
+                "stats": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "Tipo: Hitscan",
+                    "Dano: entre 35 e 70",
+                    "Distância de queda: entre 20 e 40 metros",
+                    "Espalhamento do disparo: Linha reta",
+                    "Taxa de disparo: 0,42 segundo de recuperação | aproximadamente 2,38 disparos por segundo",
+                    "Munição: 6",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Headshot: Sim",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "Tipo: Hitscan",
+                    "Dano: entre 25 e 50",
+                    "Distância de queda: entre 20 e 40 metros",
+                    "Espalhamento do disparo: Constante: 6.50 graus",
+                    "Taxa de disparo: 1 disparo por 0.13 segundos",
+                    "Munição: 6",
+                    "Uso da munição: Até 6",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "Ao contrário da maioria das armas com queda de dano, o dano do pacificador aumenta de forma não linear. A queda é muito severa ao atingir 20 metros, mas estabiliza em 30 metros; depois cai severamente novamente e estabiliza a 40 metros. Um gráfico dessa função incomum se parece com isso.",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "O disparo alternativo do pacificador também é chamado de 'Ventilador de martelo'."
+
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/mccree/rolamento.png",
+            "name": "Rolamento",
+            "description": "McCree mergulha na direção em que está se movendo, recarregando seu Pacificador sem esforço algum no processo.",
+            "data": {
+                "stats": [
+                    "Velocidade de movimento: 15 metros por segundo",
+                    "Distância máxima: 6.25 metros",
+                    "Duração: 0.4 segundos",
+                    "Tempo de recarga: 6 segundos"
+                ],
+                "details": [
+                    "Funciona apenas enquanto McCree está em uma superfície.",
+                    "McCree pode rolar para fora das bordas.",
+                    "Viaja na direção em que McCree está caminhando, não na direção que está seguindo (a menos que ele não esteja se movendo)."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/mccree/clarao.png",
+            "name": "Clarão",
+            "description": "Junkrat joga uma armadilha de metal dentada gigante. Caso um inimigo passe muito perto da armadilha, ela se agarra a ele, causando dano e imobilizando.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil",
+                    "Dano: 25",
+                    "Velocidade de projétil: 30 metros por segundo",
+                    "Distância máxima: 7 metros",
+                    "Área de efeito: Raio de 3 metros",
+                    "Tempo de ativação: 0,35 segundos de recuperação | 0,65 segundos antes do início da recarga",
+                    "Duração: 0.85 segundos de atordoamento",
+                    "Tempo de recarga: 10 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Clarão pode afetar inimigos a até 10m de distância."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/mccree/tiro-certeiro.png",
+            "name": "Tiro Certeiro (Habilidade Final)",
+            "description": "Focar. Mirar. Sacar. McCree toma alguns preciosos instantes para mirar. Quando está pronto para disparar, ele atira em todos os inimigos em seu campo de visão. Quanto mais fracos seus alvos, mais rápido ele dispara seus tiros mortais.",
+            "data": {
+                "stats": [
+                    "Tipo: Hitscan",
+                    "Dano: duração de 0,2 a 1,0 segundos e 100 de dano por segundo | duração de 1,0 a 1,5 segundos e 275 de dano por segundo | após 1,5 segundos de duração são 550 de dano por segundo",
+                    "Velocidade de movimento: -70% de penalidade",
+                    "Distância máxima: 200 metros",
+                    "Taxa de disparo: 1 disparo por 0.2 segundos",
+                    "Uso da munição: 1 por alvo",
+                    "Duração: Até 6.2 segundos",
+                    "Custo da habilidade final: 1680 pontos"
+                ],
+                "details": [
+                    "McCree gera passivamente 1% de habilidade final a cada 3,36 segundos.",
+                    "O tiro certeiro reabastece a munição de pacificador.",
+                    "O tiro certeiro tem como alvo heróis inimigos e não pode ter objetos como barreiras, torres, minas, etc.",
+                    "O tiro certeiro começa a marcar o alvo em 0,2 segundos após a ativação. Nos próximos 0,8 segundos ele acumula dano lentamente a todos os inimigos à vista, até 80 para cada um. Após 1 segundo o tiro certeiro acumula dano a uma taxa de 275 por segundo. Após 1,5 segundos, acumula-se a 550 por segundo.",
+                    "Se o dano acumulado estiver acima da saúde de um inimigo, um crânio aparecerá.",
+                    "As configurações de campo de visão do jogador (FOV) não afetam a largura do tiro certeiro. Nas configurações de FOV mais baixas, McCree pode ser capaz de matar um inimigo que o jogador não pode ver.",
+                    "Apesar dos recursos visuais no jogo, os tiros não contam como tiros na cabeça - a habilidade não causará dano quando a opção 'somente headshots' for selecionada em um jogo personalizado.",
+                    "A munição restante no cilindro não é relevante, pois continuará disparando, mesmo que a reserva fique sem munição.",
+                    "O tiro certeiro pode travar e matar mais de 6 alvos simultaneamente."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Jesse McCree, Idade: 37",
+        "Ocupação: Caçador de recompensas",
+        "Base de operações: Santa Fé, Novo México, EUA",
+        "Afiliação: Overwatch (anteriormente)",
+        "A JUSTIÇA NÃO VAI SE FAZER SOZINHA.",
+        "Armado com seu revólver Pacificador, o fora da lei Jesse McCree faz justiça com seus próprios termos.",
+        "McCree já tinha uma reputação como membro da notória gangue Deadlock, que traficava armas ilícitas e equipamentos militares por todo o Sudoeste Americano, quando ele e seus comparsas foram apreendidos por uma operação da Overwatch. Com suas habilidades como atirador e sua engenhosidade, ele foi dado a escolha de apodrecer em uma prisão de segurança máxima ou de se juntar à Blackwatch, a divisão de operações secretas da Overwatch. Ele escolheu a segunda opção. Apesar de cínico no começo, ele passou a acreditar que podia compensar pelos pecados que cometera no passado, acertando as injustiças do mundo. McCree se satisfez com a flexibilidade delegada ao grupo clandestino Blackwatch, liberto de burocracias e protocolos. Mas à medida que a influência da Overwatch enfraqueceu, membros rebeldes dentro da Blackwatch tramaram para derrubar a organização e usá-la para seus próprios fins. Sem querer participar dessas disputas internas, McCree resolveu partir sozinho e desapareceu. Anos depois, ele ressurgiu como um atirador mercenário. Mas apesar de seus talentos serem buscados por grupos grandes e pequenos, ele só luta por causas que acredita serem justas."
+    ],
+    "counters": [
+        { "urlImage": "imagens/damage/doomfist/doomfist-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/lucio/lucio-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/mercy/mercy-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/moira/moira-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/symmetra/symmetra-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/zenyatta/zenyatta-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "weak-against"}
+    ]
+}

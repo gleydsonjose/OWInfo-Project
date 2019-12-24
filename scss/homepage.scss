@@ -1,0 +1,173 @@
+@use "utilities/colors" as c;
+@use "utilities/display-help" as *;
+
+/* Homepage */
+#header-homepage{
+    @include display_flex($direction: column, $align-items: center);
+    padding: 8% 0;
+
+    img{
+        width: 360px;
+        height: 123px;
+        display: block;
+    }
+}
+
+#section-homepage{
+    @include display_flex($direction: column, $align-items: center);
+
+    #menu{
+        padding-bottom: 10%;
+
+        #menu-description-characters, #menu-description-maps{
+            padding-bottom: 3%;
+    
+            h3{
+                font-weight: 100;
+                color: c.$white;
+            }
+    
+            ul{
+                list-style-type: none;
+    
+                li{
+                    @include display_flex($align-items: center);
+                    font-size: 12pt;
+                    color: c.$gray;
+    
+                    i{
+                        padding-right: 1.5%;
+                        font-size: 5pt;
+                        color: c.$red;
+                    }
+                }            
+            }
+        }
+    }
+
+    #menu-description-characters{
+        display: block;
+    }
+
+    #menu-description-maps{
+        display: block;
+    }
+
+    #menu-buttons{
+        display: block;
+        padding-top: 3%;
+
+        img{
+            width: 250px;
+            height: 167px;
+            opacity: 0.9;
+            transition: 0.2s ease-in-out;
+
+            &:first-child{
+                margin-right: 25px;
+            }
+
+            &:hover{
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+footer{
+    @include display_flex();
+    width: 100%;
+    padding-bottom: 2%;
+
+    #credits{
+        @include display_flex($direction: column);
+        width: 50%;
+        padding-left: 2.5%;
+
+        h3{
+            text-align: center;
+            padding-bottom: 1%;
+            font-weight: 100;
+            color: c.$white;
+        }
+
+        div{
+            @include display_flex($justify-content: center);
+
+            a{
+                margin-right: 15px;
+                width: 100%;
+                text-decoration: none;
+                color: c.$gray;
+
+                &:hover{
+                    transition: 0.2s ease-in-out;
+                    color: c.$red;
+                }
+            }
+        }
+    }
+
+    #source-code{
+        @include display_flex($direction: column);
+        width: 50%;
+        
+        h3{
+            align-self: center;
+            padding-bottom: 1%;
+            font-weight: 100;
+            color: c.$white
+        }
+
+        a{
+            align-self: center;
+     
+            &:hover{
+                transition: 0.2s ease-in-out;
+                opacity: 0.7;
+                cursor: pointer;
+            }
+           
+            i{
+                font-size: 20pt;
+                color: c.$red;
+            }
+        }
+    }
+}
+
+/* Homepage - Breakpoint - Mobile */
+@media screen and(max-width: 750px){
+    #section-homepage{
+        #menu{
+            #menu-buttons{
+                @include display_flex($direction: column, $align-items: center);
+                padding-top: 10%;
+        
+                img{
+                    &:first-child{
+                        margin-right: 0;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        #credits{
+            h3{
+                padding-right: 5%;
+            }
+    
+            div{
+                @include display_flex($direction: column, $align-items: center);
+    
+                p{
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}

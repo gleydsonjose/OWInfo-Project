@@ -1,0 +1,168 @@
+{
+    "name": "Doomfist",
+    "mainImage": {
+        "img": "imagens/damage/doomfist/doomfist-image.png",
+        "alt": "Doomfist image"
+    },
+    "difficulty": "3",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "250"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "As partes cibernéticas de Doomfist fazem dele um combatente de linha de frente altamente ágil e poderoso. Além de causar dano à distância com seu Canhão de Mão, Doomfist pode esmagar o chão para desequilibrar ou lançar seus inimigos ao ar, ou avançar em uma investida com seu Soco Foguete. Quando enfrenta grupos aglutinados, Doomfist salta para fora do campo de visão e acerta o chão com um Impacto Meteoro espetacular.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/doomfist/a-melhor-defesa.png",
+            "name": "A Melhor Defesa (Passiva)",
+            "description": "Doomfist gera escudos pessoais temporários quando causa dano de habilidade.",
+            "data": {
+                "stats": [
+                    "Vida: +30 escudos temporários por inimigo atingido com qualquer uma das três habilidades | +75 escudos por inimigo atingido com habilidade máxima | Máximo de 150",
+                    "Duração: 1 segundo de atraso | -3 escudos por segundo"
+                ],
+                "details": [
+                    "Essa habilidade tem um cartão de estatística chamado 'Escudos criados'.",
+                    "O atraso é redefinido sempre que essa habilidade é ativada."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/doomfist/canhao-de-braco.png",
+            "name": "Canhão de Mão",
+            "description": "Doomfist dispara uma explosão de curto alcance de seu punho. A munição se regenera automaticamente depois de um curto período.",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis",
+                    "Dano: entre 1.8 e 6 por bala | entre 19.8 e 66 por disparo",
+                    "Distância de queda: entre 15 metros e 30 metros",
+                    "Espalhamento de disparo: Constante: 2.15 graus",
+                    "Velocidade de projétil: 80 metros por segundo",
+                    "Número de balas: 11 por disparo",
+                    "Taxa de disparo: 1 bala por 0.333 segundos",
+                    "Munição: 4",
+                    "Tempo de recarga: 0.65 segundos (por disparo)",
+                    "Headshot: Sim"
+                ],
+                "details": [
+                    "Diferente da maioria das armas, o Canhão de Mão não pode ser forçado a recarregar usando a tecla 'Recarregar'."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/doomfist/abalo-sismico.png",
+            "name": "Abalo Sísmico",
+            "description": "Doomfist salta para a frente batendo no chão, trazendo inimigos próximos para sua direção.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Dano: entre 49 e 125 (dependendo do tempo gasto no ar durante a habilidade)",
+                    "Velocidade de movimento: 25 metros por segundo (diagonal)",
+                    "Distância maxima: 15 metros (distância de viagem)",
+                    "Área de efeito: 8 metros",
+                    "Tempo de recarga: 6 segundos"
+                ],
+                "details": [
+                    "O dano é escalonado com o tempo gasto no ar durante a batida, até um máximo de 125.",
+                    "Enquanto estiver no ar, um indicador azul mostrará onde a habilidade aterrará. A orientação do ataque pode ser alterada no ar.",
+                    "Em terreno plano, o abalo sísmico impulsiona horizontalmente Doomfist 8,22 metros e causa 49 de dano. Adicionar um salto pode aumentar esse dano para 62."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/doomfist/gancho-ascendente.png",
+            "name": "Gancho Ascendente",
+            "description": "Doomfist acerta um gancho nos inimigos em sua frente, lançando-os no ar.",
+            "data": {
+                "stats": [
+                    "Tipo: Corpo a corpo",
+                    "Dano: 50",
+                    "Velocidade de movimento: 10 metros por segundo",
+                    "Área de efeito: 5 metros",
+                    "Duração: 0.6 segundos (no ar)",
+                    "Tempo de recarga: 6 segundos"
+                ],
+                "details": [
+                    "Essa habilidade pode derrubar vários inimigos no ar se eles estiverem próximos o suficiente um do outro.",
+                    "Inimigos jogados no ar perdem o controle do ar por 0,6 segundos.",
+                    "Doomfist é brevemente suspenso no ar após o uso da habilidade, diminuindo sua velocidade de queda."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/doomfist/soco-foguete.png",
+            "name": "Soco Foguete",
+            "description": "Depois de carregar, Doomfist se lança para frente e arremessa um inimigo para trás, causando dano adicional se ele atingir uma parede.",
+            "data": {
+                "stats": [
+                    "Tipo: Corpo a corpo",
+                    "Dano: entre 49 e 100 (Depende da carga adquirida) | entre 49 e 150 (impacto na parede)",
+                    "Velocidade de movimento: -50% de penalidade (enquanto está segurando a habilidade) | 45 metros por segundo (soco)",
+                    "Distância máxima: 6.5 to 20 metros (depende da carga adquirida)",
+                    "Tempo de ativação: 1,4 segundos para carregar completamente | pode manter por 0,6 segundos adicionais",
+                    "Duração: 0,5 segundos de atordoamento",
+                    "Tempo de recarga: 4 segundos"
+                ],
+                "details": [
+                    "Dano, distância percorrida e derrubada, tudo escala com o tempo de carregamento.",
+                    "Demora cerca de 0,94 segundo para carregar um alvo de 200 HP, assumindo um impacto na parede. Isso se traduz em cerca de 2,7 barras de carga no HUD. Soco foguete para se atingir um inimigo.",
+                    "Se o soco foguete colidir com a investida, golpe do escudo, a investida do B.O.B ou outro soco foguete, ambos os participantes serão derrubados por 2 segundos.",
+                    "Durante o carregamento, o soco foguete pode ser cancelado pressionando o botão disparo primário.",
+                    "Depois de lançado, o soco foguete ainda pode ser cancelado com a tecla Jump. Isso empurra Doomfist além do que ele teria feito sem cancelar."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/doomfist/impacto-meteoro.png",
+            "name": "Impacto Meteoro (Habilidade Final)",
+            "description": "Doomfist salta para os céus, depois acerta o chão, causando dano significativo.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Dano: Anel interno: 300 | Anel externo: 20-200",
+                    "Distância de queda: entre 2 e 8 metros",
+                    "Velocidade de movimento: 16.5 metros por segundo",
+                    "Área de efeito: anel interno de 2 metros | anel externo de 6 metros | raio total de 8 metros",
+                    "Tempo de ativação: 1 segundo",
+                    "Duração: 4 segundos",
+                    "Custo da habilidade final: 1680 Pontos"
+                ],
+                "details": [
+                    "Doomfist gera passivamente 1% de habilidade final a cada 3,36 segundos.",
+                    "Essa habilidade funciona mesmo quando usada dentro de uma área interna e aterrará nessa área, a menos que Doomfist se mova para fora.",
+                    "Manter o botão direito do mouse permite uma visão panorâmica da zona de impacto, que também pode ser usada para subir plataformas.",
+                    "A zona de impacto é somente vísivel para o time inimigo uma vez que o Doomfist atacar.",
+                    "Doomfist é completamente invensível durante esta habilidade final.",
+                    "Impacto meteoro tem dois anéis que diferencia os danos. Se qualquer inimigo tocar em ambos os anéis, o dano do anél de dentro será o primeiro e único."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Akande Ogundimu, Idade: 45",
+        "Ocupação: Mercenário",
+        "Base de operações: Oyo, Nigéria",
+        "Afiliação: Talon",
+        "SÓ POR MEIO DO CONFLITO PODEMOS EVOLUIR",
+        "Recém-liberto de sua prisão, Doomfist está determinado a lançar o mundo em um novo conflito que ele acredita que fará a humanidade mais forte. Akande Ogundimu nasceu em uma família nigeriana de boa reputação e herdou sua companhia de tecnologia de prostéticos. Uma figura carismática e altamente inteligente, Ogundimu ajudou a expandir os negócios da família, os colocando rumo ao futuro, enquanto dedicava seu tempo livre a sua primeira paixão, as artes marciais. Ele treinou em estilos de luta africanos, incluindo Dambe e Gidigbo, assim como luta livre e outros sistemas de combate modernos, incorporando as técnicas mais eficientes em seu repertório. Ogundimu competiu em torneios por todo o continente, utilizando habilidade e intuição para ler os oponentes com sua grande velocidade e força. Mas quando perdeu seu braço como resultado da Crise Ômnica, pareceu ser o fim de sua carreira nas artes marciais, antes mesmo de atingir seu potencial. A prótese cibernética de sua companhia permitiu que ele se recuperasse de seus ferimentos, o tornando ainda mais forte, mas essas melhorias o impediram de competir. Ele tentou se devotar aos negócios com o mesmo zelo que tinha pela luta, mas não encontrou nada para preencher o vazio… até que ele recebeu uma nova oportunidade de Akinjide Adeyemi, mais conhecido como o segundo Doomfist, o Flagelo de Numbani. Adeyemi ofereceu a Ogundimu a chance de lutar com ele como mercenário. Após a cautela inicial, Ogundimu aceitou e descobriu que ele agora tinha uma arena na qual podia liberar sua nova e melhorada potencialidade. Por fim, Adeyemi o levou para a Talon. A crença da Talon de que a humanidade seria fortalecida pelo conflito reverberou com as experiências pessoais de Ogundimu. Mas além disso, os conflitos de poder da Talon criaram um novo desafio que permitiu que ele usasse seu talento na sala de reuniões da mesma forma que usava sua astúcia em combate. Adeyemi era um recurso muito útil à Talon, mas a organização via muito mais potencial em Ogundimu, com sua inteligência e habilidade de ser um comandante inspirador. Enquanto Adeyemi se sentia satisfeito com os lucros das pilhagens em Numbani, Ogundimu tinha uma visão muito maior. Essa diferença de ambição levaria Ogundimu a matar seu mestre e tomar o manto de Doomfist, junto com a manopla homônima. Como o novo Doomfist, Ogundimu subiu bastante na Talon e ajudou a orquestrar um conflito que a organização esperava que algum dia tomaria o mundo. Porém, antes de seu plano ser concluído, Ogundimu foi derrotado e capturado pela equipe de ataque tático da Overwatch, composta por Tracer, Winston e Genji. Ele foi aprisionado em uma instituição de segurança máxima por anos, onde esperou pacientemente o acontecimento dos eventos que tinha incitado. Finalmente, ele sentiu que o tempo havia chegado para seu retorno. Ele fugiu de sua prisão e recuperou a manopla de Doomfist depois de uma batalha unilateral com a nova defesa de Numbani formada por robôs OR15. Agora, ele retomou seu posto no conselho interno da Talon e está pronto para começar uma guerra que mais uma vez consumirá o planeta."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/ashe/ashe-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/reinhardt/reinhardt-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/sigma/sigma-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/zenyatta/zenyatta-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/mccree/mccree-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/orisa/orisa-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "weak-against"}
+    ]
+}

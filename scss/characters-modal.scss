@@ -1,0 +1,105 @@
+@use 'utilities/colors' as c;
+@use 'utilities/scrollbar' as *;
+@use 'utilities/display-help' as *;
+
+/* Characters Modal */
+#bg-main-characters-modal{
+    @include display_flex($display: none, $direction: column, $justify-content: center, $align-items: center);
+    background-color: c.$black_transparent;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+
+    @include webkit_scrollbar(9px, c.$white, c.$red);
+
+    #bg-inner-characters-modal{
+        @include display_flex($direction: column);
+        width: 40%;
+        background-color: c.$white_transparent;
+        padding-bottom: 3%;
+
+        #title-characters-modal{
+            text-align: center;
+            font-weight: 100;
+            padding: 3% 0;
+        }
+
+        .div-role-characters{    
+            padding: 0 5%;
+
+            .role-button{
+                @include display_flex($align-items: center);
+                background-color: c.$black;
+                border-radius: 4px;
+                padding: 4px;
+                margin: 6px 0;
+
+                img{
+                    width: 30px;
+                    height: 25.7px;
+                }
+
+                h3{
+                    font-weight: 100;
+                    padding-left: 5px;
+                    color: c.$white;
+                }
+
+                i{
+                    margin-left: auto;
+                    margin-right: 6px;
+                    font-size: 14pt;
+                    color: c.$white;
+                }
+
+                .fa-caret-up{
+                    display: none;
+                }
+
+                &:hover{
+                    opacity: 0.9;
+                    transition: 0.2s ease-in-out;
+                    cursor: pointer;
+                }
+            }
+
+            .characters-buttons{
+                @include display_flex($display: none, $wrap: wrap, $justify-content: center);
+                padding-bottom: 3%;
+
+                .bg-character-icon{
+                    background-color: c.$black-light;
+                    border-radius: 7px;
+                    width: 50px;
+                    height: 50px;
+                    margin: 5px;
+
+                    img{
+                        border-radius: 7px;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    &:hover{
+                        filter: grayscale(70%);
+                        transition: 0.2s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Characters Modal - Breakpoint - Mobile */
+@media screen and(max-width: 750px){
+    #bg-main-characters-modal{
+        position: fixed;
+        left: 0;
+        
+        #bg-inner-characters-modal{
+            width: 60%;
+        }
+    }
+}

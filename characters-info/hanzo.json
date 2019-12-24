@@ -1,0 +1,159 @@
+{
+    "name": "Hanzo",
+    "mainImage": {
+        "img": "imagens/damage/hanzo/hanzo-image.png",
+        "alt": "Hanzo image"
+    },
+    "difficulty": "3",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "As flechas versáteis de Hanzo podem revelar seus inimigos ou se fragmentar para atingir múltiplos alvos. Ele pode escalar paredes para disparar seu arco do alto ou invocar um espírito titânico de um dragão.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/hanzo/escalar-parede.png",
+            "name": "Escalar Parede (Passiva)",
+            "description": "Salte nas paredes para escalá-las.",
+            "data": {
+                "stats": [
+                    "Velocidade de movimento: 7.15 metros por segundo (vertical)",
+                    "Distância máxima: Subida vertical de até 4 metros"
+                ],
+                "details": [
+                    "Habilidade passiva que permite subir na parede verticalmente."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/hanzo/arco-da-tempestade.png",
+            "name": "Arco da Tempestade",
+            "description": "Hanzo empunha e dispara uma flecha em seu alvo.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil de arco",
+                    "Dano: entre 29.4 e 125 (Depende de quanto foi carregado)",
+                    "Espalhamento do disparo: Linha reta",
+                    "Velocidade de movimento: -30% de penalidade",
+                    "Velocidade do projétil: 30 - 100m/s",
+                    "Taxa de disparo: Até 0,75 segundos para carregar | 0,5 segundo de recuperação",
+                    "Munição: Infinita",
+                    "Headshot: Sim"
+                ],
+                "details": [
+                    "O dano depende de quão longe a corda do arco foi puxada."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/hanzo/flecha-sonica.png",
+            "name": "Flecha Sônica",
+            "description": "Hanzo dispara uma flecha que contém um rastreador sonar. Qualquer inimigo no raio de detecção é marcado como visível, tornando a caçada mais fácil para Hanzo e seus aliados.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil lançável",
+                    "Dano: Igual do arco da tempestade",
+                    "Velocidade de projétil: Igual do arco da tempestade",
+                    "Área de efeito: Raio de 9 metros",
+                    "Taxa de disparo: Igual do arco da tempestade",
+                    "Duração: 6 segundos",
+                    "Tempo de recarga: 12 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": [
+                    "Pode ser anexado a barreiras e inimigos, o que significa que o efeito pode ser preso a eles."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/hanzo/flechas-da-tempestade.png",
+            "name": "Flechas da Tempestade",
+            "description": "As próximas flechas atiradas por Hanzo serão instantâneas mas causarão dano reduzido.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil lançável",
+                    "Dano: 70 por disparo",
+                    "Espalhamento do disparo: Linha reta",
+                    "Velocidade do projétil: 100 metros por segundo",
+                    "Taxa de disparo: 1 disparo a cada 0.3 segundos (3.33 disparos por segundo)",
+                    "Munição: 5",
+                    "Duração: 5 segundos ou até esvaziar a reserva",
+                    "Tempo de recarga: 10 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": [
+                    "Todas as flechas disparadas durante a duração da habilidade estarão com carga total.",
+                    "Ao contrário do arco da tempestade padrão, as flechas serão disparadas instantaneamente. Hanzo também não sofre nenhuma diminuição na velocidade de movimento.",
+                    "Se a habilidade ficar sem tempo (indicada na interface do usuário), ela será desativada."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/hanzo/salto.png",
+            "name": "Salto",
+            "description": "Hanzo pode executar um salto duplo, permitindo que ele mude de direção no ar.",
+            "data": {
+                "stats": [
+                    "Velocidade de movimento: 15 metros por segundo (horizontal)",
+                    "Distância máxima: 7.85 metros",
+                    "Tempo de recarga: 5 segundos"
+                ],
+                "details": [
+                    "É ativado se saltar enquanto está no ar."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/hanzo/golpe-do-dragao.png",
+            "name": "Golpe do Dragão (Habilidade Final)",
+            "description": "Hanzo invoca uma emanação dracônica que percorre o ar em linha. Ela atravessa as paredes em seu caminho, devorando qualquer inimigo que encontrar.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil (Tiro inicial) | Área de efeito (Dragões)",
+                    "Dano: Flecha: 125 (se o inimigo for acertado pela flecha) | Dragões: 150 de dano por segundo | por dragão. até 993,6 de dano contra um alvo parado",
+                    "Velocidade de projétil: 20 metros por segundo",
+                    "Distância máxima: Distância infinita de viagem",
+                    "Área de efeito: Raio de 4 metros",
+                    "Taxa de disparo: 1.5 segundos carregando",
+                    "Tempo de ativação: 0.9 segundos (carregando) | 0.6 segundos (antes da flecha se tornar dragões)",
+                    "Headshot: Flecha: Sim | Dragões: Não",
+                    "Custo da habilidade final: 1680 pontos"
+                ],
+                "details": [
+                    "Hanzo gera passivamente 1% de habilidade final a cada 3,36 segundos.",
+                    "Não danifica objetos implantados, como torres.",
+                    "Se atirar diretamente e o alvo estiver parado, o dano durará 3,33 segundos.",
+                    "O hitbox é na verdade ambos os dragões, o que significa que a habilidade final causa menos dano nas bordas e combinado no centro."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Hanzo Shimada, Idade: 38",
+        "Ocupação: Mercenário, Assassino",
+        "Base de operações: Hanamura, Japão (anteriormente)",
+        "Afiliação: Clã Shimada",
+        "COM CADA MORTE, VEM HONRA. COM HONRA, REDENÇÃO",
+        "Aperfeiçoando suas habilidades como arqueiro e assassino, Hanzo Shimada almeja mostrar-se digno como guerreiro sem par. A família Shimada foi estabelecida séculos atrás, um clã de assassinos cujo poder cresceu através dos anos, permitindo que construíssem um vasto império criminal que lucrava de vantajosas negociações de armas e substâncias ilegais. Como filho mais velho do chefe da família, Hanzo tinha o dever de suceder seu pai e governar o império Shimada. Desde jovem, ele foi treinado para essa responsabilidade, demonstrando aptidão natural para a liderança e possuindo um entendimento inato de estratégias e táticas. Ele também se sobressaia em áreas práticas: era um prodígio em artes marciais, esgrima e no arco e flecha. Com a morte de seu pai, os anciões do clã deram instruções para que Hanzo endireitasse seu rebelde irmão mais novo, para que ele também pudesse ajudar a governar o império Shimada. Quando seu irmão se recusou, Hanzo foi forçado a matá-lo. Este ato partiu o coração de Hanzo, levando-o a rejeitar o legado de seu pai, fazendo com que ele abandonasse o clã e tudo pelo que trabalhara tanto para atingir. Agora, Hanzo viaja o mundo, aperfeiçoando suas habilidades como guerreiro, tentando restaurar sua honra e dar descanso aos fantasmas de seu passado."
+    ],
+    "counters": [
+        { "urlImage": "imagens/damage/ashe/ashe-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/orisa/orisa-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/tracer/tracer-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/reinhardt/reinhardt-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "weak-against"}
+    ]
+}

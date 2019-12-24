@@ -1,0 +1,117 @@
+{
+    "name": "Tracer",
+    "mainImage": {
+        "img": "imagens/damage/tracer/tracer-image.png",
+        "alt": "Tracer image"
+    },
+    "difficulty": "2",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "150"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "Armada com pistolas eletromagnéticas, bombas temporais energéticas e brincadeiras em momentos inconvenientes, Tracer é capaz de se “teleportar” pelo tempo e espaço e rebobinar sua própria linha do tempo, enquanto batalha para corrigir os erros do mundo.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/tracer/pistolas-eletromagneticas.png",
+            "name": "Pistolas Eletromagnéticas",
+            "description": "Tracer dispara ambas as suas pistolas.",
+            "data": {
+                "stats": [
+                    "Tipo: Hitscan",
+                    "Dano: entre 1.8 e 6 por bala | entre 3.6 e 12 por disparo",
+                    "Distância de queda: entre 13 e 23 metros",
+                    "Espalhamento do disparo: Max: 3.6 graus",
+                    "Número de projéteis: 2 balas por disparo",
+                    "Taxa de disparo: 20 disparos por segundo",
+                    "Munição: 40",
+                    "Uso da munição: 2 balas por disparo",
+                    "Tempo de recarga: 1.15 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/damage/tracer/teleportar.png",
+            "name": "Teleportar",
+            "description": "Tracer some horizontalmente no espaço, na direção para qual ela estiver se movendo, e reaparece alguns metros depois. Ela armazena até três cargas da habilidade de teleportar e gera mais cargas a cada poucos segundos.",
+            "data": {
+                "stats": [
+                    "Distância máxima: 7.5 metros",
+                    "Munição: 3 teleportes",
+                    "Duração: 0.1 segundos",
+                    "Tempo de recarga: 3 segundos por teleporte | 9 por todos os 3"
+                ],
+                "details": [
+                    "Para fins práticos, o teleportar pode ser considerado uma explosão de movimento, semelhante ao golpe veloz do Genji.<br><span style='padding-left: 2.4%'>Tracer será pego pela armadilha de aço do Junkrat se ela tentar teleportar por cima e não conseguir teleportar de uma que ela já tenha disparado.</span><br><span style='padding-left: 2.4%'>Tracer ativará a mina venenosa se ela teleportar por cima.</span>",
+                    "O teleportar não vai remover efeitos negativos de alguma habilidade inimiga."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/tracer/recordacao.png",
+            "name": "Recordação",
+            "description": "Tracer volta no tempo, retornando sua vida, munição e posição no mapa precisamente para o ponto em que estavam alguns segundos atrás.",
+            "data": {
+                "stats": [
+                    "Cura: A vida retorna para o maior valor que estava em 3 segundos atrás",
+                    "Duração: 1,25 segundos do recordação | recorda 3 segundos atrás",
+                    "Tempo de recarga: 12 segundos"
+                ],
+                "details": [
+                    "Apesar de sua descrição, a recordação não retorna a munição da Tracer para o que era alguns segundos antes, mas recarrega completamente suas armas.",
+                    "A redordação não restaura armaduras temporárias ou escudos pessoais temporários.",
+                    "Se o redordação for usado para voltar a alguma posição em uma plataforma (ou a carga) que se moveu durante os últimos segundos, Tracer não voltará para uma posição no ar, mas em vez disso, será devolvido à plataforma, onde quer que esteja a plataforma agora.",
+                    "Lembre-se também de memorizar onde a Tracer estava a três segundos atrás.",
+                    "A Tracer é imune a todos os danos durante os 1,25 segundos."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/tracer/bomba-eletromagnetica.png",
+            "name": "Bomba Eletromagnética (Habilidade Final)",
+            "description": "Tracer joga uma grande bomba que adere a qualquer superfície ou oponente que tiver o azar de ser atingido por ela. Após um breve período, a bomba explode, causando dano alto a todos os inimigos dentro do raio de sua explosão.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil lançável",
+                    "Dano: se agarrar no inimigo é 5 | explosão é entre 70 e 350 | a si próprio é entre 70 e 350",
+                    "Velocidade de projétil: 15 metros por segundo",
+                    "Área de efeito: Explosão num raio de 5 metros",
+                    "Tempo de ativação: 0.15 segundos (lançar) | 1 segundo (depois de agarrar)",
+                    "Headshot: Não",
+                    "Custo de habilidade final: 1260 pontos"
+                ],
+                "details": [
+                    "A Tracer gera passivamente 1% de habilidade final a cada 2,52 segundos.",
+                    "A bomba eletromagnética da Tracer causa dano quando é presa a alguém e quando explode."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Lena Oxton, Idade: 26",
+        "Ocupação: Aventureira",
+        "Base de operações: Londres, Inglaterra",
+        "Afiliação: Overwatch (anteriormente)",
+        "NÃO SE PREOCUPEM QUERIDOS! A CAVALARIA CHEGOU!",
+        "A ex-agente da Overwatch conhecida como Tracer é uma aventureira que salta no tempo e é uma força incontrolável para o bem. Lena Oxton (codinome: 'Tracer') foi a pessoa mais jovem a ser introduzida no programa de voo experimental da Overwatch. Conhecida por suas habilidades de voo destemidas, ela foi escolhida a dedo para testar o protótipo de um caça teleportador, o Slipstream. Mas, durante seu primeiro voo, a matriz de teleporte do avião sofreu um defeito e ele desapareceu. Lena foi dada como morta. Ela reapareceu meses depois, mas seu incidente causou uma grande mudança nela: suas moléculas foram dessincronizadas pelo fluxo do tempo. Tendo sofrido uma 'desassociação cronológica', ela era um fantasma, desaparecendo por horas e até mesmo dias. Mesmo nos breves momentos em que ela estava presente, ela não conseguia manter uma forma física. Médicos e cientistas da Overwatch ficaram perplexos e o caso da Tracer parecia não ter esperanças, até que um cientista chamado Winston projetou o acelerador cronológico, um dispositivo capaz de manter Tracer ancorada no presente. Além disso, ele deu a Tracer a habilidade de controlar seu próprio tempo, permitindo a ela acelerar e desacelerar o tempo à sua vontade. Com suas novas habilidades, ela se tornou uma das agentes mais eficazes da Overwatch. Desde a dissolução da Overwatch, Tracer continua corrigindo malfeitores e lutando pelo bem sempre que surge a oportunidade."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/hanzo/hanzo-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/mercy/mercy-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/orisa/orisa-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/zenyatta/zenyatta-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/brigitte/brigitte-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/junkrat/junkrat-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "weak-against"}
+    ]
+}

@@ -1,0 +1,165 @@
+{
+    "name": "Wrecking Ball",
+    "mainImage": {
+        "img": "imagens/tank/wrecking-ball/wrecking-ball-image.png",
+        "alt": "Wrecking Ball image"
+    },
+    "difficulty": "3",
+    "role": {
+        "img": "imagens/tanque.png",
+        "alt": "Tank icon"
+    },
+    "life": [
+        "500"
+    ],
+    "armour": [
+        "100"
+    ],
+    "shield": [],
+    "description": "Wrecking Ball rola pelo campo de batalha e usa seu arsenal de armas e o corpo poderoso do seu mecha para esmagar inimigos.",
+    "skills": [
+        {
+            "skillImg": "imagens/tank/wrecking-ball/artilharia-quadrupla.png",
+            "name": "Artilharia Quádrupla",
+            "description": "Os canhões automáticos de assalto de Wrecking Ball retalham ameaças a média distância.",
+            "data": {
+                "stats": [
+                    "Tipo: Hitscan",
+                    "Dano: entre 2.5 e 5 por disparo",
+                    "Distância da queda: entre 15 e 25 metros",
+                    "Espalhamento dos disparos: aproximadamente 2 graus",
+                    "Taxa de disparo: 25 disparos por segundo",
+                    "Munição: 80",
+                    "Tempo de recarga: 2.1 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": [
+                    "Os dois primeiros tiros têm precisão perfeita; a propagação da bala atinge no máximo 20 disparos.",
+                    "Recarrega automaticamente se Wrecking Ball estiver no modo rolagem por 2,1 segundos."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/wrecking-ball/rolagem.png",
+            "name": "Rolagem",
+            "description": "Wrecking Ball se transforma em uma bola, aumentando sua velocidade máxima de movimento.",
+            "data": {
+                "stats": [
+                    "Velocidade de movimento: 10 metros por segundo"
+                ],
+                "details": [
+                    "Pode ser ativo no ar.",
+                    "O Wrecking Ball rola mais rápido ao descer ladeira abaixo. Subir não afeta sua velocidade.",
+                    "O Wrecking Ball rola automaticamente ladeira abaixo, se ele não a neutralizar.",
+                    "A velocidade básica do wrecking ball não é reduzida em 10% ao rolar para trás.",
+                    "Wrecking Ball esconde sua 'cabeça' (o hamster é a 'cabeça') e, portanto, não pode receber tiros na cabeça.",
+                    "Wrecking Ball sai do modo rolagem se ele é hackeado, slept, pinned, hooked ou derrubado."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/wrecking-ball/garra.png",
+            "name": "Projetor de Barreira",
+            "description": "Wrecking Ball joga uma garra para se prender a um ponto e se balançar. Se ele atingir um inimigo com um balanço energizado, o inimigo sofrerá dano e será empurrado.",
+            "data": {
+                "stats": [
+                    "Dano: 50(Na velocidade máxima)",
+                    "Velocidade de movimento: +100% buff(oscilante) | 18 m/s (rolando)",
+                    "Distância máxima: 23 metros (eventualmente se retrai para 6 metros)",
+                    "Duração: 1.5 segundos(após o lançamento)",
+                    "Tempo de recarga: 5 segundos"
+                ],
+                "details": [
+                    "Anexa a uma superfície, permitindo que o Wrecking Ball gire em torno do ponto de contato.",
+                    "Se a linha tiver mais de 6 metros de comprimento e o Wrecking Ball se aproximar da garra, a linha retrai e permanece retraída.",
+                    "Se lançada no modo de combate, a Bola de Demolição entra em Rolagem.",
+                    "Velocidade máxima empurra inimigos em até 10 metros de distância."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/wrecking-ball/escudo-adaptativo.png",
+            "name": "Escudo Adaptativo",
+            "description": "Os escudos pessoais temporários de Wrecking Ball absorvem dano, oferecendo defesas mais fortes se mais oponentes estiverem por perto.",
+            "data": {
+                "stats": [
+                    "Saúde: 100 escudos temporários + 100 escudos adicionais por inimigo dentro do raio",
+                    "Área de efeito: Raio de 8 metros",
+                    "Tempo de ativação: 0.2 segundos",
+                    "Duração: 7 segundos",
+                    "Tempo de recarga: 15 segundos"
+                ],
+                "details": [
+                    "Exclusivo para Wrecking Ball, os escudos não dão carga máxima ao time inimigo quando o danificam.",
+                    "B.O.B conta para criar mais escudos."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/wrecking-ball/bate-estaca.png",
+            "name": "Bate Estaca",
+            "description": "Wrecking Ball bate no chão, causando dano aos inimigos e lançando-os no ar.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Dano: 20-100",
+                    "Velocidade de movimento: 7.07 metros por segundo",
+                    "Área de efeito: Raio de 8 metros",
+                    "Tempo de recarga: 10 segundos"
+                ],
+                "details": [
+                    "Limite a agachar / alternar agachamento.",
+                    "Altura mínima do levantamento de 2,25 metros.",
+                    "Wrecking Ball se move 4 metros para frente antes de cair.",
+                    "Os inimigos afetados são jogados no ar e perdem o controle do ar."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/wrecking-ball/campo-minado.png",
+            "name": "Campo Minado (Habilidade Final)",
+            "description": "Wrecking Ball lança uma série de minas de proximidade de longa duração que explodem ao entrar em contato com inimigos.",
+            "data": {
+                "stats": [
+                    "Vida: 50 por mina",
+                    "Dano: 130 por mina",
+                    "Velocidade de projétil: 12 metros por segundo",
+                    "Área de efeito: Raio de interação de 1,5 metros",
+                    "Tempo de ativação: 0.1 segundos(para colocar) | 1.5 segundos(para ativar)",
+                    "Duração: 20 segundos",
+                    "Custo da habilidade final: 1540 pontos"
+                ],
+                "details": [
+                    "A Bola de Demolição gera passivamente 1% de habilidade final a cada 3,08 segundos.",
+                    "Implanta 15 minas de proximidade ao seu redor, dispostas em três anéis de 1/6/8 minas.",
+                    "Ativar campo minado no ar aumenta a propagação.",
+                    "As minas aderem à primeira superfície em que entram em contato, incluindo paredes e tetos.",
+                    "Minas emitem um ruído agudo para inimigos próximos.",
+                    "Wrecking Ball pode recuperar a carga da habilidade final enquanto o campo minado é implantado."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Hammond, Idade: 14 anos",
+        "Ocupação: Piloto de mecha, mecânico",
+        "Base de operações: Colônia Lunar Horizon (anteriormente), Junkertown (anteriormente)",
+        "Afiliação: Nenhuma",
+        "NÃO IRRITE O HAMSTER",
+        "Em um dos diversos experimentos realizados na Colônia Lunar Horizon, os cientistas submeteram animais a terapia genética para avaliar a capacidade de adaptação deles a períodos longos de habitação na lua. Como efeito colateral inesperado, vários exibiram um crescimento excepcional em tamanho físico e funções cerebrais. Embora as cobaias, na sua maioria, fossem gorilas e outros primatas, havia algumas exceções, como um hamster chamado Hammond. Assim como nos outros casos, a inteligência de Hammond cresceu e despertou a curiosidade dele em relação ao mundo ao seu redor. Para grande espanto e deleite dos cientistas, ele vivia fugindo para outras partes da base lunar. Embora sempre o encontrassem e o devolvessem à sua cela, eles nunca descobriram o verdadeiro propósito das escapadas noturnas. O que eles não sabiam é que Hammond estava ocupado aprendendo o ofício de mecânico, o que logo seria útil. A colônia virou um pandemônio quando alguns dos gorilas se rebelaram contra os cientistas humanos e assumiram o controle. Entretanto, nem todos os animais participaram da rebelião, e um dos gorilas, Winston, estava matutando um plano para fugir para a Terra. Hammond sentiu que era sua oportunidade. Ele construiu uma cápsula improvisada e acoplou-a secretamente à nave de Winston enquanto o gorila decolava. Quando os dois entraram na atmosfera terrestre, Hammond se soltou e aterrissou em um local diferente: a região desértica da Austrália. Hammond modificou sua cápsula de fuga para entrar na lucrativa arena de batalha de mechas do Ferro-velho. Subindo no ranque de lutadores, “Wrecking Ball” passou de concorrente a campeão, embora a identidade do piloto permanecesse um mistério para todos. Juntando seus ganhos, Hammond conseguiu aprimorar o mecha o bastante para sobreviver na perigosa jornada para sair do deserto controlado pelos Junkers. Agora livre para ir e vir, Hammond está explorando o mundo e vivendo novas aventuras pelo caminho."
+    ],
+    "counters": [
+        { "urlImage": "imagens/damage/ashe/ashe-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/sigma/sigma-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/support/brigitte/brigitte-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mei/mei-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "weak-against"}
+    ]
+}

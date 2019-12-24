@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Gleydson José">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="This site is a project test">
+    <meta name="keywords" content="OW, Overwatch, Overwatch Personagens">
+    <link rel="shortcut icon" href="imagens/owi-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/website.css">
+    <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d22aa83c9e.js" crossorigin="anonymous"></script>
+    <title>Personagens</title>
+</head>
+<body class="bg-black" id="characters-page">
+
+    <!-- Lateral Menu -->
+    <aside id="lateral-menu">
+        <div id="btn-menu-open-close">
+            <i class="fas fa-caret-square-left"></i>
+            <i class="fas fa-caret-square-right"></i>
+        </div>
+
+        <div id="characters-lateral-menu">
+            <h3 id="title-characters-lateral-menu">Personagens</h3>
+
+            <div class="div-role-characters">
+                <div class="role-button">
+                    <img src="imagens/tanque.png" alt="Tank icon">
+                    <h4>Tanque</h4>
+                    <i class="fas fa-caret-up"></i>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="characters-buttons">
+                    <a v-bind:href="character.url" class="bg-character-icon" v-for="character in characters" v-if="character.role == 'Tank'">
+                        <img v-bind:src="character.urlImage" v-bind:alt="character.altImage">
+                    </a>
+                </div>
+            </div>
+
+            <div class="div-role-characters">
+                <div class="role-button">
+                    <img src="imagens/dano.png" alt="Damage icon">
+                    <h4>Dano</h4>
+                    <i class="fas fa-caret-up"></i>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="characters-buttons">
+                    <a v-bind:href="character.url" class="bg-character-icon" v-for="character in characters" v-if="character.role == 'Damage'">
+                        <img v-bind:src="character.urlImage" v-bind:alt="character.altImage">
+                    </a>
+                </div>
+            </div>
+
+            <div class="div-role-characters">
+                <div class="role-button">
+                    <img src="imagens/suporte.png" alt="Support icon">
+                    <h4>Suporte</h4>
+                    <i class="fas fa-caret-up"></i>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="characters-buttons">
+                    <a v-bind:href="character.url" class="bg-character-icon" v-for="character in characters" v-if="character.role == 'Support'">
+                        <img v-bind:src="character.urlImage" v-bind:alt="character.altImage">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- / Lateral Menu /-->
+
+    <!-- Character Details -->
+    <section id="section-characters-page">
+        <div id="character-details">
+            <img id="character-main-image" v-bind:src="mainImg" v-bind:alt="mainImgAlt">
+            
+            <div id="character-data">
+                <h2>{{ name }}</h2>
+
+                <h4>Nível de dificuldade</h4>
+                <div id="difficulty-info">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div id="character-role">
+                    <h4>Função</h4>
+                    <img id="character-role-image" v-bind:src="roleImg" v-bind:alt="roleImgAlt">
+                </div>
+
+                <h4>Saúde</h4>
+
+                <div id="character-health">
+                    <div v-for="hp in life">
+                        <i class="fas fa-circle"></i>
+                        <p>{{ hp }}</p>
+                    </div>
+                </div>
+
+                <h4 v-if="armour.length !== 0">Armadura</h4>
+
+                <div id="character-armour" v-for="ar in armour" v-if="ar.length !== 0">
+                    <i class="fas fa-circle"></i>
+                    <p>{{ ar }}</p>
+                </div>
+
+                <h4 v-if="shield.length !== 0">Escudo</h4>
+
+                <div id="character-armour" v-for="sh in shield" v-if="sh.length !== 0">
+                    <i class="fas fa-circle"></i>
+                    <p>{{ sh }}</p>
+                </div>
+
+                <div id="btn-group-info">
+                    <button type="button" id="btn-biography"><i class="fas fa-atlas"></i>Biografia</button>
+                    <button type="button" id="btn-counters"><i class="fas fa-people-carry"></i>Counters</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="character-description">
+            <h3>Descrição</h3>
+            <p>{{ description }}</p>
+        </div>
+
+        <div id="character-skills">
+            <h3>Habilidades</h3>
+
+            <div id="skill" v-for="skill in skills">
+                <img v-bind:src="skill.skillImg" v-bind:alt="skill.name">
+
+                <div id="skill-title">
+                    <h4>{{ skill.name }}</h4>
+                    <button class="btn-skill-info" v-on:click="skillAllData(skill)"><i class="fas fa-plus-circle"></i> Informações</button>
+                </div>
+
+                <p>{{ skill.description }}</p>
+            </div>
+        </div>
+
+        <div id="skill-info">
+            <h3 id="skill-info-title">Informações de habilidade</h3>
+
+            <div id="skill">
+                <img v-bind:src="skillInfo.skillImg" v-bind:alt="skillInfo.name">
+
+                <div id="skill-title">
+                    <h4>{{ skillInfo.name }}</h4>
+                </div>
+                <p>{{ skillInfo.description }}</p>
+            </div>
+
+            <div id="skill-stats">
+                <h3 v-if="skillStats.length !== 0">Informações</h3>
+                <ul id="stats" v-if="skillStats.length !== 0">
+                    <li v-for="stats in skillStats"><i class="fas fa-circle"></i><span v-html="stats"></span></li>
+                </ul>
+
+                <h3 v-if="skillDetails.length != 0">Detalhes</h3>
+                <ul id="details" v-if="skillDetails.length !== 0">
+                    <li v-for="details in skillDetails"><i class="fas fa-circle"></i><span v-html="details"></span></li>
+                </ul>
+
+                <div id="skill-stats-btn-back">
+                    <button type="button"><i class="fas fa-caret-square-left"></i>Voltar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="character-biography">
+            <h3>Biografia</h3>
+            <ul>
+                <li v-for="bio in biography"><i class="fas fa-circle"></i>{{ bio }}</li>
+            </ul>
+
+            <div id="character-biography-btn-back">
+                <button type="button"><i class="fas fa-caret-square-left"></i>Voltar</button>
+            </div>
+        </div>
+
+        <div id="character-counters">
+            <h3>Counters</h3>
+
+            <h4><i class="fas fa-circle"></i>Forte contra</h4>
+            <div id="strong-against">
+                <div id="bg-character-icon" v-for="counter in counters" v-if="counter.category == 'strong-against'">
+                    <img v-bind:src="counter.urlImage">
+                </div>
+
+                <div v-for="counter in counters" v-if="counter.msg">{{ counter.msg }}</div>
+            </div>
+
+            <h4><i class="fas fa-circle"></i>Fraco contra</h4>
+            <div id="weak-against">
+                <div id="bg-character-icon" v-for="counter in counters" v-if="counter.category == 'weak-against'">
+                    <img v-bind:src="counter.urlImage">
+                </div>
+            </div>
+
+            <div id="character-counters-btn-back">
+                <button type="button"><i class="fas fa-caret-square-left"></i>Voltar</button>
+            </div>
+        </div>
+
+        <div class="btn-characters-page-modal-mobile" id="choose-characters">
+            <i class="fas fa-bars"></i>
+        </div>
+    </section>
+    <!-- / Character Details / -->
+
+    <!-- Characters Modal -->
+    <div id="bg-main-characters-modal">
+        <div id="bg-inner-characters-modal">
+            <h3 id="title-characters-modal">Escolha um personagem</h3>
+
+            <div class="div-role-characters">
+                <div class="role-button">
+                    <img src="imagens/tanque.png" alt="Tank icon">
+                    <h3>Tanque</h3>
+                    <i class="fas fa-caret-up"></i>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="characters-buttons">
+                    <a v-bind:href="character.url" class="bg-character-icon" v-for="character in characters" v-if="character.role == 'Tank'">
+                        <img v-bind:src="character.urlImage" v-bind:alt="character.altImage">
+                    </a>
+                </div>
+            </div>
+
+            <div class="div-role-characters">
+                <div class="role-button">
+                    <img src="imagens/dano.png" alt="Damage icon">
+                    <h3>Dano</h3>
+                    <i class="fas fa-caret-up"></i>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="characters-buttons">
+                    <a v-bind:href="character.url" class="bg-character-icon" v-for="character in characters" v-bind:key="character.id" v-if="character.role == 'Damage'">
+                        <img v-bind:src="character.urlImage" v-bind:alt="character.altImage">
+                    </a>
+                </div>
+            </div>
+
+            <div class="div-role-characters">
+                <div class="role-button">
+                    <img src="imagens/suporte.png" alt="Support icon">
+                    <h3>Suporte</h3>
+                    <i class="fas fa-caret-up"></i>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="characters-buttons">
+                    <a v-bind:href="character.url" class="bg-character-icon" v-for="character in characters" v-bind:key="character.id" v-if="character.role == 'Support'">
+                        <img v-bind:src="character.urlImage" v-bind:alt="character.altImage">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / Characters Modal / -->
+
+    <!-- Scripts JS -->
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/characters.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/dropdown.js"></script>
+    <!-- / Scripts JS / -->
+</body>
+</html>

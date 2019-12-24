@@ -1,0 +1,157 @@
+{
+    "name": "Genji",
+    "mainImage": {
+        "img": "imagens/damage/genji/genji-image.png",
+        "alt": "Genji image"
+    },
+    "difficulty": "3",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "Genji arremessa Shurikens precisas e mortais em seus alvos e usa sua katana tecnologicamente avançada para desviar projéteis ou realizar um Golpe Veloz que corta seus inimigos.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/genji/agilidade-cibernetica.png",
+            "name": "Agilidade Cibernética (Passiva)",
+            "description": "Suba nas paredes e dê um pulo duplo.",
+            "data": {
+                "stats": [
+                    "Velocidade de movimento: 7.8 metros por segundo (vertical)"
+                ],
+                "details": [
+                    "O salto duplo não é redefinido na escalada na parede."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/genji/shuriken.png",
+            "name": "Shuriken",
+            "description": "Genji solta três estrelas ninjas mortais em sucessão rápida. Como alternativa, ele pode jogar três shurikens em uma abrangência maior.",
+            "data": {
+                "stats": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "Tipo: Projéteis",
+                    "Dano: 28 por projétil | 3 projéteis por disparo",
+                    "Espalhamento do disparo: Linha reta(se parado) | Saindo da linha reta (em movimento)",
+                    "Velocidade de disparo: 3 shurikens por 0.95 segundos",
+                    "Munição: 24",
+                    "Uso da munição: 3 shurikens por disparo",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Headshot: Sim",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "Tipo: Projéteis",
+                    "Dano: 28 por projétil | 3 projéteis por disparo",
+                    "Espalhamento do disparo: na horizontal",
+                    "Velocidade do projétil: 60 metros por segundo",
+                    "Taxa de disparo: 1.33 disparos por segundo",
+                    "Munição: 24",
+                    "Uso da munição: 3",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": [
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "O disparo alternativo de shuriken também é chamado de 'Ventilador de Lâminas'.",
+                    "Mesmo se houver menos de três shuriken em sua reserva, três shurikens serão lançadas."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/genji/desviar.png",
+            "name": "Desviar",
+            "description": "Com ataques velozes de sua espada, Genji reflete projéteis iminentes e os lança de volta em seu oponente.",
+            "data": {
+                "stats": [
+                    "Área de efeito: Raio de 1 metro (somente na frente)",
+                    "Duração: 2 segundos",
+                    "Tempo de recarga: 8 segundos"
+                ],
+                "details": [
+                    "Qualquer projétil desviado é tratado como o de Genji e a queda de dano é redefinida.",
+                    "Bloqueia ataques corpo a corpo, corrente de gancho e disparo açoitador.",
+                    "Enquanto a lâmina do dragão estiver ativa, Genji pode usar o desviar.",
+                    "Os ataques de feixe ou similares não são afetados pelo desviar.<br><span style='padding-left: 2.4%'>Isso inclui: o disparo primário no aniquilador endotérmico da Mei, o disparo primário no canhão de partículas da Zarya, o canhão de tesla do Winston, o disparo primário ou secundário do punho biótico da Moira e o disparo primário no projetor de fótons da Symmetra.</span>"
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/genji/golpe-veloz.png",
+            "name": "Golpe Veloz",
+            "description": "Genji avança para frente, golpeando com sua katana e passando por inimigos em seu caminho. Se Genji eliminar um alvo com essa habilidade, ele pode usá-la de novo instantaneamente.",
+            "data": {
+                "stats": [
+                    "Dano: 50",
+                    "Velocidade de movimento: 50 metros por segundo",
+                    "Distância máxima: 15 metros",
+                    "Duração: 0.3 segundos",
+                    "Tempo de recarga: 8 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "A recarga será zerada, independentemente da habilidade usada para matar.",
+                    "A habilidade pode e também deve ser usada como habilidade de movimento.",
+                    "O golpe veloz não causa dano a armadilhas como a armadilha de aço do Junkrat ou a mina venenosa da Widowmaker, mas pode destruir as torres colocadas pela Symmetra."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/genji/lamina-do-dragao.png",
+            "name": "Lâmina do Dragão (Habilidade Final)",
+            "description": "Genji brande sua katana por um breve período de tempo. Até embainhar sua espada, Genji consegue acertar golpes mortais em qualquer alvo ao seu alcance.",
+            "data": {
+                "stats": [
+                    "Tipo: Corpo a corpo",
+                    "Dano: 120 por acerto",
+                    "Velocidade de movimento: +30% buff",
+                    "Distância máxima: 5 metros",
+                    "Taxa de disparo: 1 hit por 0.9 segundos",
+                    "Tempo de ativação: 1 segundo (desembainhamento / bainha)",
+                    "Duração: 6 segundos",
+                    "Headshot: Não",
+                    "Custo da habilidade final: 1680 pontos"
+                ],
+                "details": [
+                    "Genji gera passivamente 1% de habilidade final a cada 3,36 segundos",
+                    "Genji não pode usar seu Shuriken enquanto a lâmina do dragão estiver ativa",
+                    "Ativar a lâmina do dragão redefine a recarga do golpe veloz",
+                    "Genji pode balançar a espada no máximo 7 vezes",
+                    "A munição é restaurada após a conclusão"
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Genji Shimada, Idade: 35",
+        "Ocupação: Aventureiro",
+        "Base de operações: Monastério de Shambali, Nepal",
+        "Afiliação: Clã Shimada (anteriormente), Overwatch (anteriormente)",
+        "MESMO QUE EU SACRIFIQUE MEU CORPO, NUNCA SACRIFICAREI MINHA HONRA",
+        "O ciborgue Genji Shimada fez as pazes com seu corpo aprimorado que ele antes rejeitava e, ao fazê-lo, pode descobrir uma humanidade maior. Como filho mais novo do mestre do clã ninja dos Shimada, Genji viveu uma vida de luxo e privilégio. Ele tinha pouco interesse nos negócios ilegais de sua família, e apesar de gostar e ser excelente em seu treino ninja, ele passou a maior parte de seu tempo curtindo uma vida de playboy. Muitos no clã consideravam o estilo de vida do Genji um perigo para o clã e tinham ressentimento contra seu pai por protegê-lo. Com a morte do líder do clã, o irmão mais velho de Genji, Hanzo, exigiu que Genji tivesse um papel mais ativo no império de seu pai falecido. Genji se recusou, enfurecendo Hanzo. A tensão entre os irmãos acabou em um confronto violento que deixou Genji a beira da morte. Hanzo acreditou que tinha matado seu irmão, mas Genji foi resgatado pela Overwatch e a intervenção da Dra. Angela Ziegler. A força de segurança global via Genji como um possível recurso em suas operações para deter o clã Shimada. Como os ferimentos de Genji o deixaram a beira da morte, a Overwatch se ofereceu para reconstruir seu corpo em troca de sua ajuda. Ele passou por um longo processo de cibernetização, o que aumentou sua velocidade e agilidade naturais e potencializou suas habilidades ninja. Transformado em uma arma viva, Genji tomou como seu dever desmantelar o império criminoso de sua família. Mas à medida que o tempo passou, Genji se sentiu cada vez mais em conflito consigo mesmo. Ele tinha repulsa das partes mecânicas de seu corpo e não aceitava o que tinha se tornado. Quando sua missão foi completada, ele abandonou a Overwatch e vagou o mundo em busca de sentido. Ele vagou por muitos anos antes de encontrar o monge ômnico, Zenyatta. Apesar de Genji inicialmente ter rejeitado a sabedoria de Zenyatta, o benevolente ômnico jamais desistiu. Com o tempo, Zenyatta se tornou seu mentor, e com a tutela do monge, Genji se reconciliou com sua existência dupla tanto como homem quanto máquina. Ele aprendeu a aceitar que, apesar de ter um corpo de ciborgue, sua alma humana estava intacta e passou a ver sua nova forma como um presente e uma força única. Agora, pela primeira vez em sua vida, Genji está livre. Nem mesmo ele pode dizer para onde seu caminho eventualmente o levará."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/ashe/ashe-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/hanzo/hanzo-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/junkrat/junkrat-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/mercy/mercy-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/orisa/orisa-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/zenyatta/zenyatta-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/brigitte/brigitte-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/doomfist/doomfist-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mei/mei-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/support/moira/moira-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/zarya/zarya-icon.png", "category": "weak-against"}
+    ]
+}

@@ -1,0 +1,145 @@
+{
+    "name": "Junkrat",
+    "mainImage": {
+        "img": "imagens/damage/junkrat/junkrat-image.png",
+        "alt": "Junkrat image"
+    },
+    "difficulty": "2",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "Os armamentos de Junkrat para tomar áreas incluem um Lançador de Granadas que atira granadas que ricocheteiam, Minas de Concussão que mandam seus inimigos pelos ares e Armadilhas de Aço que imobilizam os inimigos em seu caminho.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/junkrat/caos-total.png",
+            "name": "Caos Total (Passiva)",
+            "description": "O senso de humor bisonho do Junkrat persiste após sua morte. Ao morrer, ele deixa para trás uma série de granadas.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil lançável",
+                    "Dano: 50 por granada",
+                    "Número de granadas: 6",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Também faz com que Junkrat não sofra dano de suas próprias explosões."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/junkrat/lancador-de-granadas.png",
+            "name": "Lançador de Granadas",
+            "description": "O Lançador de Granadas do Junkrat lança granadas a uma distância significativa. Elas rebatem para atingir seu destino e explodem quando acertam um inimigo.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil lançável",
+                    "Dano: Acerto direto: 130 | Acerto da explosão: 10-80",
+                    "Espalhamento do disparo: Em forma de arco",
+                    "Velocidade do projétil: 25 metros por segundo",
+                    "Área de efeito: 0.2 metros (tamanho do projétil) | 2 metros (raio da explosão)",
+                    "Taxa de disparo: 1 disparo por 0.65 segundos",
+                    "Munição: 5",
+                    "Tempo de recarga: 1.55 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "As granadas explodem após dois saltos ou quando atingem uma unidade inimiga."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/junkrat/mina-de-concussao.png",
+            "name": "Mina de Concussão",
+            "description": "Depois de colocar uma de suas Minas de Concussão caseira, Junkrat pode ativá-la para causar danos aos inimigos e os mandar pelos ares... ou impulsionar ele mesmo pelo ar.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil lançável",
+                    "Vida: 25",
+                    "Dano: entre 30 e 120",
+                    "Velocidade de projétil: 20 metros por segundo",
+                    "Área de efeito: Raio de 3 metros",
+                    "Munição: 2 minas",
+                    "Duração: Até ser detonado",
+                    "Tempo de recarga: 8 segundos para uma mina | 16 segundos para as duas",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "A mina não causa dano próprio, mas ainda o lança para trás, tornando-o utilizável como uma ferramenta de mobilidade."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/junkrat/armadilha-de-aco.png",
+            "name": "Armadilha de Aço",
+            "description": "Junkrat joga uma armadilha de metal dentada gigante. Caso um inimigo passe muito perto da armadilha, ela se agarra a ele, causando dano e imobilizando.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil lançável",
+                    "Vida: 100",
+                    "Dano: 80",
+                    "Velocidade de movimento: 10 metros por segundo",
+                    "Área de efeito: Raio de 1 metro",
+                    "Duração: 1 segundo de atordoamento | 3 segundos sendo segurado",
+                    "Tempo de recarga: 10 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Junkrat pode ver a localização da armadilha através das paredes.",
+                    "O jogador recebe um aviso(som da armadilha ativando) quando um inimigo dispara a armadilha."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/junkrat/pneu-da-morte.png",
+            "name": "Pneu da Morte (Habilidade Final)",
+            "description": "Junkrat dá a partida em uma bomba relógio motorizada e a envia pelo campo de batalha, subindo em paredes e obstáculos. Ele pode detonar remotamente o Pneu da Morte para causar danos sérios aos inimigos pegos na explosão ou esperar que ele exploda sozinho.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Vida: 100",
+                    "Dano: entre 50 e 600",
+                    "Velocidade de movimento: Junkrat: Imobilizado | Pneu: 12 metros por segundo",
+                    "Área de efeito: Raio de 10 metros",
+                    "Tempo de ativação: 1 segundo",
+                    "Duração: Até 10 segundos",
+                    "Headshot: Não",
+                    "Custo da habilidade final: 1925 pontos"
+                ],
+                "details": [
+                    "O Junkrat gera passivamente 1% de habilidade final a cada 3,85 segundos.",
+                    "A munição é restaurada após a conclusão."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Jamison Fawkes, Idade: 25",
+        "Ocupação: Anarquista, Ladrão, Demolidor, Mercenário, Sucateiro",
+        "Base de operações: Junkertown, Austrália (anteriormente)",
+        "Afiliação: Junkers (anteriormente)",
+        "O DIA ESTÁ ÓTIMO PARA UM POUCO DE CAOS!",
+        "Junkrat é um lunático obcecado por explosivos que vive para causar destruição e caos. O ataque ao núcleo de fusão do omnium australiano alterou para sempre a paisagem do Deserto Australiano. Após a detonação, a área foi transformada em uma terra devastada, árdua e irradiada, cheia de destroços e fragmentos de metal retorcido da instalação arruinada, e inóspita para a maioria. Mas há aqueles que sobreviveram. Com o nome de Junkers, eles se aproveitaram das cascas do omnium e criaram uma sociedade cruel e sem lei em suas sombras. Junkrat era um deles, sobrevivendo da posse de metais e componentes das ruínas. Como muitos outros, ele foi afetado pela radiação remanescente. Esse toque de loucura fez dele ideal para manejar explosivos perigosos, uma paixão que logo se tornou uma obsessão. Ele ganhou notoriedade quando descobriu um segredo extremamente valioso nos ossos do omnium. Apesar de poucos saberem a natureza do que ele encontrou, ele mesmo assim foi perseguido por caçadores de recompensa, gangues e oportunistas, aonde quer que fosse, até que fez um acordo com o executor Junker conhecido como Roadhog, que relutantemente concordou em ser seu guarda-costas pessoal em troca de metade dos espólios. Agora, com Roadhog ao seu lado, Junkrat deixou o Deserto Australiano e embarcou em uma onda de crimes internacionais, deixando para trás apenas um rastro de destruição."
+    ],
+    "counters": [
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/brigitte/brigitte-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/orisa/orisa-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/reinhardt/reinhardt-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/tracer/tracer-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/zarya/zarya-icon.png", "category": "weak-against"}
+    ]
+}

@@ -1,0 +1,175 @@
+{
+    "name": "Mercy",
+    "mainImage": {
+        "img": "imagens/support/mercy/mercy-image.png",
+        "alt": "Mercy image"
+    },
+    "difficulty": "1",
+    "role": {
+        "img": "imagens/suporte.png",
+        "alt": "Suporte icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "A Armadura de Valquíria de Mercy a ajuda a se manter perto de seus aliados como um anjo da guarda, curando, ressuscitando ou os fortalecendo com os raios que emanam de seu Bastão de Caduceu.",
+    "skills": [
+        {
+            "skillImg": "imagens/support/mercy/regeneracao.png",
+            "name": "Regeneração (Passiva)",
+            "description": "A regeneração cura automaticamente com o tempo.",
+            "data": {
+                "stats": [
+                    "Cura: 20 de vida por segundo depois de não levar mais dano por 1 segundo"
+                ],
+                "details": [
+                    "Não gera carga para habilidade final."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/mercy/descenso-angelical.png",
+            "name": "Descenso Angelical (Passiva)",
+            "description": "Impulsionada por sua armadura de Valquíria, Mercy reduz a velocidade de sua descida em grandes alturas.",
+            "data": {
+                "stats": [
+                    "Velocidade de movimento: Horizontal: 5.5 m/s | Vertical: 2 m/s (Baixo) | Total: 5.85 m/s"
+                ],
+                "details": [
+                    "Enquanto estiver no ar, Mercy pode pressionar e segurar o botão de pular para começar a cair lentamente no chão. Soltar o botão de salto terminará a descida angelical."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/mercy/bastao-de-caduceu.png",
+            "name": "Bastão de Caduceu",
+            "description": "Mercy ativa um de dois raios que se conectam a um aliado. Mantendo seus raios, Mercy pode restaurar a vida desse aliado ou aumentar a quantidade de dano que ele inflige.",
+            "data": {
+                "stats": [
+                    "Tipo: Feixe (Seguindo o aliado)",
+                    "Dano: +30% dano amplificado",
+                    "Cura: 50 de vida por segundo",
+                    "Distância máxima: 15 metros",
+                    "Duração: Até ser cancelada",
+                    "Ganho de carga da habilidade final: 130% do dano amplificado"
+                ],
+                "details": [
+                    "O disparo primário cria um cordão de cura no aliado mais próximo da mira da Mercy, que permanece enquanto a Mercy mantiver pressionado o botão de disparo primário.",
+                    "O disparo secundário cria uma corda de dano que funciona de maneira semelhante à corda de cura, mas aumenta o dano em vez de curar.",
+                    "Mercy não precisa olhar para o aliado para manter a corda.",
+                    "A corda se romperá se Mercy e o aliado saírem do alcance ou da linha de visão, exceto durante os primeiros 1,4 segundos após o engate.",
+                    "Os feixes de cura podem se acumular, mas os feixes de dano não.",
+                    "Mercy ganha carga para habilidade final igual a 130% do dano amplificado, exceto o dano causado por si próprio.",
+                    "Para amplificar o dano de um ataque de projétil, Mercy deve estar aumentando o dano do herói aliado quando o projétil foi disparado. Depois disso, ele será aprimorado, mesmo se Mercy mudar para a cura depois."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/mercy/desintegrador-de-caduceu.png",
+            "name": "Desintegrador de Caduceu",
+            "description": "Mercy atira um cartucho de sua arma.",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis",
+                    "Dano: 20",
+                    "Espalhamento de disparo: Linha reta",
+                    "Velocidade de projétil: 50 metros por segundo",
+                    "Taxa de disparo: 5 metros por segundo",
+                    "Munição: 20",
+                    "Tempo de recarga: 1.4 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": [
+                    "O desintegrador é recarregado automaticamente se não estiver equipado por 1,4 segundos."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/mercy/ressurreicao.png",
+            "name": "Ressurreição",
+            "description": "Mercy traz um aliado morto de volta à batalha, com vida máxima.",
+            "data": {
+                "stats": [
+                    "Cura: Restaura toda vida de um aliado caído",
+                    "Velocidade de movimento: -75% de penalidade",
+                    "Distância máxima: 5 metros",
+                    "Tempo de ativação: 1.75 segundos",
+                    "Tempo de recarga: 30 segundos",
+                    "Ganho de carga da habilidade final: Nenhuma"
+                ],
+                "details": [
+                    "Os jogadores ressuscitados ganham 2,25 segundos de invulnerabilidade.",
+                    "O aliado caído é destacado na tela do jogador.",
+                    "A Mercy pode ser interrompida por atordoamentos, hacks ou repulsões durante o uso da ressurreição."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/mercy/anjo-da-guarda.png",
+            "name": "Anjo da Guarda",
+            "description": "Mercy voa na direção de um aliado que ela tenha mirado, permitindo alcançá-lo rapidamente para fornecer assistência em momentos cruciais.",
+            "data": {
+                "stats": [
+                    "Velocidade de movimento: 17 metros por segundo",
+                    "Distância máxima: 30 metros",
+                    "Tempo de recarga: 1.5 segundos"
+                ],
+                "details": [
+                    "Pode ser usado em aliados vivos e mortos.",
+                    "Pode ser cancelado no meio do vôo pressionando a tecla da habilidade mais uma vez.",
+                    "Pressionar o botão de salto durante o anjo da guarda permitirá que Mercy faça um estilingue que a impulsiona para frente com força mantida."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/mercy/valquiria.png",
+            "name": "Valquíria (Habilidade Final)",
+            "description": "Ganha a habilidade de voar. Habilidades são aprimoradas.",
+            "data": {
+                "stats": [
+                    "Dano: Aumento de dano em cadeia (30% por alvo)",
+                    "Cura: 20 HP/s (Mercy) | 60 HP/s por alvo (aliados)",
+                    "Velocidade de movimento: 9 m/s (voo omnidirecional) | 25 m/s (anjo da guarda)",
+                    "Velocidade de projétil: 100 m/s (desintegrador)",
+                    "Distância máxima: 10 metros (cura em cadeia) | +100% de alcance (anjo da guarda | bastão de caduceu)",
+                    "Munição: Infinita (desintegrador)",
+                    "Tempo de ativação: 0.5 segundos",
+                    "Duração: 15 segundos",
+                    "Custo da habilidade final: 1820 pontos"
+                ],
+                "details": [
+                    "Mercy gera passivamente 1% de habilidade final a cada 3,64 segundos.",
+                    "O feixe do bastão de caduceu se ramifica do alvo do raio para aliados próximos, curando ou aumentando o dano deles, e aumentando na mesma quantidade. Isso requer linha de visão, mas ignora barreiras.",
+                    "A regeneração não pode ser interrompida por danos.",
+                    "A Mercy ganha visão das barras de saúde inimigas se caso eles receberem dano (mesmo que ela não tenha causado o dano).",
+                    "Segurar a tecla de saltar faz com que Mercy suba enquanto segura, e o crouch faz com que ela desça."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Angela Ziegler, Idade: 37",
+        "Ocupação: Médico de campo, Socorrista",
+        "Base de operações: Zurique, Suíça",
+        "Afiliação: Overwatch (anteriormente)",
+        "HERÓIS NUNCA MORREM",
+        "Um anjo da guarda para aqueles em seus cuidados, Dra. Angela Ziegler é uma curandeira sem igual, uma cientista brilhante e uma defensora convicta da paz. Ziegler se tornou a chefe de cirurgia em um proeminente hospital suíço, antes de ser pioneira em avanços no campo da nanobiologia aplicada, que melhorou radicalmente o tratamento de doenças e ferimentos mortais. Foram estas perícias que atraíram a atenção da Overwatch. Com o falecimento de seus pais devido à guerra, Ziegler se opunha à abordagem militar da organização em manter a paz mundial. Por fim, ela reconheceu que a Overwatch oferecia a ela a oportunidade de salvar vidas em uma escala muito maior. Como chefe das pesquisas médicas da Overwatch, Angela buscou alavancar seu trabalho de cura na linha de frente, em situações de crise. O resultado foi a armadura de resposta rápida Valquíria, a qual a própria Ziegler pilotou em diversas missões da Overwatch. Apesar de suas contribuições para a Overwatch, ela se estranhava constantemente com seus superiores e com os objetivos globais da instituição. Quando a Overwatch se dissipou, Ziegler se dedicou a ajudar aqueles afetados pela guerra. Apesar de passar a maior parte do tempo cuidando dos que tudo perderam nas áreas em crise ao redor do mundo, pode-se contar com a Dra. Ziegler para usar sua armadura de Valquíria sempre que inocentes estiverem em perigo."
+    ],
+    "counters": [
+        { "msg": "Ninguém" },
+        { "urlImage": "imagens/damage/ashe/ashe-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mccree/mccree-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mei/mei-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/soldado76/soldado76-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/tracer/tracer-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "weak-against"}
+    ]
+}

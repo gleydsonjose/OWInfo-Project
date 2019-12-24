@@ -1,0 +1,133 @@
+{
+    "name": "Zenyatta",
+    "mainImage": {
+        "img": "imagens/support/zenyatta/zenyatta-image.png",
+        "alt": "Zenyatta image"
+    },
+    "difficulty": "3",
+    "role": {
+        "img": "imagens/suporte.png",
+        "alt": "Suporte icon"
+    },
+    "life": [
+        "50"
+    ],
+    "armour": [],
+    "shield": [
+        "150"
+    ],
+    "description": "Zenyatta usa seus orbes da discórdia e da harmonia para curar seus aliados e enfraquecer seus oponentes, tudo enquanto busca um estado transcendental de imunidade ao dano. Zenyatta projeta seus orbes destrutivos de energia em uma sequência continua rápida após alguns segundos gastando energia",
+    "skills": [
+        {
+            "skillImg": "imagens/support/zenyatta/orbe-da-destruicao.png",
+            "name": "Orbe da Destruição",
+            "description": "Zenyatta projeta seus orbes de energia destrutiva individualmente ou em uma rajada de disparos rápidos após alguns segundos acumulando poder.",
+            "data": {
+                "stats": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "Tipo: Projéteis",
+                    "Dano: 48",
+                    "Espalhamento do disparo: Linha reta",
+                    "Velocidade de projétil: 90 metros por segundo",
+                    "Taxa de disparo: 2.5 disparos por segundo",
+                    "Munição: 20",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Headshot: Sim",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "Tipo: Projéteis",
+                    "Dano: 48 por orbe | máximo de 240 por sequência continua",
+                    "Espalhamento do disparo: Linha reta",
+                    "Velocidade de movimento: 90 metros por segundo",
+                    "Taxa de disparo: 1 orbe por 0.1 segundos (disparando) | 1 orbe por 0.5 (carregando) | 0.65 segundos de recuperação",
+                    "Munição: 20",
+                    "Uso da munição: Até 5 por sequência continua",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "Combinado com orbe da discórdia, o orbe da destruição pode causar 60 de dano por esfera."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/zenyatta/orbe-da-harmonia.png",
+            "name": "Orbe da Harmonia",
+            "description": "Zenyatta lança um orbe sobre o ombro de um alvo aliado. Enquanto Zenyatta mantiver uma linha de visão, o orbe recupera lentamente a vida do aliado. Somente um aliado pode receber os benefícios do orbe de cada vez.",
+            "data": {
+                "stats": [
+                    "Cura: 30 de vida por segundo",
+                    "Velocidade do projétil: 120 metros por segundo",
+                    "Distância máxima: 40 metros",
+                    "Munição: Uma ativa",
+                    "Duração: 3 segundos (Se sair da linha de visão)"
+                ],
+                "details": [
+                    "Se Zenyatta perder de vista o jogador que está sendo curado, o orbe da harmonia retornará ao Zenyatta após 3 segundos.",
+                    "Múltiplos orbes se acumulam de maneira aditiva."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/zenyatta/orbe-da-discordia.png",
+            "name": "Orbe da Discórdia",
+            "description": "Prender o orbe da discórdia a um oponente e amplifica a quantidade de dano que ele recebe enquanto Zenyatta mantiver uma linha de visão. Somente um inimigo pode sofrer os efeitos do orbe de cada vez.",
+            "data": {
+                "stats": [
+                    "Dano: +25% recebido",
+                    "Velocidade do projétil: 120 metros por segundo",
+                    "Distância máxima: 40 metros",
+                    "Munição: Uma ativa",
+                    "Duração: 3 segundos (Se sair da linha de visão)"
+                ],
+                "details": [
+                    "Se Zenyatta perder de vista o jogador afetado, o orbe da discord será devolvido ao Zenyatta após 3 segundos."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/zenyatta/transcendencia.png",
+            "name": "Transcendência (Habilidade Final)",
+            "description": "Zenyatta entra em um estado de existência elevada por um breve período de tempo. Enquanto transcende, Zenyatta não pode usar suas habilidades ou armas, mas é imune ao dano e restaura automaticamente a vida dele e de aliados próximos.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Cura: 300 de vida por segundo",
+                    "Velocidade de movimento: 11 metros por segundo",
+                    "Distância máxima: Raio de 10 metros",
+                    "Duração: 6 segundos",
+                    "Custo da habilidade final: 2310 pontos"
+                ],
+                "details": [
+                    "Zenyatta gera passivamente 1% de habilidade final a cada 4,62 segundos.",
+                    "Zenyatta também é imune a certos atordoamentos, como o hackear e o abalo terrestre.",
+                    "A munição é restaurada após a conclusão da habilidade final."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Tekhartha Zenyatta, Idade: 20",
+        "Ocupação: Guru andarilho, Aventureiro",
+        "Base de operações: Monastério de Shambali, Nepal (anteriormente)",
+        "Afiliação: O Shambali (anteriormente)",
+        "O VERDADEIRO EU NÃO POSSUI FORMA",
+        "Zenyatta é um monge ômnico que vagueia pelo mundo em busca de iluminação espiritual. Dizem que aqueles que cruzam seu caminho nunca serão os mesmos. Anos atrás, após a Crise Ômnica, um grupo de robôs ômnicos exilados vivenciou o que eles descrevem como um despertar espiritual. Eles abandonaram suas vidas pré-programadas para estabelecer um monastério comunal nas profundezas do Himalaia. Após muitos anos de meditação sobre a natureza da existência, eles passaram a acreditar que eram mais do que inteligências artificiais e que, como os humanos, possuíam a essência de uma alma. Reconhecendo a igualdade espiritual que tinham com os humanos, os monges, liderados pelo misterioso robô conhecido como Tekhartha Mondatta, procuraram curar as feridas causadas uma geração antes pela Crise Ômnica e trazer humanos e robôs de volta a uma sociedade em harmonia. Sua mensagem foi abraçada por milhares de pessoas ao redor do mundo e eles se tornaram celebridades globais. Mas um monge, Zenyatta, discordava dessa nova direção. Ele acreditava que o caminho para reparar os problemas entre humanos e ômnicos não era através do ensino dogmático, mas através da conexão e do envolvimento interpessoal. Por fim, Zenyatta seguiu seu próprio caminho. Ele escolheu deixar o monastério e vagar pelo mundo, ajudando aqueles que ele encontrar a superarem suas batalhas pessoais e encontrarem a paz interior. Mas, quando necessário, ele irá lutar para proteger os inocentes, sejam eles ômnicos ou humanos."
+    ],
+    "counters": [
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/zarya/zarya-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/doomfist/doomfist-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mccree/mccree-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mei/mei-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/tracer/tracer-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"}
+    ]
+}

@@ -1,0 +1,132 @@
+{
+    "name": "Ana",
+    "mainImage": {
+        "img": "imagens/support/ana/ana-image.png",
+        "alt": "Ana image"
+    },
+    "difficulty": "3",
+    "role": {
+        "img": "imagens/suporte.png",
+        "alt": "Suporte icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "O arsenal versátil de Ana permite que ela afete heróis em todo o campo de batalha. Os tiros de seu Rifle Biótico e as Granadas Bióticas curam aliados e prejudicam inimigos. Sua arma de mão neutralizam alvos importantes e o Estimulante concede a um aliado um grande aumento de poder.",
+    "skills": [
+        {
+            "skillImg": "imagens/support/ana/rifle-biotico.png",
+            "name": "Rifle Biótico",
+            "description": "O rifle de Ana atira dardos que podem restaurar a vida de seus aliados ou causar dano continuado a seus inimigos. Ela é capaz de usar a mira telescópica de seu rifle para dar tiros incrivelmente precisos.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil (sem escope) | Hitscan (com escope)",
+                    "Dano: 70 em 0.6 segundos",
+                    "Espalhamento do disparo: Linha reta",
+                    "Cura: 75 em 0.6 segundos",
+                    "Velocidade de movimento: -65% (com escope)",
+                    "Velocidade do projétil: 125 metros por segundo (sem escope)",
+                    "Taxa de disparo: 1 disparo a cada 0.8 segundos | 1.25 disparos por segundo",
+                    "Munição: 14",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Tempo de ativação: 0.5 segundos ativando o escope",
+                    "Duração: 0.6 segundos de efeito",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Tiros passam por aliados com saúde completa e não os afetam.",
+                    "Tiros com scope deixam o trajeto do disparo para trás.",
+                    "Aplica um efeito de dano / cura ao longo do tempo que pode ser limpo. Os pacotes de vida limpam o efeito de dano ao longo do tempo."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/ana/dardo-sonifero.png",
+            "name": "Dardo Sonífero",
+            "description": "Ana dispara um dardo de sua arma secundária, deixando seus inimigos inconscientes (porém eles despertam ao receber dano).",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis",
+                    "Dano: 5",
+                    "Espalhamento de disparo: Linha reta",
+                    "Velocidade de projétil: 60 metros por segundo",
+                    "Tempo de ativação: 0.3 segundos",
+                    "Duração: Até 6 segundos",
+                    "Tempo de recarga: 12 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Se um alvo adormecido sofrer dano, o alvo acordará prematuramente em 0,5 segundos."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/ana/granada-biotica.png",
+            "name": "Granada Biótica",
+            "description": "Ana lança uma granada biótica que causa dano aos inimigos e cura os aliados em uma pequena área de efeito. Aliados afetados recebem por tempo limitado cura aumentada de todas as fontes, enquanto inimigos pegos pela explosão não podem se curar por alguns instantes.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil lançável",
+                    "Dano: 60",
+                    "Cura: 100",
+                    "Velocidade de projétil: 30 metros por segundo",
+                    "Área de efeito: 4 metros",
+                    "Duração: 4 segundos",
+                    "Tempo de recarga: 10 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Os aliados afetados recebem 50% de cura adicional, incluindo os Pacotes de Saúde, enquanto os inimigos afetados não podem ser curados.",
+                    "A regeneração de escudos é tratada como uma forma de cura, o que significa que os aliados regeneram seus escudos 50% mais rápido e os inimigos não podem regenerar seus escudos até que o efeito expire."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/ana/estimulante.png",
+            "name": "Estimulante (Habilidade Final)",
+            "description": "Depois que Ana atinge seus aliados com um estimulante de combate, eles causam mais dano e recebem menos dano dos ataques inimigos temporariamente.",
+            "data": {
+                "stats": [
+                    "Dano: +50% dano buff",
+                    "Cura: 250 de vida",
+                    "Redução de dano: 50%",
+                    "Distância máxima: 40 metros",
+                    "Tempo de ativação: 0.15 segundos",
+                    "Duração: 8 segundos",
+                    "Custo de habilidade final: 2100 pontos"
+                ],
+                "details": [
+                    "Ana gera passivamente 1% de habilidade final a cada 4,20 segundos.",
+                    "A redução de dano é limitada em 50%. Se o Bastion (que recebe 20% menos dano durante a transformação) recebe o estimulante, a redução de dano ainda é de 50%."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Ana Amari, Idade: 60",
+        "Ocupação: Caçadora de recompensa",
+        "Base de operações: Cairo, Egito",
+        "Afiliação: Overwatch (anteriormente)",
+        "TODOS DEVEM ENCONTRAR SUA CAUSA",
+        "Uma das fundadoras de Overwatch, Ana usa suas habilidades e seu conhecimento para defender seu lar e as pessoas que ela ama. Como a Crise Ômnica teve um peso muito grande para o Egito, as forças de segurança esvaziadas e sem pessoal do país se apoiaram nos franco-atiradores de elite. Entres eles, Ana Amari, que era considerada por muitos a melhor do mundo. Sua destreza com as armas, tomada rápida de decisões e instintos, fizeram dela uma seleção natural para se juntar à força de ataque de Overwatch que terminou a guerra. Seguindo o sucesso da missão original de Overwatch, Ana serviu muitos anos como a Segunda no Comando para o Comandante de Ataque Morrison. Apesar de suas grandes responsabilidades liderando a organização, Ana se recusou a deixar as operações de combate. Ela continuou ativa até seus cinquenta anos de idade, até acreditarem que ela morreu nas mãos de uma agente da Talon conhecida como “Widowmaker”, durante uma missão de resgate de reféns. Na verdade, Ana sobreviveu a esse encontro, mesmo que gravemente ferida e tendo perdido seu olho direito. Durante sua recuperação, ela sentiu o peso de uma vida gasta no combate e decidiu permanecer distante dos conflitos mundiais que se alargavam. Entretanto, com o passar do tempo, ela se deu conta de que não podia fazer nada enquanto sua cidade e as pessoas inocentes ao seu redor eram ameaçados por outros. Agora, Ana voltou à luta para proteger seu país das forças que poderiam desestabilizá-lo; e mais importante, para manter sua família e seus aliados mais próximos em segurança."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/lucio/lucio-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/moira/moira-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/wrecking-ball/wrecking-ball-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/zenyatta/zenyatta-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/doomfist/doomfist-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/tracer/tracer-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"}
+    ]
+}

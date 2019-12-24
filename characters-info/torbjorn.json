@@ -1,0 +1,165 @@
+{
+    "name": "Torbjörn",
+    "mainImage": {
+        "img": "imagens/damage/torbjorn/torbjorn-image.png",
+        "alt": "Torbjorn image"
+    },
+    "difficulty": "2",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [
+        "50"
+    ],
+    "shield": [],
+    "description": "O arsenal extenso de Torbjörn inclui uma Pistola de Rebite, um martelo e uma forja pessoal que ele pode usar para construir torres.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/torbjorn/pistola-de-rebite.png",
+            "name": "Pistola de Rebite",
+            "description": "Torbjörn dispara rebites a longas distâncias ou ejeta metal derretido da sua pistola em rajadas de curto alcance.",
+            "data": {
+                "stats": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "Tipo: Projétil lançável",
+                    "Dano: 70 por disparo",
+                    "Velocidade de projétil: 70 metros por segundo",
+                    "Taxa de disparo: 0.6 segundos de recuperação | 1.67 disparos por segundo",
+                    "Munição: 18",
+                    "Tempo de recarga: 2 segundos",
+                    "Headshot: Sim",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "Tipo: Escopeta (Projétil)",
+                    "Dano: entre 3.15 e 10.5 por projétil | entre 31.5 e 105 por disparo",
+                    "Distância de queda: entre 10 e 20 metros",
+                    "Espalhamento de disparo: Constante: 4.15 graus",
+                    "Número de projéteis: 10",
+                    "Taxa de disparo: 0.6 segundos de recuperação | 1.67 disparos por segundo",
+                    "Munição: 18",
+                    "Uso da munição: 3 por disparo",
+                    "Tempo de recarga: 2 segundos"
+                ],
+                "details": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "Recarrega automaticamente se Torbjörn tem seu martelo de forja equipado por 2 segundos.",
+                    "A torre terá como alvo o inimigo atingido pelo disparo primário, se estiver dentro do alcance e da linha de visão.",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "Recarrega automaticamente se Torbjörn tem seu martelo de forja equipado por cerca de 2,1 segundos."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/torbjorn/martelo-de-forja.png",
+            "name": "Martelo de Forja",
+            "description": "Esse martelo multiuso conserta torres e, em caso de emergência, também pode ser utilizado como arma.",
+            "data": {
+                "stats": [
+                    "Tipo: Corpo a corpo",
+                    "Dano: 55",
+                    "Cura: 50 por acerto (reparação da torreta)",
+                    "Distância máxima: 2.5 metros",
+                    "Taxa de disparo: 0.85 segundos de recuperação, 1.2 de balanços por segundo",
+                    "Headshot: Não"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/damage/torbjorn/posicionar-torre.png",
+            "name": "Posicionar Torre",
+            "description": "Torbjörn posiciona uma torre que se autoconstrói. Ela segue e ataca inimigos automaticamente.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil lançável (antes de ativar) | Hitscan (quando está ativa)",
+                    "Vida: 250",
+                    "Dano: 14 por disparo (56 por segundo)",
+                    "Velocidade de projétil: 17 metros por segundo",
+                    "Distância máxima: 15 metros (lançamento da torreta) | 40 metros (distância do ataque da torreta)",
+                    "Taxa de disparo: 4 balas por segundo",
+                    "Tempo de ativação: 3 segundos",
+                    "Duração: Até ser destruido",
+                    "Tempo de recarga: 5 segundos | 10 segundos se destruido enquanto está em combate",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "A implantação da torre pode ser lançada a uma distância máxima de 15 metros no nível do solo.",
+                    "A torre ataca automaticamente o inimigo mais próximo dentro da linha de visão e continua atacando esse inimigo até que ele esteja morto ou fora de vista.<br><span style='padding-left: 2.4%'>O alvo pode ser mudado se o jogador danificar o inimigo com o tiro principal da pistola de rebite.</span>",
+                    "A torre pode ser destruída manualmente usando a tecla 'interagir', que causa instantaneamente 10.000 de dano a ela, independentemente da distância.<br><span style='padding-left: 2.4%'>Não pode ser feito enquanto a torre está se construindo.</span>",
+                    "A torre não pode ser reimplantada se causar ou receber dano nos últimos 3 segundos. A tecla 'posicionar torre' aparecerá colorida para indicar isso.<br><span style='padding-left: 2.4%'>Se a Torreta for destruída durante esse período, inclusive pela tecla 'interagir', o 'posicionar torre' entrará em um cooldown de 10 segundos.</span>"
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/torbjorn/sobrecarga.png",
+            "name": "Sobrecarga",
+            "description": "Torbjörn ganha armadura adicional, além de aumento nas velocidades de ataque, movimento e recarregamento por um curto período.",
+            "data": {
+                "stats": [
+                    "Saúde: +100 de armadura",
+                    "Velocidade de movimento: +30% buff",
+                    "Taxa de disparo: +30% para pistola de rebite e martelo de forja",
+                    "Duração: 5 segundos",
+                    "Tempo de recarga: 12 segundos"
+                ],
+                "details": [
+                    "Aumenta a velocidade de recarregamento por 30%."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/torbjorn/nucleo-fundido.png",
+            "name": "Núcleo Fundido (Habilidade Final)",
+            "description": "Torbjörn cria poças de escória incandescente que causam enorme dano contínuo (além de dano extra a armaduras) e podem atrapalhar a movimentação dos inimigos em locais importantes.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil lançável, Área de efeito (piscinas)",
+                    "Dano: Impacto: 25 | Piscinas: 160 por segundo | +90 contra armadura",
+                    "Velocidade do projétil: 40 metros por segundo",
+                    "Área de efeito: Raio de 2.5 metros de interação",
+                    "Munição: 10",
+                    "Duração: 6 segundos de tempo de lançamento ou até a munição acabar 10 segundos por piscina",
+                    "Custo de habilidade final: 2142 pontos"
+                ],
+                "details": [
+                    "Torbjörn gera passivamente 1% de habilidade final a cada 4.284 segundos.",
+                    "Cada tiro salta até atingir o chão; nesse momento, ele se transforma em uma pequena poça de magma que causa dano ao longo do tempo.",
+                    "Contra a armadura, as piscinas causam 250 de dano por segundo.",
+                    "Os danos das piscinas não se acumulam; duas piscinas na mesma área causam o mesmo dano que uma piscina."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Torbjörn Lindholm, Idade: 57",
+        "Ocupação: Designer de armas",
+        "Base de operações: Gotemburgo, Suécia",
+        "Afiliação: Overwatch (anteriormente)",
+        "CONSTRUÍ-LAS PARA DESTRUÍ-LOS",
+        "No seu auge, Overwatch possuía um dos armamentos mais avançados do planeta, que remetia de volta à oficina de um habilidoso engenheiro chamado Torbjörn Lindholm. Antes da Crise Ômnica, Torbjörn ganhou notoriedade por projetar sistemas de armas, usados por países de todo o mundo. No entanto, sua crença de que a tecnologia deve servir a uma perspectiva melhor para a humanidade o fez entrar em conflito com seus empregadores, que desejavam controlar suas armas usando inteligência computacional interconectada. Torbjörn tinha uma profunda desconfiança da inteligência computacional consciente e, enquanto muitos de seus companheiros consideravam isso uma paranoia, seus piores medos se tornaram realidade quando as populações de robôs do mundo se viraram contra seus criadores humanos durante a Crise Ômnica. Por ser um gênio da engenharia, ele foi recrutado para juntar-se à equipe de ataque original do Overwatch e suas diversas invenções provaram-se fundamentais para acabar com a crise. Nos anos seguintes, a Overwatch se tornou uma força de paz internacional e Torbjörn continuou sendo um recurso crítico para todas as suas necessidades tecnológicas e sistemas de armas exclusivos. Mas após a queda da Overwatch, muitas das armas de Torbjörn foram roubadas ou escondidas por todo o mundo. Sentindo-se responsável por suas criações, Torbjörn está determinado a impedi-las de continuarem caindo nas mãos erradas e causando estragos a inocentes."
+    ],
+    "counters": [
+        { "urlImage": "imagens/damage/tracer/tracer-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/brigitte/brigitte-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/reinhardt/reinhardt-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/wrecking-ball/wrecking-ball-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/ashe/ashe-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/hanzo/hanzo-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/junkrat/junkrat-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/orisa/orisa-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/soldado76/soldado76-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/zarya/zarya-icon.png", "category": "weak-against"}
+    ]
+}

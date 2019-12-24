@@ -1,0 +1,190 @@
+{
+    "name": "Sigma",
+    "mainImage": {
+        "img": "imagens/tank/sigma/sigma-image.png",
+        "alt": "Sigma image"
+    },
+    "difficulty": "3",
+    "role": {
+        "img": "imagens/tanque.png",
+        "alt": "Tank icon"
+    },
+    "life": [
+        "300"
+    ],
+    "armour": [],
+    "shield": [
+        "100"
+    ],
+    "description": "O excêntrico astrofísico Sigma é um tanque volátil, que ganhou o poder de controlar a gravidade num experimento orbital que não deu certo. Manipulado pela Talon para servir de arma, é impossível ignorar sua presença no campo de batalha.",
+    "skills": [
+        {
+            "skillImg": "imagens/tank/sigma/hiperesferas.png",
+            "name": "Hiperesferas",
+            "description": "Sigma lança duas cargas gravitacionais que ricocheteiam nas paredes e implodem após um curto período, causando dano aos inimigos em um raio considerável.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil de arco",
+                    "Dano: 2 esferas por disparo | cada: 55 de dano direto | entre 9 e 30 de dano no raio da explosão | 2.25 á 7.5 de dano próprio",
+                    "Velocidade de projétil: 50 metros por segundo",
+                    "Distância máxima: 20 metros",
+                    "Área de efeito: Explosão em um raio de 3 metros",
+                    "Taxa de disparo: 2 esferas por 1.5 segundos | 0.2 segundos entre esferas",
+                    "Munição: Infinita",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Ricocheteiam na parede, chão e teto.",
+                    "Os inimigos feridos pela implosão serão levemente puxados em direção ao centro."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/sigma/barreira-experimental.png",
+            "name": "Barreira Experimental",
+            "description": "Sigma lança uma barreira flutuante no local escolhido. A barreira pode ser dispensada a qualquer instante.",
+            "data": {
+                "stats": [
+                    "Vida: 1500",
+                    "Regeneração: 150 por segundo | depois de ficar inativo por 2 segundos",
+                    "Velocidade do projétil: 16.5 metros por segundo",
+                    "Distância máxima: Infinita",
+                    "Área de efeito: 4,5 metros de altura | Largura de 5 metros nos postes | curvas para 7 metros no meio",
+                    "Duração: Até destruido ou cancelado",
+                    "Tempo de recarga: 1 segundo quando recuperado | 5 segundos se destruído"
+                ],
+                "details": [
+                    "Após a ativação, a barreira avança mantendo pressionada a tecla de habilidade e para quando a tecla não é mais pressionada.",
+                    "Paredes bloquearão o caminho da barreira se o centro da barreira estiver bloqueado. A barreira irá deslizar ao longo do solo se o ângulo para baixo for 45 ° ou menor.",
+                    "A barreira pode ser removida pressionando a tecla de habilidade novamente, mantendo toda a saúde restante. Isso pode ser feito a qualquer momento, inclusive no meio de outras habilidades, como punho cinético.",
+                    "A barreira é destruída se sair dos limites.",
+                    "A barreira é removida automaticamente após a morte do Sigma, ou se o Sigma for hackeado."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/sigma/punho-cinetico.png",
+            "name": "Punho Cinético",
+            "description": "Sigma paralisa projéteis no ar, convertendo-os em escudos.",
+            "data": {
+                "stats": [
+                    "Vida: 40% do dano absorvido é convertido em escudos temporários (máximo é 400 de escudo)",
+                    "Distância de queda: 3 metros",
+                    "Duração: 2 segundos",
+                    "Tempo de recarga: 13 segundos"
+                ],
+                "details": [
+                    "Após 3 segundos, os escudos começam a decair a 7 escudos por segundo.",
+                    "Nega projéteis recebidos pela frente e pelos lados, incluindo habilidades como surto de grávitons, nevasca e golpe do dragão (a flecha).",
+                    "Algumas habilidades recebem valores atribuídos devido à sua natureza não ortodoxa. Por exemplo, o dano do orbe biótico é creditado como 100 de dano, que se converte em 40 escudos.",
+                    "Pode ser cancelado com a acreção. No entanto, como os escudos são ganhos no final, nenhum escudo será ganho se punho cinético for cancelado mais cedo."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/sigma/acrecao.png",
+            "name": "Acreção",
+            "description": "Sigma junta uma massa de escombros e a atira em um inimigo para derrubá-lo.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil de arco",
+                    "Dano: 90 de dano direto | 18 á 60 de dano no raio do impacto ou 9 à 30 de dano próprio",
+                    "Velocidade de movimento: -75% de penalidade",
+                    "Velocidade de projétil: 37.5 metros por segundo",
+                    "Distância máxima: Derruba com o máximo de 4 metros no impacto direto | 1 à 2 metros se for próximo e 2 metros se for em si próprio",
+                    "Área de efeito: Raio de 2.5 metros de explosão",
+                    "Tempo de ativação: 0.8 segundos",
+                    "Duração: 0.75 à 3 segundos derrubado",
+                    "Tempo de recarga: 10 segundos"
+                ],
+                "details": [
+                    "Ignora o desviar, matriz de defesa e punho cinético.",
+                    "Quanto mais longe o alvo estiver na horizontal, mais longa será a duração da derrubada. A duração máxima de 3 segundos é sentida a 45 metros."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/sigma/fluxo-gravitacional.png",
+            "name": "Fluxo Gravitacional (Habilidade final)",
+            "description": "No auge do seu poder, Sigma alça voo, ergue os inimigos na área escolhida, lança-os para o alto e os atira no chão novamente.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Dano: 50 (quando levantado) | 50% do HP máximo (quando derrubado)",
+                    "Distância máxima: 35 metros",
+                    "Área de efeito: Raio de 7 metros",
+                    "Tempo de ativação: 0.6 segundos(inicio) | 1 segundo(quando está levantando)",
+                    "Duração: Até 5 segundos para escolher a área | 2 segundos(para levantar) e 0.9 segundos(mantendo os inimigos no ar)",
+                    "Custo da habilidade final = 2170 pontos"
+                ],
+                "details": [
+                    "O Sigma gera passivamente 1% de habilidade final a cada 4,34 segundos.",
+                    "Permite que o Sigma voe. Pressionar a tecla Jump faz com que Sigma suba, enquanto segurar Crouch fará com que ele desça.",
+                    "O final pode ser interrompido através de atordoamentos e hack, mas apenas antes da área ser selecionada.",
+                    "Como o impacto meteoro, a área selecionada é visível para o time inimigo. Inimigos que entram no intervalo alvo após o levantamento não serão afetados.",
+                    "Se nenhuma área for selecionada ou se não houver inimigos dentro, o final termina imediatamente.",
+                    "Não afeta objetos implantados, como torretas (mas move o Bastion no modo Sentinela).",
+                    "Desativa todas as habilidades de movimento dos inimigos suspensos no ar, exceto se a Moira usar o desvanecer e o Reaper usar a sua forma fantasma. Inimigos são suspensos a aproximadamente 10 metros.",
+                    "Se os inimigos escaparem da suspensão, como fortificar ou congelamento criogênico, eles caem e nenhum dano é causado.",
+                    "O golpe causa 50% do HP máximo, que é aumentado pelo HP temporário ganho por habilidades como o kit de reparos.",
+                    "Aqueles afetados pela habilidade experimentam alta gravidade e são massivamente travados por 0,9 segundos.",
+                    "O inimigo levantado pode sofrer danos, mas não a batida.",
+                    "Sigma pode disparar sua arma durante o período de levantamento."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Siebren de Kuiper, Idade: 62 anos",
+        "Ocupação: Astrofísico",
+        "Base de operações: Haia, Holanda (anteriormente)",
+        "Afiliação: Talon",
+        "O UNIVERSO NÃO TEM A OBRIGAÇÃO DE FAZER SENTIDO PARA VOCÊ",
+        "A vida de Dr. Siebren de Kuiper, astrofísico brilhante, mudou para sempre quando um experimento catastrófico lhe deu o poder de controlar a gravidade. Agora, a Talon o manipula para seus próprios fins. De Kuiper era considerado um pioneiro em sua área. Ele dedicou a vida a encontrar uma forma de controlar a gravidade. Renomado tanto por sua pesquisa inovadora quanto por sua personalidade excêntrica, conduziu a maior parte dos estudos no seu laboratório em Haia. Acreditando estar próximo de alcançar seu objetivo, realizou seu experimento mais importante a bordo de uma estação espacial internacional. Mas algo deu errado, causando a formação de um efêmero buraco negro. De Kuiper só foi exposto a ele por um breve instante, porém sofreu graves danos psicológicos. A área ao redor dele começou a apresentar estranhas variações na gravidade, que ora se elevava, ora caía, em função de suas reações. Ele teve que ser tirado dali imediatamente. Ao retornar à Terra, De Kuiper foi mantido em quarentena em instalações governamentais secretas. Em meio a desvarios acerca dos padrões do universo, ao dano psíquico sofrido e a anomalias gravitacionais, ele foi considerado perigoso e passou anos confinado, sendo denominado 'Cobaia Sigma'. Isolado e incapaz de controlar seus poderes, De Kuiper se refugiou em sua própria mente, achando que jamais voltaria a ver o mundo exterior. Quando soube da existência de De Kuiper, a Talon se infiltrou nas instalações e o retirou de lá, planejando se aproveitar de sua genialidade e de suas pesquisas. Sob a custódia da organização, De Kuiper lentamente ganhou controle dos seus poderes. A gravidade passou a se alterar de acordo com sua vontade e ele estava mais perto do que nunca de alcançar o objetivo de toda uma vida. Porém, o mesmo experimento que expandira sua mente também a esfacelara, e ele agora lutava para juntar os pedaços. De Kuiper continua desenvolvendo seus poderes na esperança de desvendar os segredos do universo, sem saber que tanto ele quanto sua pesquisa estão sendo usados pela Talon."
+    ],
+    "counters": [
+        {
+            "msg": "Sigma é um herói novo, por isso ainda não tenho uma lista precisa, mas geralmente ele é forte contra os heróis de hitscan e squishy"
+        },
+        {
+            "urlImage": "imagens/tank/dva/dva-icon.png",
+            "category": "weak-against"
+        },
+        {
+            "urlImage": "imagens/damage/doomfist/doomfist-icon.png",
+            "category": "weak-against"
+        },
+        {
+            "urlImage": "imagens/damage/mei/mei-icon.png",
+            "category": "weak-against"
+        },
+        {
+            "urlImage": "imagens/damage/reaper/reaper-icon.png",
+            "category": "weak-against"
+        },
+        {
+            "urlImage": "imagens/tank/roadhog/roadhog-icon.png",
+            "category": "weak-against"
+        },
+        {
+            "urlImage": "imagens/damage/sombra/sombra-icon.png",
+            "category": "weak-against"
+        },
+        {
+            "urlImage": "imagens/damage/symmetra/symmetra-icon.png",
+            "category": "weak-against"
+        },
+        {
+            "urlImage": "imagens/tank/winston/winston-icon.png",
+            "category": "weak-against"
+        },
+        {
+            "urlImage": "imagens/tank/wrecking-ball/wrecking-ball-icon.png",
+            "category": "weak-against"
+        },
+        {
+            "urlImage": "imagens/tank/zarya/zarya-icon.png",
+            "category": "weak-against"
+        }
+    ]
+}

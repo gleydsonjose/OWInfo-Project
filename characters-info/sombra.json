@@ -1,0 +1,169 @@
+{
+    "name": "Sombra",
+    "mainImage": {
+        "img": "imagens/damage/sombra/sombra-image.png",
+        "alt": "Sombra image"
+    },
+    "difficulty": "3",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "Furtividade e ataques debilitadores tornam Sombra uma infiltradora poderosa. Hackeando, ela consegue atrapalhar seus inimigos, fazendo com que eles sejam mais facilmente derrotados, enquanto seu PEM concede uma vantagem contra múltiplos inimigos de uma só vez. A habilidade da Sombra de usar o Translocador e a camuflagem fazem dela um alvo difícil de se acertar.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/sombra/oportunista.png",
+            "name": "Oportunista (Passiva)",
+            "description": "Sombra detecta inimigos gravemente feridos através das paredes.",
+            "data": {
+                "stats": [],
+                "details": [
+                    "Oportunista detecta inimigos com menos de 50% de vida.",
+                    "A silhueta tem um efeito brilhante, diferente de outros efeitos de visão na parede.",
+                    "Revela barras de saúde inimigas que estão abaixo de 100% apenas para Sombra, sem exigir que a Sombra tenha causado algum dano a elas."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/sombra/pistola-automatica.png",
+            "name": "Pistola Automática",
+            "description": "A pistola automática de Sombra dispara em uma dispersão de curto alcance.",
+            "data": {
+                "stats": [
+                    "Tipo: Hitscan",
+                    "Dano: entre 2.4 e 8",
+                    "Distância da queda: entre 15 e 35 metros",
+                    "Espalhamento do disparo: Max: 2.7 graus",
+                    "Taxa de disparo: 20 balas por segundo",
+                    "Munição: 60",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/damage/sombra/hackear.png",
+            "name": "Hackear",
+            "description": "Sombra hackeia seus inimigos os impedindo temporariamente de usar suas habilidades ou kits médicos, os tornando inúteis para seus oponentes.",
+            "data": {
+                "stats": [
+                    "Distância máxima: 15 metros",
+                    "Tempo de ativação: 0.65 segundos",
+                    "Duração: em inimigos e o B.O.B são 5 segundos | pacotes de cura são 60 segundos | outros são 10 segundos",
+                    "Tempo de recarga: 8 segundos | 4 segundos (Pacote de cura) | 2 segundos (se interrompido no meio do uso)"
+                ],
+                "details": [
+                    "O dano interrompe o hackear e ele entra no tempo de recarga de 2 segundos. Se o hackear for interrompido sem sofrer nenhum dano, a habilidade continua carregada.",
+                    "Barreiras quebram a linha de visão instantaneamente. Paredes também quebram a linha de visão, mas há um breve período de que o hackear pode continuar.",
+                    "Inimigos hackeados não podem ativar suas habilidades. Para habilidades passivas, o hackear apenas desativa aqueles que exigem um botão para pressionar. Para transformações, o hackear cancela transformações de habilidades normais, mas não de habilidades finais. O hackear também desliga a música do Lúcio e desativa a barreira do Sigma. O hackear não afeta armas.",
+                    "Os inimigos hackeados têm sua barra de vida revelada à equipe de Sombra por 20 segundos. Se a habilidade final estiver pronta, um ícone aparecerá no topo para mostrar isso.",
+                    "Os pacotes de vida hackeados reaparecem quatro vezes mais rápido - 2,5 segundos para os pacotes de vida pequenos, 3,75 segundos para os mega pacotes de vida, e podem ser vistos através de muros para todos os aliados em um raio de 30 metros. Pacotes de vida hackeados não podem ser usados pela equipe inimiga.",
+                    "Pacotes de vida não podem ser hackeados antes do jogo começar.",
+                    "Sombra não pode hackear pacotes de vida que já foram hackeados por uma Sombra inimiga.",
+                    "Hackear também pode ter como alvo o B.O.B da Ashe, o Campo de Imortalidade do Baptiste, o amplificador da Orisa e a torre de Torbjörn. Com exceção do B.O.B, eles são desativados por 10 segundos.",
+                    "Não-heróis que são hackeados têm uma caveira acima deles que drena com o tempo. Isso representa a duração do hack.",
+                    "É possível hackear algo que já está hackeado. Nesse caso, a duração é redefinida."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/sombra/furtividade.png",
+            "name": "Furtividade",
+            "description": "Sombra se torna invisível, durante o qual sua velocidade é aumentada consideravelmente. A habilidade é desativada ao atacar, receber dano ou usar habilidades ofensivas. Sombra não captura objetivos quando está invisível.",
+            "data": {
+                "stats": [
+                    "Velocidade de movimento: +50% buff",
+                    "Área de efeito: Raio de 2 metros (Detecção)",
+                    "Tempo de ativação: 0,8 segundos furtivo / não furtivo",
+                    "Duração: Infinita",
+                    "Tempo de recarga: 6 segundos"
+                ],
+                "details": [
+                    "Enquanto invisível, a Sombra não pode ser alvejada por ataques automático (por exemplo, torretas, orbe biótico, tiro certeiro, etc.), a menos que o Sombra seja detectada.",
+                    "Sombra é detectada se houver um inimigo a 2 metros dela ou através de habilidades como flecha sônica e visão infravermelho. No caso do primeiro, apenas o inimigo próximo detecta Sombra, mas no caso dos dois últimos, todo o time inimigo detecta Sombra. UM 'DETECTADO!' A mensagem aparecerá na parte superior da tela do Sombra.",
+                    "A recarga é acionada após a habilidade ser desativada.",
+                    "O efeito sonoro e a distância da narração são 15 metros."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/sombra/translocador.png",
+            "name": "Translocador",
+            "description": "Sombra lança um sinalizador translocador. Ela pode retornar instantaneamente para a localização do translocador enquanto ele estiver ativo (inclusive enquanto ele estiver no ar).",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil lançável",
+                    "Vida: 5",
+                    "Velocidade de projétil: 25 metros por segundo",
+                    "Duração: Infinita",
+                    "Tempo de recarga: 6 segundos"
+                ],
+                "details": [
+                    "A recarga do translocador começa imediatamente após o lançamento ou quando é destruída.",
+                    "Pode ser destruído manualmente usando a tecla 'interagir'. Destruir dessa maneira não redefine o tempo de espera.",
+                    "O Translocador quica nas paredes, mas não nas encostas.",
+                    "Sombra tem um breve momento de invencibilidade ao translocar."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/sombra/pem.png",
+            "name": "PEM (Habilidade Final)",
+            "description": "Sombra realiza uma descarga de energia eletromagnética de amplo alcance, destruindo barreiras e escudos inimigos e hackeando todos os oponentes pegos na explosão.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Dano: 10,000 contra barreiras e escudos",
+                    "Área de efeito: 15 metros",
+                    "Tempo de ativação: 0,35 segundos de ativação | 0,3 segundos de recuperação",
+                    "Duração: igual o hackear",
+                    "Custo da habilidade final: 1400 pontos"
+                ],
+                "details": [
+                    "O Sombra gera passivamente 1% de habilidade final a cada 2,80 segundos.",
+                    "Além de tudo o que o hackear pode fazer, o PEM também hackeia as torre de sentinela da Symmetra, o teleporte da Symmetra e o campo de proximidade do Wrecking Ball por 10 segundos. Eles devem estar dentro da linha de visão da Sombra, ignorando barreiras.",
+                    "O PEM causa 10.000 de dano a todas as barreiras e escudos da área. O PEM também destrói a matriz amplificadora do Baptiste.",
+                    "Se Zarya projetar uma barreira em um alvo com escudos (por exemplo, ela mesma), a barreira protege os escudos, mas o alvo ainda será hackeado.",
+                    "Ao contrário de outras habilidades, Sombra alerta toda a equipe, independentemente da distância dela, que ela usou seu PEM. Isso é feito pela imagem da Sombra que aparece no canto inferior direito da tela para todos os aliados, acompanhada por uma transmissão de rádio que soa 'PEM ativado'.",
+                    "Sombra não pode ganhar carga para habilidade final até que o efeito do PEM desapareça dos heróis inimigos.",
+                    "A Sombra recebe um pequeno impulso vertical ao ativar o PEM."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: ░░░░░░ , Idade: 30",
+        "Ocupação: Hacker",
+        "Base de operações: Dorado, México",
+        "Afiliação: Talon, Los Muertos (anteriormente)",
+        "QUALQUER COISA PODE SER HACKEADA… E QUALQUER UM",
+        "Uma das hackers mais famosas do mundo, Sombra usa informações para manipular aqueles que estão no poder. Muito antes de assumir o nome de “Sombra”, ░░░░░░ era uma das milhares de crianças que ficaram órfãs após a Crise Ômnica. Com muita da infraestrutura de seu país destruída, ela sobreviveu utilizando seus dons naturais de computação como hacker. Depois disso, ░░░░░░ foi acolhida pela gangue mexicana Los Muertos, os ajudando em sua revolução pessoal contra o governo. Los Muertos acreditavam que a reconstrução do México havia favorecido os ricos e mais influentes, deixando para trás os mais necessitados. Após tantas conquistas, ░░░░░░ estava plenamente confiante de suas habilidades, mas foi pega desprevenida quando esbarrou em uma rede de conspiração global, que também a percebeu. Com sua segurança comprometida, ░░░░░░ foi forçada a excluir todos os rastros de sua existência e se escondeu. Ela mais tarde ressurgiu como Sombra, melhorada e determinada a descobrir a verdade por trás da conspiração que ela descobriu. Sombra lançou ataques cibernéticos ainda mais audaciosos e conseguiu com suas explorações conquistar muitos admiradores, incluindo a Talon. Ela se juntou à organização e acredita-se que contribuiu para ataques cibernéticos maciços contra corporações com fortes laços governamentais. Essas façanhas incitaram uma revolta popular no México contra a LumériCo e violaram a segurança das Indústrias Volskaya, a indústria russa responsável pela manufatura da defesa anti-ômnica. Agora, junto a Talon e seus recursos abundantes, Sombra pode focar em seu objetivo real: expor a conspiração e usar este poder para seus objetivos pessoais."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/brigitte/brigitte-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/doomfist/doomfist-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/lucio/lucio-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/mercy/mercy-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/reinhardt/reinhardt-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/sigma/sigma-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/symmetra/symmetra-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/tracer/tracer-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/wrecking-ball/wrecking-ball-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/zenyatta/zenyatta-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/hanzo/hanzo-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/junkrat/junkrat-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mccree/mccree-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mei/mei-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "weak-against"}
+    ]
+}

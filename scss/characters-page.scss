@@ -1,0 +1,582 @@
+@use "utilities/colors" as c;
+@use "utilities/scrollbar" as *;
+@use "utilities/display-help" as *;
+
+/* Characters Page */
+#characters-page{
+    @include display_flex($justify-content: space-between);
+
+    @include webkit_scrollbar(7px, c.$white, c.$black);
+
+    #lateral-menu{
+        @include display_flex();
+        height: 100%;
+        position: fixed;
+        z-index: 999;
+        border-radius: 0 7px 7px 0;
+
+        #btn-menu-open-close{
+            @include display_flex();
+            border-radius: 0 7px 7px 0;
+            background-color: c.$black;
+            order: 2;
+            padding: 0 12px;
+            box-shadow: 0 0 3px 0 c.$red;
+
+            i{
+                color: c.$red;
+                align-self: center;
+                font-size: 16pt;
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            .fa-caret-square-left{
+                display: none;
+            }
+        }
+
+        #characters-lateral-menu{
+            @include display_flex($display: none, $direction: column);
+            width: 400px;
+            max-width: 400px;
+            background-color: c.$white_transparent;
+            padding-bottom: 3%;
+            order: 1;
+            overflow: auto;
+    
+            #title-characters-lateral-menu{
+                text-align: center;
+                font-weight: 100;
+                padding-top: 3%;
+                margin-bottom: 3%;
+            }
+    
+            .div-role-characters{    
+                padding: 0 5%;
+    
+                .role-button{
+                    @include display_flex($align-items: center);
+                    background-color: c.$black;
+                    border-radius: 4px;
+                    padding: 3px 4px;
+                    margin: 6px 0;
+    
+                    img{
+                        width: 27px;
+                        height: 23px;
+                    }
+    
+                    h4{
+                        font-weight: 100;
+                        padding-left: 5px;
+                        color: c.$white;
+                    }
+    
+                    i{
+                        margin-left: auto;
+                        margin-right: 6px;
+                        font-size: 12pt;
+                        color: c.$white;
+                    }
+
+                    &:hover{
+                        opacity: 0.9;
+                        transition: 0.2s ease-in-out;
+                        cursor: pointer;
+                    }
+
+                    .fa-caret-up{
+                        display: none;
+                    }
+                }
+    
+                .characters-buttons{
+                    @include display_flex($display: none, $wrap: wrap, $justify-content: center);
+                    padding-bottom: 3%;
+    
+                    .bg-character-icon{
+                        background-color: c.$black-light;
+                        border-radius: 7px;
+                        width: 40px;
+                        height: 40px;
+                        margin: 3px;
+    
+                        img{
+                            border-radius: 7px;
+                            width: 100%;
+                            height: 100%;
+                        }
+    
+                        &:hover{
+                            filter: grayscale(70%);
+                            transition: 0.2s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #section-characters-page{
+        @include display_flex($direction: column);
+        background-color: c.$white;
+        max-width: 800px;
+        padding: 25px;
+        border-radius: 3px;
+        margin: 2% auto;
+
+        #character-details{
+            @include display_grid($grid-template-columns: 250px 1fr);
+            grid-gap: 25px;
+
+            #character-main-image{
+                grid-column: 1;
+                background-color: c.$gray;
+                border-radius: 3px;
+                box-shadow: 0 0 2px 0 c.$black;
+                max-width: 250px;
+                padding: 15px;
+            }
+
+            #character-data{
+                grid-column: 2;
+                display: flex;
+                flex-flow: column nowrap;
+
+                h2{
+                    font-weight: 100;
+                    font-size: 18pt;
+                    margin-top: -5px;
+                    padding-bottom: 5px;
+                }
+
+                h4{
+                    font-weight: 100;
+                }
+
+                #character-role{
+                    @include display_flex($align-items: center);
+
+                    h4{
+                        font-weight: 100;
+                        padding-right: 3px;
+                    }
+
+                    #character-role-image{
+                        width: 23px;
+                        height: 19.5px;
+                    }
+                }
+
+                #character-health{
+                    div{
+                        @include display_flex($align-items: center);
+
+                        i{
+                            padding-right: 1.5%;
+                            font-size: 5pt;
+                            color: c.$red;
+                        }
+
+                        p{
+                            font-size: 12pt;
+                            color: c.$black-light2;
+                        }
+                    }
+                }
+
+                #character-armour{
+                    @include display_flex($align-items: center);
+
+                    i{
+                        padding-right: 1.5%;
+                        font-size: 5pt;
+                        color: c.$red;
+                    }
+
+                    p{
+                        font-size: 12pt;
+                        color: c.$black-light2;
+                    }
+                }
+
+                #difficulty-info{
+                    i{
+                        font-size: 11pt;
+                    }
+                }
+
+                #btn-group-info{
+                    margin-top: 10px;
+
+                    button{
+                        padding: 4px 15px;
+                        cursor: pointer;
+                        font-size: 11pt;
+                        border-radius: 5px;
+                        background-color: c.$black-light;
+                        color: c.$white;
+
+                        i{
+                            margin-right: 6px;
+                        }
+
+                        &:hover{
+                            opacity: 0.9;
+                            transition: 0.2s ease-in-out;
+                        }
+
+                        &:first-child{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #character-description{
+            @include display_flex($direction: column);
+            word-break: break-word;
+            text-align: justify;
+            padding-top: 40px;
+            padding-bottom: 25px;
+            line-height: 22px;
+
+            h3{
+                font-weight: 100;
+                padding-bottom: 5px;
+            }
+
+            p{
+                color: c.$black-light2;
+            }
+        }
+
+        #character-skills{
+            @include display_flex($direction: column);
+
+            h3{
+                font-weight: 100;
+                padding-bottom: 20px;
+            }
+
+            #skill{
+                @include display_grid($grid-template-columns: 134px 1fr, $grid-template-rows: auto 100%);
+                padding-bottom: 70px;
+
+                img{
+                    border-radius: 7px;
+                    max-width: 114px;
+                    grid-column: 1;
+                    grid-row: 1 / 3;
+                    background-color: c.$black-light;
+                }
+
+                #skill-title{
+                    @include display_flex();
+                    grid-column: 2;
+                    padding-bottom: 7px;
+
+                    h4{
+                        font-weight: 100;
+                    }
+
+                    button{
+                        @include display_flex($justify-content: center, $align-items: center);
+                        margin-left: auto;
+                        padding: 0 13px 0 13px;
+                        cursor: pointer;
+                        font-size: 11pt;
+                        border-radius: 5px;
+                        background-color: c.$black-light;
+                        color: c.$white;
+
+                        i{
+                            margin-right: 5px;
+                        }
+
+                        &:hover{
+                            opacity: 0.9;
+                            transition: 0.2s ease-in-out;
+                        }
+                    }
+                }
+
+                p{
+                    color: c.$black-light2;
+                    word-break: break-word;
+                    text-align: justify;
+                    line-height: 22px;
+                    grid-column: 2;
+                }
+            }
+        }
+
+        #skill-info{
+            @include display_flex($display: none, $direction: column);
+
+            #skill-info-title{
+                font-weight: 100;
+                padding-bottom: 20px;
+            }
+
+            #skill{
+                @include display_grid($grid-template-columns: 134px 1fr, $grid-template-rows: auto 100%);
+                padding-bottom: 40px;
+
+                img{
+                    border-radius: 7px;
+                    max-width: 114px;
+                    grid-column: 1;
+                    grid-row: 1 / 3;
+                    background-color: c.$black-light;
+                }
+
+                #skill-title{
+                    @include display_flex();
+                    grid-column: 2;
+                    padding-bottom: 3px;
+
+                    h4{
+                        font-weight: 100;
+                    }
+                }
+
+                p{
+                    color: c.$black-light2;
+                    word-break: break-word;
+                    text-align: justify;
+                    line-height: 22px;
+                    grid-column: 2;
+                }
+            }
+
+            #skill-stats{
+                ul{
+                    list-style: none;
+
+                    li{
+                        color: c.$black-light2;
+
+                        i{
+                            padding-right: 1.5%;
+                            font-size: 5pt;
+                            color: c.$red;
+                        }
+                    }
+                }
+
+                #stats{
+                    padding-bottom: 30px;
+                }
+                
+                h3{
+                    font-weight: 100;
+                }
+
+                #skill-stats-btn-back{
+                    @include display_flex($justify-content: center);
+                    padding-top: 30px;
+
+                    button{
+                        padding: 3px 13px;
+                        cursor: pointer;
+                        font-size: 11pt;
+                        border-radius: 5px;
+                        background-color: c.$black-light;
+                        color: c.$white;
+
+                        i{
+                            margin-right: 5px;
+                        }
+
+                        &:hover{
+                            opacity: 0.9;
+                            transition: 0.2s ease-in-out;
+                        } 
+                    }
+                }
+            }
+        }
+
+        #character-biography{
+            @include display_flex($display: none, $direction: column);
+
+            h3{
+                font-weight: 100;
+            }
+
+            ul{
+                list-style: none;
+
+                li{
+                    color: c.$black-light2;
+
+                    i{
+                        padding-right: 1.5%;
+                        font-size: 5pt;
+                        color: c.$red;
+                    }
+                }
+            }
+
+            #character-biography-btn-back{
+                @include display_flex($justify-content: center);
+                padding-top: 30px;
+
+                button{
+                    padding: 3px 13px;
+                    cursor: pointer;
+                    font-size: 11pt;
+                    border-radius: 5px;
+                    background-color: c.$black-light;
+                    color: c.$white;
+
+                    i{
+                        margin-right: 5px;
+                    }
+
+                    &:hover{
+                        opacity: 0.9;
+                        transition: 0.2s ease-in-out;
+                    } 
+                }
+            }
+        }
+
+        #character-counters{
+            @include display_flex($display: none, $direction: column, $wrap: wrap);
+
+            h3{
+                font-weight: 100;
+                padding-bottom: 10px;
+            }
+
+            h4{
+                @include display_flex($align-items: center);
+                color: c.$black-light2;
+                font-weight: 100;
+
+                i{
+                    margin-right: 1.5%;
+                    font-size: 5pt;
+                    color: c.$red;
+                }
+            }
+
+            #strong-against, #weak-against{
+                @include display_flex($wrap: wrap);
+                padding-bottom: 3%;
+
+                #bg-character-icon{
+                    background-color: c.$black-light;
+                    border-radius: 7px;
+                    width: 55px;
+                    height: 55px;
+                    margin: 3px;
+
+                    img{
+                        border-radius: 7px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            #character-counters-btn-back{
+                @include display_flex($justify-content: center);
+                padding-top: 30px;
+
+                button{
+                    padding: 3px 13px;
+                    cursor: pointer;
+                    font-size: 11pt;
+                    border-radius: 5px;
+                    background-color: c.$black-light;
+                    color: c.$white;
+
+                    i{
+                        margin-right: 5px;
+                    }
+
+                    &:hover{
+                        opacity: 0.9;
+                        transition: 0.2s ease-in-out;
+                    } 
+                }
+            }
+        }
+
+        .btn-characters-page-modal-mobile{
+            display: none;
+        }
+    }
+}
+
+/* Characters Page - Breakpoint - Mobile */
+@media screen and(max-width: 650px){
+    #characters-page{
+        #lateral-menu{
+            display: none;
+        }
+
+        #section-characters-page{
+            #character-details{
+                @include display_grid($grid-template-columns: 1fr);
+    
+                #character-main-image{
+                    max-width: 300px;
+                }
+
+                #character-data{
+                    grid-column: 1;
+                    display: flex;
+                    flex-flow: column nowrap;
+                }
+            }
+
+            #character-skills{    
+                #skill{
+                    @include display_grid($grid-template-columns: 110px 1fr, $grid-template-rows: auto 100%);
+
+                    img{
+                        max-width: 90px;
+                    }
+
+                    #skill-title{
+                        @include display_flex($direction: column);
+                        padding-bottom: 12px;
+    
+                        button{
+                            margin: 5px auto 0 0;
+                        }
+                    }
+                }
+            }
+
+            .btn-characters-page-modal-mobile{
+                @include display_flex($align-items: center, $justify-content: center);
+                position: fixed;
+                align-self: flex-end;
+                background-color: c.$black;
+                padding: 12px 15px;
+                border-radius: 4px;
+                opacity: 0.9;
+
+                &:hover{
+                    cursor: pointer;
+                    opacity: 1;
+                    transition: 0.2s ease-in-out;
+                }
+
+                i{
+                    font-size: 16pt;
+                    color: c.$red;
+                }
+            }
+        }
+    }
+}

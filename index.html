@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="author" content="Gleydson José">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="This site is a project test">
+    <meta name="keywords" content="OW, Overwatch, Overwatch Personagens">
+    <link rel="shortcut icon" href="imagens/owi-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/website.css">
+    <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d22aa83c9e.js" crossorigin="anonymous"></script>
+    <title>Overwatch Info Project</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header-homepage">
+        <img src="imagens/owi-logo.png" alt="Website logo">
+    </header>
+    <!-- / Header / -->
+
+    <!-- Menu -->
+    <section id="section-homepage">
+        <div id="menu">
+            <div id="menu-description-characters">
+                <h3>Escolha personagens se você quer ter informações como:</h3>
+
+                <ul>
+                    <li>
+                        <i class="fas fa-circle"></i>
+                        <p>Dano e dicas de algumas habilidades</p>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-circle"></i>
+                        <p>Uma parte da história do personagem</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="menu-description-maps">
+                <h3>Escolha mapas se você quer ter informações como:</h3>
+
+                <ul>
+                    <li>
+                        <i class="fas fa-circle"></i>
+                        <p>Em breve</p>
+                    </li>
+                </ul>      
+            </div>
+
+            <div id="menu-buttons">
+                <img src="imagens/menu-personagens-ow.png" alt="Escolher personagens" id="choose-characters">
+                <img src="imagens/menu-mapas-ow.png" alt="Escolher mapas" id="choose-maps">
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Modal -->
+    <div id="bg-main-characters-modal">
+        <div id="bg-inner-characters-modal">
+            <h3 id="title-characters-modal">Escolha um personagem</h3>
+
+            <div class="div-role-characters">
+                <div class="role-button">
+                    <img src="imagens/tanque.png" alt="Tank icon">
+                    <h3>Tanque</h3>
+                    <i class="fas fa-caret-up"></i>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="characters-buttons">
+                    <a v-bind:href="character.url" class="bg-character-icon" v-for="character in characters" v-if="character.role == 'Tank'">
+                        <img v-bind:src="character.urlImage" v-bind:alt="character.altImage">
+                    </a>
+                </div>
+            </div>
+
+            <div class="div-role-characters">
+                <div class="role-button">
+                    <img src="imagens/dano.png" alt="Damage icon">
+                    <h3>Dano</h3>
+                    <i class="fas fa-caret-up"></i>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="characters-buttons">
+                    <a v-bind:href="character.url" class="bg-character-icon" v-for="character in characters" v-bind:key="character.id" v-if="character.role == 'Damage'">
+                        <img v-bind:src="character.urlImage" v-bind:alt="character.altImage">
+                    </a>
+                </div>
+            </div>
+
+            <div class="div-role-characters">
+                <div class="role-button">
+                    <img src="imagens/suporte.png" alt="Support icon">
+                    <h3>Suporte</h3>
+                    <i class="fas fa-caret-up"></i>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="characters-buttons">
+                    <a v-bind:href="character.url" class="bg-character-icon" v-for="character in characters" v-bind:key="character.id" v-if="character.role == 'Support'">
+                        <img v-bind:src="character.urlImage" v-bind:alt="character.altImage">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- * Characters Modal * -->
+
+    <!-- / Menu / -->
+
+    <!-- Footer -->
+    <footer>
+        <div id="credits">
+            <h3>Créditos</h3>
+            
+            <div>
+                <p><a href="https://playoverwatch.com" target="_blank">Overwatch Site Oficial</a></p>
+                <p><a href="https://overwatch.gamepedia.com" target="_blank">Overwatch Wiki</a></p>
+                <p><a href="https://www.esportstales.com" target="_blank">Esports Tales</a></p>
+            </div>
+        </div>
+
+        <div id="source-code">
+            <h3>Código fonte deste site</h3>
+            <a href="#" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </footer>
+    <!-- / Footer / -->
+
+    <!-- Scripts JS -->
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/dropdown.js"></script>
+    <!-- / Scripts JS / -->
+</body>
+</html>

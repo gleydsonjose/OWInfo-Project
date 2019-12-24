@@ -1,0 +1,21 @@
+@mixin webkit_scrollbar($width, $background-colors...){
+    ::-webkit-scrollbar{
+        width: $width;
+    }
+
+    $i: 1;
+
+    @each $bcolor in $background-colors{
+        @if $i == 1{
+            ::-webkit-scrollbar-track{
+                background-color: $bcolor;
+            }
+            $i: 2;
+        } @else if $i == 2{
+            ::-webkit-scrollbar-thumb{
+                background-color: $bcolor;
+                border-radius: 5px;
+            }
+        }
+    }
+}

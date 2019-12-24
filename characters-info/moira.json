@@ -1,0 +1,135 @@
+{
+    "name": "Moira",
+    "mainImage": {
+        "img": "imagens/support/moira/moira-image.png",
+        "alt": "Moira image"
+    },
+    "difficulty": "2",
+    "role": {
+        "img": "imagens/suporte.png",
+        "alt": "Suporte icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "As habilidades bióticas de Moira permitem que ela contribua curando ou causando dano durante qualquer crise. Seu Punho Biótico concede opções para batalhas de curto alcance, enquanto seus Orbes Bióticos concedem cura e dano para distâncias maiores. Ela também pode usar Desvanecer para escapar de grupos ou continuar perto de aliados que precisam de suporte. Quando sua Coalescência estiver carregada, Moira pode salvar vários aliados de serem eliminados de uma vez ou abater inimigos enfraquecidos.",
+    "skills": [
+        {
+            "skillImg": "imagens/support/moira/punho-biotico.png",
+            "name": "Punho Biótico",
+            "description": "Usando sua mão esquerda, Moira gasta energia biótica para curar aliados à sua frente. Sua mão direita dispara um raio de longa distância que drena a vida dos inimigos e cura Moira, recarregando também sua energia biótica. Sua mão direita dispara um feixe de longo alcance que prejudica a saúde dos inimigos, curando a Moira e reabastecendo sua energia biótica.",
+            "data": {
+                "stats": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "Tipo: Feixe (Como projétil)",
+                    "Cura: 80 de vida por segundo | 65 de vida em 4 segundos (prolongado)",
+                    "Velocidade de projétil: 20 metros por segundo",
+                    "Distância máxima: 15 metros",
+                    "Munição: 180 energia biótica",
+                    "Uso da munição: 20 de energia por segundo",
+                    "Tempo de ativação: 0.1 segundos",
+                    "Duração: 4 segundos (restante)",
+                    "Headshot: Não",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "Tipo: Feixe",
+                    "Dano: 50 por segundo",
+                    "Cura: 20 por segundo (A si próprio)",
+                    "Distância máxima: 20 metros",
+                    "Munição: Infinita",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "Atravessa aliados, mas não barreiras inimigas.",
+                    "Causa uma cura ao longo do tempo que começa com a última aplicação da cura por spray. Isso permite que a Moira cure sem gastar recursos.",
+                    "Regenera 4,32 energia biótica por segundo enquanto inativo.",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "Tem uma largura de feixe muito grande.",
+                    "A autocura e os danos são completamente separados. Alterar o dano não afeta a auto-cura.",
+                    "Gera aproximadamente 18,8 energia biótica por segundo. Quando combinado com a regeneração passiva, isso se torna aproximadamente 23 por segundo."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/moira/orbe-biotico.png",
+            "name": "Orbe Biótico",
+            "description": "Moira lança uma esfera biótica que rebate. Ela pode escolher entre um efeito de regeneração que cura aliados ao passar por eles ou de deterioração que causa dano aos inimigos.",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis",
+                    "Dano: 50 por segundo | até 200",
+                    "Cura: 65 por segundo | até 300",
+                    "Velocidade de projétil: 16 metros por segundo | 5,5 metros por segundo enquanto o orbe estiver próximo de alguém",
+                    "Distância de máxima: 5 metros (próximo de alguém)",
+                    "Duração: 10 segundos ou até esgotar os recursos do orbe",
+                    "Tempo de recarga: 10 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Ricocheteiam nas paredes.",
+                    "Atravessa barreiras, mas não tem como alvo os inimigos por trás deles.",
+                    "Não afeta armadilhas, torretas e outros dispositivos.",
+                    "Se amplificado, apenas o dano/cura por segundo é aumentado. Em outras palavras, o orbe se esgota mais rapidamente."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/moira/desvanecer.png",
+            "name": "Desvanecer",
+            "description": "Moira se teletransporta rapidamente por distâncias curtas.",
+            "data": {
+                "stats": [
+                    "Velocidade de movimento: +250% buff",
+                    "Distância máxima: 15 metros (máximo)",
+                    "Duração: 0.8 segundos",
+                    "Tempo de recarga: 6 segundos"
+                ],
+                "details": [
+                    "Torna Moira invulnerável e invisível. Ela ainda pode pegar pacotes de vida.",
+                    "Limpa Moira dos efeitos de status e danos ao longo do tempo.",
+                    "Pode ser usado para escapar de habilidades como surto de grávitons ou fluxo gravitacional."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/moira/coalescencia.png",
+            "name": "Coalescência (Habilidade Final)",
+            "description": "Moira canaliza um raio de longa distância que pode curar aliados ou atravessar barreiras para causar dano a seus inimigos.",
+            "data": {
+                "stats": [
+                    "Tipo: Feixe",
+                    "Dano: 70 por segundo",
+                    "Cura: 140 por segundo | 50 por segundo (A si próprio)",
+                    "Velocidade de movimento: +50% buff",
+                    "Distância máxima: 30 metros",
+                    "Tempo de ativação: 0.5 segundos",
+                    "Duração: 8 segundos",
+                    "Headshot: Não",
+                    "Custo da habilidade final: 2380 pontos"
+                ],
+                "details": [
+                    "Moira gera passivamente 1% de habilidade final a cada 4,76 segundos."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Moira O'Deorain, Idade: 48",
+        "Ocupação: Geneticista",
+        "Base de operações: Dublin, Irlanda; Oásis, Iraque",
+        "Afiliação: Talon, Blackwatch (anteriormente)",
+        "A CIÊNCIA REVELARÁ A VERDADE",
+        "Tão brilhante quanto controversa, a cientista Moira O’Deorain pesquisa o que há de mais avançado na engenharia genética, buscando uma forma de reescrever os fundamentos que constroem a vida. Mais de uma década atrás, O’Deorain causou um alvoroço ao publicar um trabalho controverso detalhando uma metodologia para criar programas genéticos personalizados que poderiam alterar o DNA em nível celular. Parecia um passo promissor para superar doenças e síndromes e maximizar o potencial humano. O evento foi seguido por discordâncias entre seus colegas. Muitos consideraram seu trabalho perigoso devido às consequências éticas e O'Deorain foi acusada de ter o mesmo desejo científico de avanço sem restrições que muitos acreditam ter causado a Crise Ômnica. Além disso, outros geneticistas foram incapazes de reproduzir os resultados das pesquisas de Moira, o que trouxe questionamentos a suas descobertas. Em vez de alavancar sua carreira, seu trabalho acabou prejudicando imensamente sua reputação. Ela recebeu investimento com uma oferta de uma fonte improvável: a Blackwatch, a equipe de operações secretas da Overwatch. Ela continuou seu trabalho das sombras enquanto desenvolvia armas e tecnologias novas para a organização. Seu emprego era um segredo bem guardado até que foi descoberto devido às investigações após o incidente de Veneza. Muitos oficiais de alto escalão na Overwatch juraram não saber de sua afiliação à equipe. Após a Overwatch ter sido desfeita, O'Deorain foi forçada a buscar fontes alternativas de custeamento. Dessa vez, ela foi convidada para se juntar ao coletivo científico que fundou a cidade de Oásis. Ainda assim, alguns dizem que a organização secreta Talon já a financiava por anos, ajudando em seus experimentos em troca do uso de seus resultados para fins próprios. Apesar de O'Deorain buscar o avanço científico a qualquer custo, seu trabalho ainda é desconhecido pela maioria. Mas agora que ela foi libertada de todas as amarras, é só uma questão de tempo até tudo mudar."
+    ],
+    "counters": [
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/orisa/orisa-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/reinhardt/reinhardt-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mccree/mccree-icon.png", "category": "weak-against"}
+    ]
+}

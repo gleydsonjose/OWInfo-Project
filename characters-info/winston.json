@@ -1,0 +1,125 @@
+{
+    "name": "Winston",
+    "mainImage": {
+        "img": "imagens/tank/winston/winston-image.png",
+        "alt": "Winston image"
+    },
+    "difficulty": "2",
+    "role": {
+        "img": "imagens/tanque.png",
+        "alt": "Tank icon"
+    },
+    "life": [
+        "400"
+    ],
+    "armour": [
+        "100"
+    ],
+    "shield": [],
+    "description": "Winston manuseia invenções incríveis, uma mochila a jato, um Canhão de Tesla dispersor de eletricidade, um projetor de escudo portátil, além de sua força de gorila, literalmente.",
+    "skills": [
+        {
+            "skillImg": "imagens/tank/winston/canhao-de-tesla.png",
+            "name": "Canhão de Tesla",
+            "description": "A arma de Winston dispara uma rajada elétrica de curto alcance enquanto ele mantiver o gatilho pressionado.",
+            "data": {
+                "stats": [
+                    "Tipo: Feixe (multi-alvo)",
+                    "Dano: 60 por segundo",
+                    "Distância maxima: 8 metros",
+                    "Área de efeito: 6 metros de largura",
+                    "Munição: 100",
+                    "Uso da munição: 20 de munição por segundo",
+                    "Tempo de recarga: 1.7 segundos",
+                    "Headshot: Não"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/tank/winston/salto-a-jato.png",
+            "name": "Salto a Jato",
+            "description": "Com a ajuda do seu jato de energia, Winston ataca pelo ar, causando dano significativo e atordoando inimigos próximos ao aterrissar.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito (Aterrisagem)",
+                    "Dano: Salto: 1 de dano | Aterrisagem: 1-50 de dano",
+                    "Velocidade de movimento: 30 metros por segundo(salto inicial)",
+                    "Distância máxima: 18 à 22 metros",
+                    "Área de efeito: Raio de 5 metros (Dano de aterrisagem)",
+                    "Tempo de recarga: 6 segundos | 2 segundos durante a fúria primata",
+                    "Headshot: Não"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/tank/winston/projetor-de-barreira.png",
+            "name": "Projetor de Barreira",
+            "description": "O Projetor de Barreira de Winston estende um campo em forma de bolha que absorve dano até ser destruído. Aliados dentro da barreira podem atirar de dentro dela.",
+            "data": {
+                "stats": [
+                    "Vida: 700",
+                    "Área de efeito: Raio de 5 metros",
+                    "Duração: 9 segundos",
+                    "Tempo de recarga: 13 segundos"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/tank/winston/furia-primata.png",
+            "name": "Fúria Primata (Habilidade Final)",
+            "description": "Winston retorna à sua natureza animal, aumentando significativamente sua vida e deixando-o mais difícil de matar, fortalecendo seu ataque corpo-a-corpo e permitindo a ele usar sua habilidade Salto a Jato com maior frequência. Durante sua fúria, Winston só é capaz de realizar ataques corpo-a-corpo e com o Salto a Jato.",
+            "data": {
+                "stats": [
+                    "Tipo: Corpo a corpo",
+                    "Vida: 900 de vida | 100 de armadura",
+                    "Dano: 40 por soco",
+                    "Velocidade de movimento: +30%",
+                    "Distância maxima: 4 metros",
+                    "Taxa de disparo: 0.66 segundos de recuperação à 1.5 por segundo",
+                    "Duração: 10 segundos",
+                    "Headshot: Não",
+                    "Custo da habilidade final: 1540 pontos"
+                ],
+                "details": [
+                    "Winston gera passivamente 1% de habilidade final a cada 3,08 segundos.",
+                    "O HP de Winston se torna instantaneamente 1000 quando ativado, 900 de vida e 100 de armadura.",
+                    "Também reduz o tempo de espera no salto a jato para 2 segundos.",
+                    "Redefine a recarga do salto a jato na ativação.",
+                    "Winston não pode usar o projetor de barreira enquanto fúria primata estiver ativo.",
+                    "Munição é restaurada após a conclusão.",
+                    "O HP de Winston após o fúria primata é baseado no HP dele no final da duração.<br><span style='padding-left: 2.4%'>Se a saúde do Winston for superior a 400, ela se tornará 400. Se for 400 ou menor, esse número permanecerá.</span><br><span style='padding-left: 2.4%'>Se Winston tiver alguma armadura, ela será transferida. Caso contrário, Winston não terá nenhuma armadura.</span>"
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Winston, Idade: 29",
+        "Ocupação: Cientista, Aventureiro",
+        "Base de operações: Colônia Lunar do Horizonte (anteriormente)",
+        "Afiliação: Overwatch (anteriormente)",
+        "A IMAGINAÇÃO É A ESSÊNCIA DA DESCOBERTA",
+        "Um gorila geneticamente modificado altamente inteligente, Winston é um cientista brilhante e um herói do potencial humano. A Colônia Lunar do Horizonte foi estabelecida como um primeiro passo para uma nova exploração do espaço pela humanidade. Entre seus residentes, estava um grupo de gorilas geneticamente melhorados que deveriam testar os efeitos da vida prolongada no espaço. Um dos gorilas apresentou um desenvolvimento cerebral tão rápido com a terapia genética que foi levado aos cuidados do Dr. Harold Winston, que o ensinou ciências e o inspirou com histórias da ingenuidade humana. O jovem gorila passou seus dias ajudando nos experimentos dos cientistas, assistindo ao distante mundo azul do lado de fora da janela do seu habitat, sonhando com as infinitas possibilidades que o aguardavam lá fora. Mas sua vida se transformou em caos quando os outros gorilas começaram uma rebelião, mataram os cientistas da missão e tomaram a posse da colônia. Tomando o nome do seu amado cuidador humano, Winston construiu um foguete improvisado e fugiu para a Terra. Lá, ele encontrou um novo lar na Overwatch, uma organização que representava tudo o que ele aprendeu a admirar sobre a humanidade. Winston finalmente poderia viver pelos ideais heroicos que haviam se instaurado nele. Agora, com a queda da Overwatch, Winston ficou isolado, novamente tirado do mundo em que ele acredita, mas ansiando para que os dias de heroísmo retornem."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/hanzo/hanzo-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/lucio/lucio-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/mccree/mccree-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/mercy/mercy-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/sigma/sigma-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/symmetra/symmetra-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/tracer/tracer-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "weak-against"}
+    ]
+}

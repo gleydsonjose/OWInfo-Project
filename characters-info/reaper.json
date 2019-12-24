@@ -1,0 +1,138 @@
+{
+    "name": "Reaper",
+    "mainImage": {
+        "img": "imagens/damage/reaper/reaper-image.png",
+        "alt": "Reaper image"
+    },
+    "difficulty": "1",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "250"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "Espingardas Infernais, a habilidade fantasmagórica de se tornar imune ao dano e o poder de caminhar entre as sombras tornam o Reaper um dos seres mais mortais na Terra.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/reaper/a-colheita.png",
+            "name": "A Colheita (Passiva)",
+            "description": "Reaper rouba saúde de seus inimigos enquanto ele os danificam.",
+            "data": {
+                "stats": [
+                    "Cura: 40% do dano causado ao herói"
+                ],
+                "details": [
+                    "Conta todos os danos causados pelo Reaper, mesmo que sejam causados a ataques corpo a corpo ou mortes ambientais.",
+                    "Não fornece carga a habilidade final."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/reaper/espingardas-infernais.png",
+            "name": "Espingardas Infernais",
+            "description": "Reaper estraçalha os inimigos com suas espingardas.",
+            "data": {
+                "stats": [
+                    "Tipo: Hitscan",
+                    "Dano: entre 2.1 e 7 por bala | entre 42 e 140 por disparo",
+                    "Queda do projétil: entre 10 e 20 metros",
+                    "Espalhamento do disparo: se constante são 20.1 graus",
+                    "Número de balas: 20 por disparo",
+                    "Taxa de disparo: 2 disparos por segundo",
+                    "Munição: 8",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/damage/reaper/forma-fantasma.png",
+            "name": "Forma Fantasma",
+            "description": "Reaper se torna uma sombra por um curto período de tempo. Enquanto está nessa forma, ele não recebe dano e pode atravessar inimigos, mas não pode usar suas armas ou outras habilidades.",
+            "data": {
+                "stats": [
+                    "Velocidade de movimento: +50% buff",
+                    "Duração: Até 3 segundos",
+                    "Tempo de recarga: 8 segundos"
+                ],
+                "details": [
+                    "O Reaper é purificado dos efeitos de status e fica imune aos danos e habilidades do inimigo.",
+                    "Recarrega automaticamente as espingardas infernais com munição completa.",
+                    "Pode ser cancelado mais cedo.",
+                    "Pode ser usado para usar pacotes de saúde."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/reaper/passos-das-sombras.png",
+            "name": "Passos das Sombras",
+            "description": "Após marcar um destino, Reaper desaparece e reaparece naquele destino.",
+            "data": {
+                "stats": [
+                    "Distância máxima: 35 metros",
+                    "Tempo de ativação: 1.5 segundos",
+                    "Duração: 2 segundos",
+                    "Tempo de recarga: 10 segundos"
+                ],
+                "details": [
+                    "Pode ser usado enquanto o Reaper estiver no ar.",
+                    "O Reaper é invulnerável enquanto está usando a habilidade."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/reaper/desabrochar-da-morte.png",
+            "name": "Desabrochar da Morte (Habilidade Final)",
+            "description": "Em um movimento rápido, Reaper esvazia as duas espingardas infernais em velocidade relâmpago, infligindo dano massivo aos inimigos nas proximidades.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Dano: 170 de dano por segundo (34 dano por acerto, 5 acertos por segundo e por alvo) | Total de 510 de dano",
+                    "Velocidade de movimento: -50% de penalidade",
+                    "Área de efeito: Raio de 8 metros",
+                    "Duração: 3 segundos",
+                    "Headshot: Não",
+                    "Custo da habilidade final: 2100"
+                ],
+                "details": [
+                    "O Reaper gera passivamente 1% de habilidade final a cada 4,20 segundos.",
+                    "Recarrega automaticamente as espingardas infernais com munição completa."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Desconhecido, Idade: Desconhecida",
+        "Ocupação: Mercenário",
+        "Base de operações: Desconhecida",
+        "Afiliação: Desconhecida",
+        "A MORTE ANDA ENTRE VOCÊS",
+        "Há quem fale sobre um terrorista em um manto preto, conhecido apenas como Reaper. Sua identidade e motivações são um mistério. O que se sabe é que onde ele aparece, a morte o segue. O Reaper é um mercenário extremamente volátil, um matador sem remorso ou piedade, responsável por ataques terroristas ao redor do mundo. Ele lutou em muitos conflitos armados nas últimas décadas, sem demonstrar qualquer lealdade a nenhuma causa ou organização. Sobreviventes descreveram uma sombra negra, vagando como fantasma pelos campos de batalha mais infernais. Os poucos corpos recuperados daqueles que ele assassinou são pálidos, vazios e sem vida, com suas células apresentando sinais intensos de degradação. É possível que ele seja o resultado da falha de um experimento genético, que força suas células a se degenerarem e regenerarem simultaneamente, em uma velocidade ultra acelerada. Aqueles que têm tentado rastrear seus movimentos começaram a enxergar um padrão em suas aparições. Eles acreditam que Reaper está caçando antigos agentes da Overwatch e os eliminando sistematicamente."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/brigitte/brigitte-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/doomfist/doomfist-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/mercy/mercy-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/orisa/orisa-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/reinhardt/reinhardt-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/sigma/sigma-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/wrecking-ball/wrecking-ball-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/zarya/zarya-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/zenyatta/zenyatta-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/ashe/ashe-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/hanzo/hanzo-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/junkrat/junkrat-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mccree/mccree-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"}
+    ]
+}

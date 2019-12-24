@@ -1,0 +1,145 @@
+{
+    "name": "Symmetra",
+    "mainImage": {
+        "img": "imagens/damage/symmetra/symmetra-image.png",
+        "alt": "Symmetra image"
+    },
+    "difficulty": "2",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "100"
+    ],
+    "armour": [],
+    "shield": [
+        "100"
+    ],
+    "description": "Symmetra usa seu projetor de fótons capaz de dobrar a luz para liquidar seus adversários, criar escudos para seus aliados, construir plataformas de teletransporte e implantar Torres de Sentinela com ataques de partículas.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/symmetra/projetor-de-fotons.png",
+            "name": "Projetor de Fótons",
+            "description": "A arma de Symmetra emite um raio que causa dano crescente enquanto estiver conectado. O projetor também pode lançar uma esfera de energia explosiva que causa dano alto com o impacto.",
+            "data": {
+                "stats": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "Tipo: Feixe",
+                    "Dano: 60/120/180",
+                    "Distância máxima: 12 metros",
+                    "Área de efeito: Largura do feixe de 0,2 metros",
+                    "Munição: 70",
+                    "Uso da munição: 7 por segundo | +7 por segundo ganho contra barreiras",
+                    "Tempo de recarga: 1.35 segundos",
+                    "Headshot: Não",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "Tipo: Projéteis",
+                    "Dano: dano direto são 120 (carga completa) | dano da explosão é entre 15 e 60 (carga completa)",
+                    "Velocidade do projétil: 25 metros por segundo",
+                    "Área de efeito: Raio de 2 metros",
+                    "Taxa de disparo: 9 projéteis por segundo enquanto está carregando(max. 9) | 0.55 segundos de recuperação (carga completa)",
+                    "Munição: 70",
+                    "Uso da munição: entre 2 e 10 projéteis baseado no tempo do carregamento",
+                    "Tempo de recarga: 1.35 segundos",
+                    "Headshot: Não"
+                    
+                ],
+                "details": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "O nível do feixe é aumentado atingindo um inimigo ou um objeto inimigo (por exemplo, barreira, torre, mina etc.) por 1,33 segundos. Se o raio não estiver atingindo nada, ele se deteriora a uma taxa de 1 nível por 2,0 segundos.",
+                    "Gera munição em vez de consumi-la ao atacar barreiras.",
+                    "Quando o raio inicia ou atinge um novo alvo, causa temporariamente menos danos que o normal. Se deixado ininterrupto em um único alvo, resultará em 23 a menos de dano.",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "Leva 1 segundo para carregar completamente e pode ser mantido por 1 segundo.",
+                    "Consome automaticamente 1 projétil quando disparado, o que significa que o número mínimo de projéteis consumidos são 2 e o máximo são 10.<br><span style='padding-left: 2.4%'>Quando muitos orbes pequenos são lançados, às vezes isso não se aplica e orbes que consomem apenas 1 projétil pode ser disparado.</span><br><span style='padding-left: 2.4%'>Se houver apenas 1 projétil sobrando, um orbe ainda pode ser disparado.</span>",
+                    "O dano é reduzido no tempo de carregamento, não no consumo de munição.",
+                    "A menor quantidade de dano que um golpe direto pode causar é 15,46, embora isso seja extremamente difícil de obter."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/symmetra/torre-de-sentinela.png",
+            "name": "Torre de Sentinela",
+            "description": "Symmetra lança uma pequena torre que automaticamente dispara explosões redutoras de velocidade no inimigo mais próximo dentro de seu alcance. Até três torres podem ser construídas no campo de batalha de uma só vez.",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis (Antes de ativado) | Feixe (Quando é ativado, feixe da torreta)",
+                    "Vida: 30",
+                    "Dano: 40 por segundo",
+                    "Velocidade de movimento: -20% (lentidão)",
+                    "Velocidade de projétil: 15 metros por segundo",
+                    "Distância máxima: 10 metros (feixe da torreta)",
+                    "Munição: 3 armazenados | máximo 3 em campo",
+                    "Tempo de ativação: 0.5 segundos (animação de lançamento) | 1 segundo (ativação)",
+                    "Tempo de recarga: 10 segundos por torre",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Torres são projéteis até atingirem uma parede, momento em que serão implantadas. Enquanto estão no ar, eles não podem atacar, mas ainda podem ser destruídos.",
+                    "Não afetado pela matriz de defesa, desviar ou punho cinético."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/symmetra/teletransportador.png",
+            "name": "Teletransportador",
+            "description": "Symmetra posiciona uma plataforma temporária de saída de teletransporte a distância e a conecta a uma plataforma de entrada em sua posição atual. Aliados (e algumas de suas habilidades, como o Pneu da Morte de Junkrat) podem viajar pelas duas plataformas instantaneamente.",
+            "data": {
+                "stats": [
+                    "Saúde: 50 de vida | 250 de escudo",
+                    "Cura: Regenera 30 escudos por segundo | depois de evitar algum dano por 3 segundos",
+                    "Distância máxima: 30 metros (para ativar) | 40 metros (max. distância absoluta)",
+                    "Área de efeito: 1.5 metros (intervalo de interação)",
+                    "Tempo de ativação: 2 segundos (ativação)",
+                    "Duração: Infinita",
+                    "Tempo de recarga: 12 segundos"
+                ],
+                "details": [
+                    "Requer que o jogador use a tecla 'interagir' para ativar, a menos que seja uma entidade separada de um jogador; nesse caso, ele será teleportado automaticamente. (Torres, mecha da D.Va quando se autodestrói, etc).",
+                    "Não pode ser usado na área do spawn.",
+                    "Pode ser destruído pelo jogador pressionando a tecla da habilidade novamente.",
+                    "Se a entrada e a saída estiverem a mais de 40 metros de distância, elas serão destruídas automaticamente.",
+                    "Após o teletransporte, ocorre um cooldown de 1 segundo antes que possa ser reutilizado novamente para o mesmo jogador."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/symmetra/barreira-de-fotons.png",
+            "name": "Barreira de Fótons (Habilidade Final)",
+            "description": "Symmetra arma uma barreira de energia enorme que impede ataques a distância e corta todo o mapa.",
+            "data": {
+                "stats": [
+                    "Vida: 4000",
+                    "Distância máxima: 25 metros",
+                    "Área de efeito: Infinita (Barreira plana, cobre o mapa inteiro)",
+                    "Duração: 12 segundos",
+                    "Custo da habilidade final: 1680 pontos"
+                ],
+                "details": [
+                    "Symmetra gera passivamente 1% de habilidade final a cada 3,36 segundos.",
+                    "Pode ser colocado de qualquer lugar (inclusive da sala de spawn), pois cobre o mapa inteiro.",
+                    "A orientação pode ser alterada pressionando a tecla da habilidade final novamente (como a muralha de gelo da Mei)."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Satya Vaswani, Idade: 28",
+        "Ocupação: Arquitécnica",
+        "Base de operações: Utopaea, Índia",
+        "Afiliação: Corporação Vishkar",
+        "O VERDADEIRO INIMIGO DA HUMANIDADE É A DESORDEM",
+        "Symmetra literalmente dobra a realidade. Ao manipular construtos de luz sólida, ela altera o mundo conforme a sua vontade, na esperança de criar uma sociedade perfeita. Após a Crise Ômnica, a Corporação Vishkar do sul da Índia iniciou um trabalhoso processo de criação de novas cidades autossustentáveis para abrigar a população deslocada da nação. Uma dessas cidades, Utopaea, foi criada com o uso de tecnologias radicais de luz sólida que permitem aos seus arquitetos darem forma a ruas, utilidades e habitações da cidade em um piscar de olhos. Depois de ter sido identificada como um dos poucos capazes de se tornarem um arquiteto dobrador de luz, a jovem Satya Vaswani foi arrancada da extrema pobreza e posta aos cuidados da academia de arquitetura de Vishkar, sem nunca voltar para casa. Isolada e sozinha na sua nova vida, Satya mergulhou nos estudos e no treinamento. Ela rapidamente se agarrou às aplicações da tecnologia e se tornou uma das melhores alunas de sua turma. Satya abordou a manipulação de luz sólida de uma forma diferente de seus colegas com suas construções mais metódicas e mecânicas. Em vez disso, ela tecia seus constructos com os movimentos da dança tradicional da sua terra natal. Apesar de ser uma das melhores arquitetas de Utopaea, a Corporação Vishkar viu um potencial muito maior nas habilidades de Satya. Dando a ela o apelido de 'Symmetra', Vishkar a enviou em missões clandestinas ao redor do mundo para defender seus interesses corporativos e expandir sua influência para outros países. Symmetra acredita que suas ações servem a um bem maior na sociedade. Mas, em alguns momentos, ela se questiona se o controle e a ordem que ela deseja realmente são o melhor para a humanidade."
+    ],
+    "counters": [     
+        { "urlImage": "imagens/tank/orisa/orisa-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/reinhardt/reinhardt-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/sigma/sigma-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/mccree/mccree-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "weak-against"}
+    ]
+}

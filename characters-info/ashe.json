@@ -1,0 +1,142 @@
+{
+    "name": "Ashe",
+    "mainImage": {
+        "img": "imagens/damage/ashe/ashe-image.png",
+        "alt": "Ashe image"
+    },
+    "difficulty": "2",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "Ashe dispara rapidamente o rifle da cintura ou usa a mira da arma para alvejar um disparo de alto dano. Ela explode inimigos arremessando dinamite e sua escopeta tem força suficiente para abrir distância entre ela e os adversários. E Ashe não está sozinha: ela pode chamar seu aliado ômnico Bob para entrar na briga quando surge a necessidade.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/ashe/vibora.png",
+            "name": "Víbora",
+            "description": "O rifle semiautomático de Ashe dispara rapidamente. Ela também pode usar sua mira para obter um disparo mais preciso, que causa mais dano.",
+            "data": {
+                "stats": [
+                    "<b style='color: #b63939;'>Disparo Hip Fire</b>",
+                    "Tipo: Hitscan",
+                    "Dano: entre 20 e 40",
+                    "Distância da queda: entre 20 e 40 metros",
+                    "Espalhamento do disparo: Max: 1.85 graus",
+                    "Taxa de disparo: 1 disparo por 0.25 segundos",
+                    "Munição: 12",
+                    "Tempo de recarga: 0,5 segundos (animação inicial) | +0,25 segundos por bala | 3,5 segundos (animação de recarga completa)",
+                    "Headshot: Sim",
+                    "<b style='color: #b63939;'>Disparo com a mira ativada</b>",
+                    "Tipo: Hitscan",
+                    "Dano: entre 42.5 e 85",
+                    "Distância da queda: entre 30 e 50 metros",
+                    "Velocidade de movimento: -25% de penalidade",
+                    "Taxa de disparo: 1 disparo por 0.7 segundos",
+                    "Munição: 12",
+                    "Tempo de recarga: 0,5 segundos (animação inicial) | +0,25 segundos por bala | 3,5 segundos (animação de recarga completa)"
+                ],
+                "details": [
+                    "<b style='color: #b63939;'>Disparo Hip Fire</b>",
+                    "Ashe recarrega a víbora uma bala de cada vez em rápida sucessão, em vez de todas de uma vez<br><span style='padding-left: 2.4%'>Quanto mais balas usadas na revista, mais tempo leva para recarregar completamente.</span><br><span style='padding-left: 2.4%'>Se a recarga for cancelada antes da conclusão, algumas munições ainda serão reabastecidas com base em quantas balas carregadas na arma, em vez de nenhuma.</span>",
+                    "Ao contrário da maioria das armas, a víbora é semi-automática em vez de totalmente automático.",
+                    "Os dois primeiros tiros são precisos, o terceiro é mais aleatório, e tudo depois dessa experiência é espalhado ao máximo.",
+                    "<b style='color: #b63939;'>Disparo com a mira ativada</b>",
+                    "Ela pode pular enquanto mira.",
+                    "Se Ashe parar de mirar, haverá um período de recuperação de 0,85 segundo antes que ela possa usar seu hip fire."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/ashe/dinamite.png",
+            "name": "Dinamite",
+            "description": "Ashe joga um explosivo que detona após um breve intervalo ou assim que é atingido por um tiro. A explosão da Dinamite também ateia fogo aos inimigos, causando dano ao longo do tempo.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil de arco",
+                    "Dano: Explosão: entre 30 e 75 | Queimação: 100 | A si próprio: 50%",
+                    "Velocidade de projétil: 25 metros por segundo",
+                    "Tempo de ativação: 2 segundos",
+                    "Duração: 5 segundos (queimação)",
+                    "Tempo de recarga: 10 segundos"
+                ],
+                "details": [
+                    "Danifica a si mesmo, mas o dano é reduzido pela metade.",
+                    "Pode ser atingido com a víbora ou escopeta para detonar imediatamente.",
+                    "A queimadura também afeta barreiras e torres e é removida imediatamente após o uso de um Pacote de Saúde.",
+                    "Depois de Ashe jogar a dinamite, há um período de recuperação de 0,55 antes que ela possa usar a víbora ou escopeta."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/ashe/escopeta.png",
+            "name": "Escopeta",
+            "description": "Ashe dispara nos inimigos à frente para afastá-los e jogar-se para trás, ganhando mais mobilidade.",
+            "data": {
+                "stats": [
+                    "Tipo: Hitscan",
+                    "Dano: 6 por bala | 90 por disparo",
+                    "Distância máxima: 9.4 metros (joga a Ashe para trás)",
+                    "Número de balas disparadas: 15",
+                    "Tempo de recarga: 10 segundos"
+                ],
+                "details": [
+                    "As balas não precisam acertar nada para aplicar o golpe de volta ao Ashe."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/ashe/bob.png",
+            "name": "B.O.B (Habilidade Final)",
+            "description": "Ashe chama Bob, seu fiel ajudante ômnico, que avança, joga os inimigos para o alto e usa seus canhões de braço para forçar adversários a procurar cobertura.",
+            "data": {
+                "stats": [
+                    "Tipo: Hitscan (canhão de braço)",
+                    "Vida: 1200",
+                    "Dano: Investida: 120 | Canhão de braço: 112 por segundo | 14 por bala | total de 1092",
+                    "Velocidade de movimento: 15 metros por segundo",
+                    "Distância máxima: 70 metros(investida) | 40 metros(canhão de braço)",
+                    "Taxa de disparo: 8 balas por segundo",
+                    "Duração: 10 segundos (depois da colisão)",
+                    "Custo da habilidade final: 2240 pontos"
+                ],
+                "details": [
+                    "Ashe gera passivamente 1% de habilidade final a cada 4,48 segundos",
+                    "B.O.B aparece levemente à direita de Ashe e aterrissa 5 metros à sua frente, depois carrega na direção em que Ashe está olhando. Uma vez que o B.O.B. esbarra em um inimigo ou em uma parede ou viaja 65 metros, o B.O.B. pára e começa a atirar nos inimigos próximos como uma torre<br><span style='padding-left: 2.4%'>Se B.O.B. esbarrar em um inimigo (ou inimigos), o B.O.B. causa 120 de dano a eles e os lança no ar</span><br><span style='padding-left: 2.4%'>Se B.O.B. colide com a investida, soco foguete, golpe de escudo ou outro B.O.B usando a investida, ambos os participantes são derrubados por 2 segundos</span><br><span style='padding-left: 2.4%'>B.O.B usa automaticamente o Teleporte da Symmetra se estiver no caminho</span>",
+                    "B.O.B pode ser curado, buffado (por exemplo, estimulante) e hackeado<br><span style='padding-left: 2.4%'>Se B.O.B. é hackeado, B.O.B. fica inativo por 5 segundos</span>",
+                    "B.O.B é tratado como um jogador adicional ao contestar / capturar objetivos e para o escudo adaptativo do Wrecking Ball",
+                    "B.O.B conta para eliminações no Deathmatch",
+                    "Danificar ou curar B.O.B não carrega a habilidade final, mas é possível aumentar  o dano dele com a Mercy",
+                    "Ashe ainda pode carregar a habilidade final enquanto B.O.B está ativo (mas não pelo dano causado por B.O.B)"
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Elizabeth Caledonia “Calamity” Ashe, Idade: 39",
+        "Ocupação: Ladra, líder de gangue",
+        "Base de operações: Desfiladeiro Deadlock, Arizona, EUA",
+        "Afiliação: Gangue Deadlock",
+        "MEU NEGÓCIO, MINHAS REGRAS",
+        "Ashe, a líder ambiciosa e calculista da gangue Deadlock, é uma figura respeitada no submundo do crime. Nascida em uma família rica, Ashe cresceu cercada de privilégios. Seus pais eram consultores de negócios bastante procurados por CEOs poderosos do mundo todo. Embora dessem pouca atenção à menina, que geralmente ficava sob os cuidados do mordomo ômnico da família, Bob, eles lhe proporcionaram todas as oportunidades de vencer na vida. Mas um encontro fortuito com um rufião local chamado Jesse McCree e uma série de crimes improvisados juntos abriram os olhos dela para sua verdadeira vocação. A satisfação de enganar seus alvos e a emoção de levar a melhor transformou-a em uma fora da lei. Junto com os outros três fundadores da gangue Deadlock, Ashe começou a chamar a atenção com roubos cada vez maiores e mais extravagantes. A rápida ascensão do bando gerou desavenças com outras organizações criminosas do sudoeste americano, e os encontros muitas vezes descambavam para a violência. Após anos de conflitos e derramamento de sangue, a moça convocou os líderes dos maiores grupos. Ashe viu o potencial de crescimento da influência de todos. Ela usou o que havia aprendido com o negócio dos pais para levar ordem a esses grupos. A proposta era fazer as gangues trabalharem em conjunto (ou pelo menos não umas contra as outras). Seus princípios: cumpram a palavra dada, não cooperem com a lei, respeitem o território dos outros e sempre punam os traidores. Sem precisar mais gastar energia em picuinhas com outras gangues, Ashe agora expande sua reputação por todo o sudoeste americano. Uma série de roubos e operações audaciosas a colocou no topo da lista dos mais procurados pelas autoridades e cimentou seu legado como lenda dos fora da lei."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/mercy/mercy-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/doomfist/doomfist-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/hanzo/hanzo-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/reinhardt/reinhardt-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/wrecking-ball/wrecking-ball-icon.png", "category": "weak-against"}
+    ]
+}

@@ -1,0 +1,147 @@
+{
+    "name": "Pharah",
+    "mainImage": {
+        "img": "imagens/damage/pharah/pharah-image.png",
+        "alt": "Pharah image"
+    },
+    "difficulty": "1",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "Rasgando os céus em sua armadura de combate e armada com um lançador de foguetes que atira foguetes concussivos altamente explosivos, Pharah é uma força a se reconhecer.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/pharah/hover-jets.png",
+            "name": "Hover Jets (Passiva)",
+            "description": "Segure para pairar.",
+            "data": {
+                "stats": [
+                    "Velocidade de movimento: 4.11 metros por segundo (vertical)",
+                    "Duração: Até 2 segundos"
+                ],
+                "details": [
+                    "Ativado pressionando o botão de pular enquanto estiver no ar ou o botão de disparo alternativo.",
+                    "Permite que a Pharah ganhe altura quando segurado. Quando mantido por 2 segundos, a Pharah ganha mais de 8 metros de altura vertical.",
+                    "Reabastece automaticamente quando não estiver em uso, levando dois segundos para reabastecer de vazio para cheio.",
+                    "A parte vermelha da barra de combustível da Pharah significa a área que não será reabastecida quando a Pharah atingir o pico de seu salto foguete.",
+                    "Permite que a Pharah passe o mouse indefinidamente quando emparelhado com o salto foguete."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/pharah/lancador-de-foguetes.png",
+            "name": "Lançador de Foguetes",
+            "description": "A arma primária de Pharah lança um foguete que inflige dano significativo num amplo raio de explosão.",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis",
+                    "Dano: acerto direto são 120 | acerto da explosão são entre 20 e 65, acertar a si próprio são entre 10 e 32.5",
+                    "Espalhamento de disparo: Linha reta",
+                    "Velocidade do projétil: 35 metros por segundo",
+                    "Área de efeito: Raio de 2.5 metros",
+                    "Taxa de disparo: 1 foguete por 0.75 segundos",
+                    "Munição: 6",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "O dano explosivo e repulsão, diminuem com a distância da explosão, chegando a 0% na borda do raio da explosão.",
+                    "Dano explosivo e repulsão também se aplicam a si próprio."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/pharah/salto-foguete.png",
+            "name": "Salto Foguete",
+            "description": "Impulsionada pelos propulsores de sua armadura, Pharah sobe bem alto pelos ares.",
+            "data": {
+                "stats": [
+                    "Distância máxima: 11.55 metros verticalmente",
+                    "Tempo de recarga: 10 segundos"
+                ],
+                "details": [
+                    "Pode ser emparelhado com um foguete para maior altura e distância um pouco mais na horizontal.",
+                    "Pode ser emparelhado com a explosão concussiva para uma distância mais na horizontal, mas sem altura adicional."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/pharah/explosao-concussiva.png",
+            "name": "Explosão Concussiva",
+            "description": "Pharah dispara um foguete de pulso que lança para longe os inimigos que atinge.",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis",
+                    "Dano: Repulsão",
+                    "Velocidade do projétil: 60 metros por segundo",
+                    "Área de efeito: Raio de 8 metros",
+                    "Tempo de recarga: 9 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Também repele a própria Pharah.",
+                    "Pode ser usado como uma ferramenta de mobilidade adicional, pois não causa danos pessoais.",
+                    "Lida principalmente com a repulsão horizontal."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/pharah/bombardeio.png",
+            "name": "Bombardeio (Habilidade Final)",
+            "description": "Pharah direciona uma salva contínua de mini-foguetes para destruir grupos de inimigos.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil",
+                    "Dano: acerto direto são 40 por foguete | dano da explosão e a si próprio são entre 3.75 e 15 por foguete",
+                    "Velocidade de movimento: Parado",
+                    "Área de efeito: Explosão num raio de 2 metros",
+                    "Taxa de disparo: 30 foguetes por segundo",
+                    "Duração: 3 segundos",
+                    "Headshot: Não",
+                    "Custo da habilidade final: 2100"
+                ],
+                "details": [
+                    "Pharah gera passivamente 1% de habilidade final a cada 4,20 segundos.",
+                    "Pharah permanece parada enquanto a habilidade está ativa, mas pode virar.",
+                    "Pharah permanecerá no ar se a habilidade for usada no ar.",
+                    "A munição é restaurada após a conclusão."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Fareeha Amari, Idade: 32",
+        "Ocupação: Chefe da segurança",
+        "Base de operações: Giza, Egito",
+        "Afiliação: Helix Segurança Internacional",
+        "EU PROTEGEREI OS INOCENTES",
+        "O comprometimento com o dever de Fareeha Amari corre em suas veias. Ela vem de uma longa linhagem de soldados altamente condecorados e tem um desejo intenso de servir com honra. Quando criança, Fareeha sonhava em seguir os passos de sua mãe e se juntar à força de manutenção da paz, Overwatch. Ela se alistou no exército egípcio e sua persistência constante e proezas táticas a levaram ao alto escalão. Ela era uma líder corajosa e conquistou a lealdade de todos àqueles que serviram sob seu comando. Com sua ficha exemplar, Fareeha foi bem colocada para se juntar às fileiras da Overwatch, porém, antes de ter essa oportunidade, a Overwatch se dissolveu. Depois de deixar o exército com uma recomendação por serviços exemplares, ela recebeu uma oferta de emprego na Helix Segurança Internacional, uma firma de segurança privada, contratada para proteger a instalação de pesquisa de inteligência artificial abaixo do Planalto de Giza. A instalação ultra secreta foi apontada como vital para a segurança não apenas da região, mas também de diversos países ao redor do mundo. Fareeha ficou contente em aceitar a missão e recebeu treinamento na Raptora Mark VI, uma armadura de combate experimental, projetada para mobilidade rápida e poder de fogo devastador. Sob o codinome “Pharah”, ela trabalha para proteger a instalação de IA. Apesar de lamentar o fim da Overwatch, ela ainda sonha em lutar pelo bem e fazer diferença em escala global."
+    ],
+    "counters": [
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/brigitte/brigitte-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/doomfist/doomfist-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/lucio/lucio-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/junkrat/junkrat-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/mei/mei-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/reinhardt/reinhardt-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/symmetra/symmetra-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/zarya/zarya-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/ashe/ashe-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mccree/mccree-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/soldado76/soldado76-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/support/zenyatta/zenyatta-icon.png", "category": "weak-against"}
+    ]
+}

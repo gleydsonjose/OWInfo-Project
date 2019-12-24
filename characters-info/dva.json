@@ -1,0 +1,203 @@
+{
+    "name": "Dva",
+    "mainImage": {
+        "img": "imagens/tank/dva/dva-image.png",
+        "alt": "Dva image"
+    },
+    "difficulty": "2",
+    "role": {
+        "img": "imagens/tanque.png",
+        "alt": "Tank icon"
+    },
+    "life": [
+        "150 (mini-dva)",
+        "400 (Mecha)"
+    ],
+    "armour": [
+        "200 (Mecha)"
+    ],
+    "shield": [],
+    "description": "O mecha da D.Va é ágil e poderoso, seus Canhões de Fusão duplo disparam automaticamente a curto alcance e ela pode usar seus Propulsores para atropelar inimigos e obstáculos, ou impedir ataques com sua Matriz de Defesa destruidora de projéteis.",
+    "skills": [
+        {
+            "skillImg": "imagens/tank/dva/ejetar.png",
+            "name": "Ejetar (Passiva)",
+            "description": "Ejete do seu mecha quando ele for destruído.",
+            "data": {
+                "stats": [
+                    "Vida: 150",
+                    "Duração: 1.5 segundos"
+                ],
+                "details": [
+                    "Dva pode usar o autodestruir enquanto está enjetando.",
+                    "Dva invulnerável enquanto está ejetando."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/dva/canhoes-de-fusao.png",
+            "name": "Canhões de Fusão",
+            "description": "O mecha da D.Va é equipado com canhões rotativos de curto alcance. Eles projetam disparos contínuos de alto dano, sem a necessidade de carregar, mas reduzem a velocidade de movimento da D.Va enquanto estão ativos.",
+            "data": {
+                "stats": [
+                    "Tipo: Hitscan",
+                    "Dano: entre 0.6 e 2",
+                    "Distância de queda: entre 10 e 20 metros",
+                    "Espalhamento do disparo: constante: 4,15 graus",
+                    "Velocidade de movimento = -50% de penalidade, exceto quando está usando os propulsores",
+                    "Número de balas por tiro: 11 por tiro",
+                    "Velocidade de disparo: 6.67 balas por segundo",
+                    "Munição: Infinita",
+                    "Headshot: Sim"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/tank/dva/pistola-de-luz.png",
+            "name": "Pistola de Luz",
+            "description": "Enquanto estiver fora de seu mecha, D.Va pode continuar a luta com um desintegrador automático de médio alcance.",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis",
+                    "Dano: 14",
+                    "Velocidade do projétil: 50 metros por segundo",
+                    "Velocidade de disparo: 7 balas por segundo",
+                    "Munição: 20",
+                    "Tempo de recarregamento: 1.45 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/tank/dva/propulsores.png",
+            "name": "Propulsores",
+            "description": "O mecha da D.Va se lança no ar e sua força a empurra para frente. Ela pode virar e mudar de direção ou atropelar seus inimigos, empurrando-os para trás.",
+            "data": {
+                "stats": [
+                    "Dano: 10",
+                    "Velocidade de movimento: +118%",
+                    "Alcance máximo: Até 23.98 metros",
+                    "Duração: Até 2 segundos",
+                    "Tempo de recarregamento da habilidade: 5 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Cancelado ao usar o ataque corpo a corpo."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/dva/matriz-de-defesa.png",
+            "name": "Matriz de Defesa",
+            "description": "D.Va pode ativar seus projetores frontais por um curto período. Enquanto os projetores estiverem ativos, deterão projéteis iminentes.",
+            "data": {
+                "stats": [
+                    "Distância máxima: 10 metros",
+                    "Duração: Até 2 segundos (quando está completamente carregado)",
+                    "Tempo de recarregamento da habilidade: 2 segundos"
+                ],
+                "details": [
+                    "Dva não pode usar canhões de fusão enquanto está habilidade está ativa.",
+                    "Utiliza um medidor de recursos que após um atraso de 0,75 segundos, é recarregado a uma taxa de 16% por segundos.",
+                    "Leva 7 segundos para recarregar completamente."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/dva/micro-misseis.png",
+            "name": "Micro Mísseis",
+            "description": "D.VA lança uma salva de foguetes explosivos.",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis",
+                    "Dano: 7 por míssel em acerto direto",
+                    "Explosão próxima: entre 1 e 4 por míssel",
+                    "Dano a si próprio: entre 1 e 4 por míssel",
+                    "Velocidade do projétil: 40 metros por segundos",
+                    "Área afetada: Raio de 1.5 metros",
+                    "Velocidade do disparo: 11 mísseis por segundo",
+                    "Munição: 18",
+                    "Tempo de recarregamento da habilidade: 8 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Causa até 126 de dano total.",
+                    "Pode ser usado junto com os canhões de fusão.",
+                    "Não pode ser manualmente cancelado."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/dva/chamar-mecha.png",
+            "name": "Chamar Mecha",
+            "description": "Se sua armadura de batalha for destruída, D.Va pode chamar um mecha novinho em folha para retornar para as trincheiras.",
+            "data": {
+                "stats": [
+                    "Dano: 50",
+                    "Duração: 2 segundos",
+                    "Headshot: Não",
+                    "Custo da habilidade final: 319,20 pontos"
+                ],
+                "details": [
+                    "Dva gera passivamente 1% de habilidade final a cada 0,64.",
+                    "Torna-se completamente carregado depois que a autodestruição é detonada.",
+                    "Recarrega automaticamente a pistola de luz."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/dva/auto-destruir.png",
+            "name": "Autodestruir (Habilidade Final)",
+            "description": "D.Va ejeta de seu mecha e arma seu reator para explodir, causando dano massivo a seus inimigos próximos.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Dano: entre 100 e 1000",
+                    "Área de efeito: Raio de 20 metros",
+                    "Duração: 3 segundos antes da explosão",
+                    "Headshot: Não",
+                    "Custo da habilidade final: 1540 pontos"
+                ],
+                "details": [
+                    "Dva gera passivamente 1% de habilidade final a cada 3,08 segundos.",
+                    "Não prejudica a si mesmo.",
+                    "É possível lançar o mecha com os boosters ativado."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Hana Song, Idade: 19",
+        "Ocupação: Gamer profissional (anteriormente), piloto de Mecha",
+        "Base de Operações: Busan, Coréia do Sul",
+        "Afiliação: MEKA (Exército coreano de exo-força móvel)",
+        "EU JOGO PARA GANHAR.",
+        "D.Va é uma ex-gamer profissional que sabe como usar suas habilidades para pilotar um mecha de última geração na defesa de sua cidade natal. Vinte anos atrás, a Coréia do Sul foi atacada por um ômnico monstruoso que surgiu das profundezas do Mar da China Oriental. O construto enorme causou danos catastróficos às cidades costais antes de ser forçado a recuar para debaixo das ondas. Em resposta, o governo da Coréia do Sul desenvolveu uma unidade drone blindada e mecanizada, chamada de MEKA, para proteger ambientes urbanos em combates futuros com a ameaça ômnica. Os medos do governo se mostraram bem fundados à medida que um padrão de ataques perturbador surgiu. A cada determinado número de anos, a monstruosidade se levantava do mar para atacar a Coréia do Sul e seus vizinhos. O ômnico aprendia com cada ataque, sempre se reconfigurando em uma forma diferente e aparecendo com novas armas e funcionalidades. Cada incidente terminava em um impasse, com a monstruosidade derrotada, porém não destruída. Com o ômnico sempre se adaptando, ele eventualmente conseguiu interferir com o controle de drones da rede MEKA, forçando os militares a colocarem pilotos nos mechas. Com dificuldades para achar candidatos apropriados, o governo recorreu aos jogadores de videogames profissionais, que tinham os reflexos e instintos necessários para operar os sistemas avançados das armas dos mechas. Os melhores foram selecionados, incluindo a campeã mundial, Hana Song, conhecida também como 'D.Va'. Famosa por suas habilidades de elite, D.Va era uma competidora feroz, que jogava para vencer a qualquer custo, e tinha a reputação bem fundamentada de não mostrar misericórdia por seus oponentes. Vendo sua nova missão como um jogo, D.Va avança ferozmente em batalha junto com o resto de sua unidade MEKA, pronta para agir em defesa de sua nação a qualquer momento. Recentemente, ela começou a fazer streams de suas operações de combate para seus adorados fãs e o crescimento de seus seguidores a transformou em um ícone global."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/ashe/ashe-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/hanzo/hanzo-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/mccree/mccree-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/mercy/mercy-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/moira/moira-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/sigma/sigma-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/support/brigitte/brigitte-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/doomfist/doomfist-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/junkrat/junkrat-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mei/mei-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/zarya/zarya-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/support/zenyatta/zenyatta-icon.png", "category": "weak-against"}
+    ]
+}

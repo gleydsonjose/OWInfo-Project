@@ -1,0 +1,148 @@
+{
+    "name": "Lucio",
+    "mainImage": {
+        "img": "imagens/support/lucio/lucio-image.png",
+        "alt": "Lucio image"
+    },
+    "difficulty": "2",
+    "role": {
+        "img": "imagens/suporte.png",
+        "alt": "Suporte icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "No campo de batalha, o avançado Amplificador Sônico de Lúcio acerta seus inimigos com projéteis e os arremessa para traz com explosões de som. Suas músicas podem tanto curar quanto impulsionar a velocidade de movimento de seus aliados e ele pode trocar entre essas faixas instantaneamente.",
+    "skills": [
+        {
+            "skillImg": "imagens/support/lucio/wall-ride.png",
+            "name": "Wall Ride (Passiva)",
+            "description": "Pule em uma parede para andar por ela.",
+            "data": {
+                "stats": [
+                    "Velocidade de movimento: +30% de buff | +2,5 metros por segundo (salto na parede)"
+                ],
+                "details": [
+                    "Para iniciar um wall ride, pule em uma parede próxima e mantenha pressionada a tecla de 'saltar', o Lúcio vai andar na parede enquanto a tecla estiver pressionada.",
+                    "Se a opção 'Permitir retroceder na parede' estiver ativada, o Lúcio poderá iniciar um wall ride na parede sem precisar olhar para a parede ou mover-se antes da parede.",
+                    "Lúcio recebe uma explosão de velocidade ao pular de uma parede enquanto preserva algum impulso."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/lucio/amplificador-sonico.png",
+            "name": "Amplificador Sônico",
+            "description": "Lúcio pode acertar seus inimigos com projéteis sônicos ou empurrá-los para trás com uma explosão sonora.",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis",
+                    "Dano: 20 por disparo | 80 por burst",
+                    "Espalhamento do disparo: Linha reta",
+                    "Velocidade de projétil: 50 metros por segundo",
+                    "Taxa de disparo: 4 projéteis em 0.52 segundos | 0.4 de recuperação",
+                    "Munição: 20",
+                    "Uso da munição: 1 projétil por disparo | 4 projéteis por burst | 5 bursts por recarregamento",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": [
+                    "A cada vez que a tecla de disparo primário for pressionada, dispara 4 projéteis que consomem 1 munição cada.",
+                    "Se com menos de 4 munições, a tecla de disparo primário for pressionada, será disparado apenas o número de cartuchos restantes."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/lucio/soundwave.png",
+            "name": "Soundwave",
+            "description": "Lúcio pode repelir seus inimigos com uma explosão de som",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Dano: 25",
+                    "Distância máxima: 8 metros",
+                    "Tempo de recarga: 4 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Pode ser usado durante o recarregamento."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/lucio/transicao.png",
+            "name": "Transição",
+            "description": "Lúcio se energiza continuamente, assim como aliados próximos, com sua música. Ele pode trocar entre duas músicas: uma amplifica a velocidade de movimento, enquanto a outra recupera vida.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Cura: Aliados: 16 por segundo | A si mesmo: aproximadamente 12.3 por segundo",
+                    "Velocidade de movimento: +25% buff",
+                    "Área de efeito: Raio de 12 metros",
+                    "Tempo de ativação: 0.8 segundos de duração da animação"
+                ],
+                "details": [
+                    "Ambas as músicas exigem linha de visão e não afetam aliados atrás das barreiras inimigas.",
+                    "Se um colega de equipe sair da área, o efeito da música atual permanece por 1 segundo, a menos que a música seja alterada.",
+                    "A troca pode ser feita durante o recarregamento."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/lucio/solta-o-som.png",
+            "name": "Solta o Som",
+            "description": "Lúcio aumenta o volume de seus alto-falantes, aumentando os efeitos de suas músicas.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Cura: Aliados: 52 por segundo | A si próprio: 40 por segundo",
+                    "Velocidade de movimento: +60% buff",
+                    "Área de efeito: Raio de 12 metros",
+                    "Duração: 3 segundos",
+                    "Tempo de recarga: 12 segundos"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/support/lucio/barreira-de-som.png",
+            "name": "Barreira de Som (Habilidade Final)",
+            "description": "Ondas protetoras irradiam do Amplificador Sônico do Lúcio, garantindo escudos pessoais a ele e a aliados próximos por um breve momento.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Vida: 750 de escudos temporários",
+                    "Área de efeito: Raio de 30 metros",
+                    "Tempo de ativação: 0,72 segundos em um terreno plano",
+                    "Duração: 7 segundos",
+                    "Custo da habilidade final: 2940 pontos"
+                ],
+                "details": [
+                    "Lúcio gera passivamente 1% de habilidade final a cada 5,88 segundos.",
+                    "Dá ao Lúcio e todos os aliados em sua linha de visão uma enorme explosão de escudos temporários que se deterioram imediatamente a 125 escudos por segundo.",
+                    "Quando lançado, Lúcio dá um pequeno salto antes de aplicar sua ult, tornando mais eficaz lançá-lo de terreno baixo a alto (como uma carga ou borda) ou próximo a um teto baixo (como uma pequena porta) para diminuir o tempo de lançamento.",
+                    "Após o lançamento completo, possui aproximadamente 0,5 segundos de 'período de carência', em que a habilidade final ainda pode ser aplicada a aliados que não receberam escudos pessoais se estiverem dentro do alcance.",
+                    "Não afeta aliados atrás das barreiras inimigas."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Lúcio Correia dos Santos, Idade: 26",
+        "Ocupação: DJ; Lutador da Liberdade",
+        "Base de operações: Rio de Janeiro, Brasil",
+        "Afiliação: Nenhuma",
+        "VAMOS LÁ, GALERA, ESSA É NOSSA!",
+        "Lúcio é uma celebridade internacional que inspira a mudança social através de suas músicas e ações. Lúcio Correia dos Santos cresceu no Rio de Janeiro, em uma favela pobre e super populosa, que sofreu muito com o revés financeiro após a Crise Ômnica. Com o Brasil iniciando o longo processo de recuperação, ele quis encontrar uma forma de avivar os espíritos daqueles a seu redor. Ele encontrou o que procurava na música e no poder que ela tem de aproximar as pessoas, ajudando-as até mesmo a esquecer seus problemas, mesmo que apenas por um momento. Ele se apresentava nas ruas, em festas na comunidade, e quando foi ficando mais velho, em uma série de shows lendários da cena underground. Mas a comunidade unida de Lúcio se transformou em um caos quando a Corporação Vishkar, uma multinacional, assinou um contrato para reconstruir grandes porções da cidade. Foi dito a Lúcio e seus vizinhos que o desenvolvimento melhoraria suas vidas. Mas essa promessa nunca virou realidade. A Vishkar impôs um controle a seus residentes sob a alegação de construir uma sociedade com mais ordem: colocando toques de recolher, atacando comportamentos que a companhia via como imorais e explorando a população como força de trabalho barata. Lúcio não podia aceitar isso. Ele roubou a tecnologia sônica da Vishkar que havia sido usada para oprimir a população e converteu em uma ferramenta para motivá-los à ação. Com uma revolta popular, eles expulsaram a Vishkar de suas vizinhanças. A liderança de Lúcio o transformou da noite para o dia em celebridade e um símbolo de mudança social positiva. Sua música teve uma explosão de popularidade. Antes ele se apresentava localmente, agora ele enchia as arenas ao redor do mundo. Com sua nova fama, Lúcio percebeu que tinha a oportunidade de fazer a diferença e mudar o mundo para melhor."
+    ],
+    "counters": [
+        { "msg": "Ninguém" },
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mccree/mccree-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "weak-against"}
+    ]
+}

@@ -1,0 +1,139 @@
+{
+    "name": "Orisa",
+    "mainImage": {
+        "img": "imagens/tank/orisa/orisa-image.png",
+        "alt": "Orisa image"
+    },
+    "difficulty": "2",
+    "role": {
+        "img": "imagens/tanque.png",
+        "alt": "Tank icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [
+        "200"
+    ],
+    "shield": [],
+    "description": "Orisa cumpre a função de âncora de sua equipe e defende os aliados de ataques frontais com uma barreira protetora. Ela pode atacar à distância, se fortificar, lançar cargas de grávitons para desacelerar e deslocar inimigos e implantar um Amplificador para aumentar o dano de vários aliados de uma vez.",
+    "skills": [
+        {
+            "skillImg": "imagens/tank/orisa/metralhadora-de-fusao.png",
+            "name": "Metralhadora de Fusão",
+            "description": "O canhão de projéteis automático de Orisa causa dano constante mas reduz a velocidade de movimento enquanto dispara",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis",
+                    "Dano: 11",
+                    "Espalhamento do disparo: constante: 1,2 graus",
+                    "Velocidade de movimento: -30% de penalidade",
+                    "Velocidade do projétil: 90 metros por segundo",
+                    "Taxa de disparo: 12 balas por segundo",
+                    "Munição: 150",
+                    "Tempo de recarregamento: 2,55 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/tank/orisa/fortificar.png",
+            "name": "Fortificar",
+            "description": "Orisa reduz temporariamente o dano recebido e não pode ser afetada por efeitos que impedem suas ações.",
+            "data": {
+                "stats": [
+                    "Redução de dano recebido: 50%",
+                    "Duração: 4 segundos",
+                    "Tempo de recarregamento da habilidade: 10 segundos"
+                ],
+                "details": [
+                    "Orisa torna-se imune a todos os efeitos de crowd control relacionados ao movimento, incluindo stun, sleep, freeze, pin, knock down, knock back, pull, slow, root, etc.<br><span style='padding-left: 2.4%'>Orisa pode escapar da armadilha de aço, surto de grávitons e fluxo gravitacional.</span><br><span style='padding-left: 2.4%'>Orisa não recebe dano da investida e corrente de gancho.</span>",
+                    "Orisa pode ser hackeada pela Sombra enquanto usa o fortificar, mas isso não vai interromper a habilidade.",
+                    "O carregamento da habilidade começa depois do efeito terminar.",
+                    "Aliados atrás da Orisa não estão protegidos de habilidades como abalo terrestre e pneu da morte.",
+                    "A armadura é aplicada após a redução de dano. Ataques que consistem em 12 ou menos danos (por exemplo, espingardas) são reduzidos em 75%. Os feixes são reduzidos em 60%."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/orisa/parados.png",
+            "name": "Parados",
+            "description": "Orisa lança uma carga de grávitons que pode ser detonada para desacelerar inimigos próximos e puxá-los para o centro da explosão.",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis",
+                    "Velocidade de movimento: 20 metros por segundo(velocidade de tração)",
+                    "Velocidade de projétil: 20 metros por segundo",
+                    "Área de efeito: Raio de 7,5 metros",
+                    "Duração: 0,1 segundos(lançamento) | 0,45 segundos(ativação) e 1 segundo(puxar)",
+                    "Tempo de carregamento da habilidade: 8 segundos"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/tank/orisa/barreira-protetora.png",
+            "name": "Barreira Protetora",
+            "description": "Orisa cria uma barreira fixa que protege a ela e seus aliados de fogo inimigo.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil de arco",
+                    "Vida: 900",
+                    "Velocidade de projétil: 25 metros por segundo",
+                    "Duração: 20 segundos",
+                    "Tempo de carregamento da habilidade: 10 segundos"
+                ],
+                "details": [
+                    "O projétil ignora a matriz de defesa, desviar e punho cinético.",
+                    "A barreira tem o formato de uma rede de futebol.",
+                    "A barreira se estende um pouco abaixo de onde é implantada, no caso de estar em uma borda ou carga.",
+                    "A barreira pode ser implantada sem interromper a recarga da metralhadora de fusão."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/orisa/amplificador.png",
+            "name": "Amplificador (Habilidade Final)",
+            "description": "Orisa implanta um dispositivo que aumenta o dano causado por aliados em seu campo de visão.",
+            "data": {
+                "stats": [
+                    "Vida: 200",
+                    "Dano: +50% de boost de dano",
+                    "Área de efeito: Raio de 25 metros",
+                    "Duração da ativação da habilidade: 1 segundo",
+                    "Duração: 15 segundos",
+                    "Custo da habilidade final: 1680 pontos"
+                ],
+                "details": [
+                    "Orisa gera passivamente 1% de habilidade final a cada 3,36 segundos.",
+                    "Barreiras inimigas quebram a linha de visão.",
+                    "O efeito permanece por 1 segundo se a linha de visão estiver quebrada ou se um jogador estiver fora do alcance.",
+                    "Pode ser hackeada pelo Sombra, que o desativa por 10 segundos."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Orisa, Idade: 1 mês",
+        "Ocupação: Guardiã Robô",
+        "Base de operações: Numbani",
+        "Afiliação: Nenhuma",
+        "SUA SEGURANÇA É MEU DEVER PRIMÁRIO.",
+        "Construída a partir das peças de um OR15, os robôs de defesa de curta duração de Numbani, Orisa é a mais nova protetora da cidade, mas ela ainda tem muito o que aprender. Colocada em funcionamento antes da Crise Ômnica, a linha OR14 'Idina' de robôs de segurança foi construída no enorme ômnium de produção nigeriano. Após a guerra, eles saíram de linha, juntamente com vários outros modelos usados durante a crise. Vinte anos depois, Numbani reativou e reiniciou o programa OR14 para proteger a cidade contra ameaças externas. Esses novos OR15 foram implantados por um breve período antes de serem destruídos em um ataque de Doomfist. Após o ataque, o programa foi desmontado e o governo vendeu o estoque restante de OR15s. Algumas peças foram adquiridas por Efi Oladele, uma garota gênio de apenas 11 anos de idade cujas precoces realizações na área de robótica já haviam lhe rendido um 'prêmio de gênio' da Fundação Adawe. Com a aprovação de seus pais extremamente compreensivos e mente aberta, Efi gastou a maior parte do seu prêmio na compra de um robô OR15 desativado. Ela acreditava que Numbani precisava de um protetor e que um OR15 aprimorado seria capaz de fazer isso. Efi consertou e reconfigurou o robô e instalou um núcleo de personalidade que ela mesma projetou. Ela chamou a mais nova heroína de Numbani de Orisa. Orisa já mostrou que pode ser útil para a cidade, mas ainda se esforça para encontrar seus protocolos ideais. A falta de experiência da ômnica às vezes faz dela um estorvo, mas, felizmente, graças à disposição de Efi em fazer as modificações necessárias e à inteligência artificial adaptativa de Orisa, tanto robô quanto criadora sempre conseguiram ajustar as coisas. Neste início de carreira como guardiã, Orisa tem muito o que aprender sobre suas próprias funcionalidades e sobre o mundo. Mas enquanto ela for guiada pelo ilimitado otimismo de Efi e por seu crescente senso de honra e dever, Orisa estará pronta para proteger sua criadora e Numbani a qualquer custo."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/doomfist/doomfist-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/mei/mei-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/soldado76/soldado76-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/hanzo/hanzo-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/support/moira/moira-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/junkrat/junkrat-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/symmetra/symmetra-icon.png", "category": "weak-against"}
+    ]
+}

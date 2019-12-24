@@ -1,0 +1,141 @@
+{
+    "name": "Windowmaker",
+    "mainImage": {
+        "img": "imagens/damage/windowmaker/windowmaker-image.png",
+        "alt": "Windowmaker image"
+    },
+    "difficulty": "2",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "Widowmaker se equipa com o que for necessário para eliminar seu alvo, incluindo minas que dispensam um gás venenoso, um visor que concede ao seu esquadrão visão infravermelho e um poderoso rifle de precisão que pode disparar em modo completamente automático.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/windowmaker/beijo-da-viuva.png",
+            "name": "Beijo da Viúva",
+            "description": "O versátil rifle de Widowmaker é ideal para disparos em alvos distantes. Caso os alvos se aproximem a uma distância média, o rifle também pode ser usado em modo automático.",
+            "data": {
+                "stats": [
+                    "<b style='color: #b63939;'>Disparo com scope</b>",
+                    "Tipo: Hitscan",
+                    "Dano: 12 no inicio | 120 completamente carregado",
+                    "Espalhamento do disparo: Linha reta",
+                    "Velocidade de movimento: -65%",
+                    "Taxa de disparo: Até 0.75 segundos para carregar | 0.5 segundos para se recuperar antes de começar a carregar novamente",
+                    "Munição: 30",
+                    "Uso da munição: 3 por disparo",
+                    "Tempo de recarga: 1.55 segundos",
+                    "Tempo de ativação: 0.75 segundos carregando | 0.33 segundos puxando scope ou removendo",
+                    "Headshot: Sim (multiplicado em 2.5x)",
+                    "<b style='color: #b63939;'>Disparo automático</b>",
+                    "Tipo: hitscan",
+                    "Dano: entre 6.5 e 13",
+                    "Distância de queda: entre 20 e 40 metros",
+                    "Espalhamento do disparo: Max: 3.00 graus",
+                    "Taxa de disparo: 10 balas por segundo",
+                    "Munição: 30",
+                    "Tempo de recarga: 1.55 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": [
+                    "<b style='color: #b63939;'>Disparo com scope</b>",
+                    "O dano base é 12 e escala linearmente para 120. Cada porcentagem de potência aumenta o dano em 1,08.",
+                    "A potência mínima necessária para matar um alvo com vida completa (sem armadura) com um único tiro na cabeça:<br><span style='padding-left: 2.4%'>150 HP: 45%</span><br><span style='padding-left: 2.4%'>200 HP: 63%</span><br><span style='padding-left: 2.4%'>250 HP: 82%</span>",
+                    "Se a potência estiver abaixo de 50%, produz um som mais suave e deixa uma trilha menor."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/windowmaker/arpeu.png",
+            "name": "Arpéu",
+            "description": "Widowmaker lança um arpéu em direção ao local em que ela estiver apontando. Quando o gancho se conecta com uma superfície escalável, ela é puxada rapidamente na direção dele, permitindo a ela expandir sua visão do campo de batalha e escapar ou flanquear alvos.",
+            "data": {
+                "stats": [
+                    "Velocidade de movimento: 20 metros por segundo (velocidade da puxada)",
+                    "Distância máxima: 20 metros",
+                    "Tempo de recarga: 10 segundos"
+                ],
+                "details": [
+                    "O arpéu pode ser cancelado pressionando a tecla de pular."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/windowmaker/mina-venenosa.png",
+            "name": "Mina Venenosa",
+            "description": "Widowmaker adere um mina venenosa de ativação rápida a quase qualquer superfície. Quando um alvo se move dentro do alcance do mecanismo de ativação da mina, ela explode, lançando gás venenoso aos inimigos nas proximidades.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil lançável",
+                    "Vida: 1",
+                    "Dano: 15 por segundo | 75 total",
+                    "Velocidade de movimento: 20 metros por segundo",
+                    "Área de efeito: Interage num raio de 3 metros",
+                    "Duração: 5 segundos depois da detonação",
+                    "Tempo de recarga: 15 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Os inimigos que acionam a mina podem ser vistos pela Widowmaker através das paredes por um curto período de tempo.",
+                    "O efeito do veneno é removido após o uso de um pacote de vida."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/windowmaker/visao-infravermelho.png",
+            "name": "Visão Infravermelho (Habilidade Final)",
+            "description": "O visor de reconhecimento de Widowmaker permite a ela enxergar assinaturas térmicas através de paredes e objetos durante um período moderado de tempo. Essa visão melhorada é compartilhada com seus aliados.",
+            "data": {
+                "stats": [
+                    "Área de efeito: Todo o mapa",
+                    "Tempo de ativação: 0.5 segundos",
+                    "Duração: 15 segundos",
+                    "Custo da habilidade final: 1540 pontos"
+                ],
+                "details": [
+                    "O Widowmaker gera passivamente 1% de habilidade final a cada 3,08 segundos.",
+                    "Permite que toda a equipe da Widowmaker veja inimigos e suas barras de vida através das paredes.",
+                    "A visão infravermelho termina se a Widowmaker morrer."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Amélie Lacroix, Idade: 33",
+        "Ocupação: Assassina",
+        "Base de operações: Annecy, França",
+        "Afiliação: Talon",
+        "UM TIRO, UMA MORTE",
+        "Widowmaker é a assassina perfeita: uma matadora paciente e impiedosamente eficiente que não mostra emoção nem remorso. Acredita-se que, na sua antiga vida, Widowmaker foi casada com Gérard Lacroix, um agente da Overwatch que liderava operações contra a organização terrorista Talon. Depois de diversas tentativas frustradas de eliminar Gérard, a Talon decidiu mudar seu foco para sua esposa, Amélie. Os agentes da Talon a sequestraram e a sujeitaram a um intenso programa de recondicionamento neural. Eles destruíram sua vontade, suprimiram sua personalidade e a reprogramaram como uma agente dormente. Ela eventualmente foi encontrada pelos agentes da Overwatch, aparentemente sem nenhum arranhão, e voltou à sua vida normal. Duas semanas depois, ela matou Gérard enquanto ele dormia. Com sua missão concluída, Amélie voltou à Talon e eles concluíram o processo de transformá-la em uma arma viva. Ela recebeu extenso treinamento em artes ocultas e, então, sua fisiologia foi alterada, reduzindo drasticamente seu ritmo cardíaco, o que deixou sua pele azul e fria, e entorpeceu sua capacidade de sentir emoções humanas. Amélie já não existia mais. Agora, Widowmaker é a assassina mais eficaz da Talon, sentindo muito pouco além da satisfação de um trabalho bem feito."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/ashe/ashe-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/brigitte/brigitte-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/hanzo/hanzo-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/junkrat/junkrat-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/mccree/mccree-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/mei/mei-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/mercy/mercy-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/soldado76/soldado76-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/symmetra/symmetra-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/zenyatta/zenyatta-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/orisa/orisa-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/reinhardt/reinhardt-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/wrecking-ball/wrecking-ball-icon.png", "category": "weak-against"}
+    ]
+}

@@ -1,0 +1,148 @@
+{
+    "name": "Zarya",
+    "mainImage": {
+        "img": "imagens/tank/zarya/zarya-image.png",
+        "alt": "Zarya image"
+    },
+    "difficulty": "2",
+    "role": {
+        "img": "imagens/tanque.png",
+        "alt": "Tank icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [
+        "200"
+    ],
+    "description": "Implantando poderosas Barreiras pessoais que convertem dano iminente em energia para seu poderoso Canhão de Partículas, Zarya é um recurso valioso para as linhas de frente de qualquer batalha.",
+    "skills": [
+        {
+            "skillImg": "imagens/tank/zarya/energia.png",
+            "name": "Energia (Passiva)",
+            "description": "Dano bloqueado aumenta o dano do canhão de partículas.",
+            "data": {
+                "stats": [],
+                "details": [
+                    "A energia é obtida ao bloquear os danos barreira projetada e barreira de partículas (máximo de 100%).",
+                    "A energia decai a uma taxa de 1,6% por segundo.",
+                    "A energia é redefinida instantaneamente para 0 após a morte. (Ressuscitar não restaura energia).",
+                    "Quanto mais energia Zarya tem, mais brilhante ela fica.",
+                    "50% ou mais é considerado 'alta energia.'"
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/zarya/canhao-de-particulas.png",
+            "name": "Canhão de Partículas",
+            "description": "O poderoso Canhão de Partículas de Zarya dispara um raio de energia destrutiva de curto alcance. Como alternativa, Zarya pode liberar uma carga explosiva para acertar múltiplos inimigos.",
+            "data": {
+                "stats": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "Tipo: Feixe",
+                    "Dano: 95 por segundo",
+                    "Distância máxima: 15 metros",
+                    "Área de efeito: 0,15 metros de largura do feixe",
+                    "Taxa de disparo: 20 de munição por segundo",
+                    "Munição: 100",
+                    "Tempo de recarga: 1.6 segundos",
+                    "Headshot: Não",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "Tipo: Projétil de arco",
+                    "Dano: Inimigo: entre 9.4 e 47 | A si próprio: entre 4.7 e 23.5",
+                    "Velocidade de projétil: 25 metros por segundo",
+                    "Área de efeito: Raio de 2 metros",
+                    "Taxa de disparo: 1 disparo por segundo",
+                    "Munição: 100",
+                    "Uso da munição: 25 de munição por disparo",
+                    "Tempo de recarga: 1.6 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "O dano por segundo é aumentado em 0,75 para cada porcentagem de energia. Em 100%, o dano por segundo se torna 170.",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "O dano é aumentado em 1% para cada porcentagem de energia. Em 100%, o dano é dobrado."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/zarya/barreira-de-particulas.png",
+            "name": "Barreira de Partículas",
+            "description": "O Canhão de Partículas pode emitir uma barreira individual que protege Zarya contra ataques eminentes, redirecionando a energia deles para aumentar o dano de sua própria arma e a largura de seu raio.",
+            "data": {
+                "stats": [
+                    "Vida: 200",
+                    "Área de efeito: Raio de 1.5 metros",
+                    "Duração: 2 segundos",
+                    "Tempo de recarga: 10 segundos"
+                ],
+                "details": [
+                    "Zarya ganha 1% de energia por cada 5 de dano recebido pela barreira.",
+                    "A barreira limpa a Zarya da maioria dos efeitos de status e danos ao longo do tempo.",
+                    "Enquanto a barreira está levantada, Zarya é imune a todos os danos e à maioria dos efeitos de Crowd Control, mesmo que o ataque ultrapasse barreiras como o soco foguete.<br><span style='padding-left: 2.4%'>Não protege Zarya de repulsão</span>",
+                    "Mesmo que a barreira seja destruída, ela protegerá Zarya do ataque"
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/zarya/barreira-projetada.png",
+            "name": "Barreira Projetada",
+            "description": "Zarya cerca um dos membros de sua equipe com uma barreira de energia que simultaneamente absorve fogo inimigo e aumenta o poder de seu Canhão de Partículas.",
+            "data": {
+                "stats": [
+                    "Vida: 200",
+                    "Distância maxima: 30 metros",
+                    "Duração: 2 segundos",
+                    "Tempo de recarga: 8 segundos"
+                ],
+                "details": [
+                    "A barreira projetada se comporta de forma idêntica à barreira de partículas.",
+                    "Embora a barreira impeça que o alvo seja hackeado, slept, congelado ou atordoado, em primeiro lugar, ela não interrompe esses efeitos uma vez aplicados."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/zarya/surto-de-gravitons.png",
+            "name": "Surto de Grávitons (Habilidade Final)",
+            "description": "Zarya lança uma bomba de gravidade que atrai os combatentes inimigos, causando dano enquanto eles estão presos.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil de arco(lançamento) | Área de efeito (quando é ativada)",
+                    "Dano: Impacto: 5 | Dano ao longo do tempo: 5 por segundo | até 18,72",
+                    "Velocidade de projétil: 25 metros por segundo",
+                    "Área de efeito: Raio de 6 metros",
+                    "Duração: 4 segundos",
+                    "Custo da habilidade final: 2100 pontos"
+                ],
+                "details": [
+                    "Zarya gera passivamente 1% de habilidade final a cada 4,20 segundos.",
+                    "A maioria das habilidades de movimento é desativada dentro do efeito do surto de grávitons.<br><span style='padding-left: 2.4%'>Exceto a forma fantasma do Reaper e o desvanecer da Moira</span>."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Aleksandra Zaryanova, Idade: 28",
+        "Ocupação: Soldado",
+        "Base de operações: Fronte de Krasnoyarsk, Rússia",
+        "Afiliação: Forças Defensivas Russas",
+        "JUNTOS NÓS SOMOS FORTES",
+        "Aleksandra Zaryanova é uma das mulheres mais fortes do mundo, uma atleta aclamada que sacrificou o triunfo pessoal para proteger sua família, amigos e país em tempos de guerra. Aleksandra nasceu em uma vila remota na Sibéria, que era uma das linhas de frente na Crise Ômnica, que começou por volta de trinta anos atrás. Apesar das forças russas terem derrotado os robôs e desligado seu omnium, a região foi devastada pelo conflito. Aleksandra, que era apenas uma criança na época, foi cercada pela destruição pós-guerra, e com o passar dos anos, ela jurou que se tornaria forte para ajudar seu povo a se recuperar. Focando em levantamento de peso e fisiculturismo, Aleksandra foi identificada pelo programa nacional de atletas como uma estrela em potencial. Ela treinou, extensivamente, subindo nos rankings enquanto representava seu país, com expectativas de quebrar antigos recordes nos campeonatos mundiais que viriam. Entretanto, na véspera do torneio, um ataque veio do dormente omnium siberiano e sua vila foi lançada na guerra mais uma vez. Aleksandra imediatamente se retirou da competição e correu para casa para se alistar às forças locais de defesa, sacrificando a vida de fama e fortuna que ela poderia ter tido. Agora ela serve ao dever, sendo um símbolo para alguns e brava companheira de guerra para outros. Mas para Aleksandra, é uma chance de usar sua grande força para proteger aqueles que ama."
+    ],
+    "counters": [
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/junkrat/junkrat-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/mei/mei-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/sigma/sigma-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/support/zenyatta/zenyatta-icon.png", "category": "weak-against"}
+    ]
+}

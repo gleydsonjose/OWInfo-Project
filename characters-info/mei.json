@@ -1,0 +1,141 @@
+{
+    "name": "Mei",
+    "mainImage": {
+        "img": "imagens/damage/mei/mei-image.png",
+        "alt": "Mei image"
+    },
+    "difficulty": "3",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "250"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "Os dispositivos de alteração climática da Mei reduzem a velocidade de seus inimigos e protegem locais. Seu Aniquilador Endotérmico lança pingentes de gelo e jatos congelantes, e ela pode usar seu Congelamento Criogênico em si mesma para se proteger de contra-ataques inimigos, ou obstruir os movimentos da equipe adversária com uma Muralha de Gelo.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/mei/aniquilador-endotermico.png",
+            "name": "Aniquilador Endotérmico",
+            "description": "O aniquilador da Mei libera um raio de gelo concentrado e de curto alcance que desacelera, inflige dano e por fim congela seus inimigos no lugar. Mei também pode usar seu aniquilador para atirar projéteis de gelo de médio alcance.",
+            "data": {
+                "stats": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "Tipo: Feixe (tipo projétil)",
+                    "Dano: 55 por segundo | 2.75 por projéteis",
+                    "Velocidade de movimento: -30% no início | depois -2,5% por tick (efeito lento)",
+                    "Velocidade de projétil: 20 metros por segundo",
+                    "Distância máxima: 10 metros",
+                    "Munição: 200",
+                    "Uso da munição: 20 projéteis por segundo",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Duração: 1.5 segundos (Congelando) | 1.5 segundos (Congelado)",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "Tipo: Projétil",
+                    "Dano: 75",
+                    "Espalhamento de disparo: Linha reta",
+                    "Taxa de disparo: 1 disparo por 0.8 segundos",
+                    "Munição: 200",
+                    "Uso de munição: 20 por disparo",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Tempo de ativação: 0.4 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "O primeiro tick resulta em um progresso de 30% em direção ao congelamento (também causa um efeito lento de 30%), depois cada tick subsequente aumenta esse valor em 2,5% (e também causa um efeito lento de 2,5%). A 100%, o próximo tick congela o alvo; portanto, são necessários 30 projéteis para congelar.",
+                    "O efeito lento dura 1,5 segundos após o último golpe de dano ter sido causado.",
+                    "Perfura inimigos.",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "O disparo alternativo do aniquilador endotérmico também é chamado de 'Sincelo'."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/mei/congelamento-criogenico.png",
+            "name": "Congelamento-Criogênico",
+            "description": "Mei se envolve instantaneamente em um bloco de gelo espesso. Ela se cura e ignora dano enquanto está envolvida, mas não pode se mover ou usar habilidades.",
+            "data": {
+                "stats": [
+                    "Cura: 37.5 por segundos | 150 em toda a duração",
+                    "Duração: Até 4 segundos",
+                    "Tempo de recarga: 12 segundos"
+                ],
+                "details": [
+                    "A recarga é iniciada somente após o efeito desaparecer.",
+                    "A habilidade pode ser cancelada prematuramente.",
+                    "Mei se torna completamente invencível e é limpa de todos os efeitos de status."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/mei/muralha.png",
+            "name": "Muralha de Gelo",
+            "description": "Mei cria uma enorme muralha de gelo que obstrui as linhas de visão, interrompe movimentos e bloqueia ataques.",
+            "data": {
+                "stats": [
+                    "Vida: 400 por pilar | existe 5 pilares no total",
+                    "Distância máxima: 35 metros",
+                    "Área de efeito: 3x8 metros de área",
+                    "Duração: Até 5 segundos",
+                    "Tempo de recarga: 10 segundos"
+                ],
+                "details": [
+                    "A habilidade pode ser cancelada prematuramente pressionando a tecla de atalho mais uma vez.",
+                    "Antes da ativação, o posicionamento da Muralha de Gelo da linha de visão do jogador pode ser alternado de perpendicular para paralelo pressionando a tecla de atalho.",
+                    "A recarga começa imediatamente, não quando a habilidade termina ou é cancelada."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/mei/nevasca.png",
+            "name": "Nevasca (Habilidade Final)",
+            "description": "Mei lança um drone de manipulação climática que emite rajadas de vento e neve em uma área ampla. Inimigos pegos na nevasca são desacelerados e recebem dano e aqueles que ficarem nela por muito tempo são congelados.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil lançável (inicio da habilidade) | Área de efeito (depois da ativação)",
+                    "Dano: 20 por segundo | 100 ao longo da duração",
+                    "Velocidade de movimento: -50% no início | depois -20% por segundo (efeito lento)",
+                    "Velocidade de projétil: 20 metros por segundo",
+                    "Área de efeito: Raio de 10 metros",
+                    "Tempo de ativação: 0.5 segundos (lançamento)",
+                    "Duração: 5 segundos",
+                    "Headshot: Não",
+                    "Custo da habilidade final: 1610"
+                ],
+                "details": [
+                    "Mei gera passivamente 1% de habilidade final a cada 3,22 segundos.",
+                    "O primeiro tick resulta em um progresso de 50% em direção ao congelamento (também causa um efeito lento de 50%), depois continua a uma taxa de 20% por segundo (e também diminui a uma taxa de 20% por segundo).",
+                    "O uso do aniquilador endotérmico em combinação com a Blizzard acelera bastante o processo de congelamento.",
+                    "Atravessa barreiras, carga e a muralha de gelo."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Mei-Ling Zhou, Idade: 31",
+        "Ocupação: Climatologista, Aventureira",
+        "Base de Operações: Xi’an, China",
+        "Afiliação: Overwatch (anteriormente)",
+        "VALE A PENA LUTAR PELO NOSSO MUNDO",
+        "Mei é uma cientista que faz a luta pela preservação do meio ambiente com suas próprias mãos. Apesar de muitos atribuírem os aumentos dos fenômenos climáticos inexplicados ao advento de novas tecnologias, o rápido crescimento da população ômnica e o aumento drástico do consumo de recursos, as verdadeiras causas permaneciam desconhecidas. Para achar uma solução, a Overwatch estabeleceu uma série de observatórios ecológicos em locais remotos e críticos pelo mundo. Mei-Ling Zhou era um membro dessa iniciativa multifacetada. Uma climatologista sem igual, ela introduziu inovações tecnológicas de primeira linha no campo de manipulação climática que protegeu áreas de risco dentro e fora da Ásia. Foi designado a ela a estação do programa de monitoramento no Observatório: Antártica, quando um desastre aconteceu: uma tempestade polar catastrófica soterrou a instalação e a isolou do mundo exterior, deixando as instalações danificadas e os cientistas presos. Com seus suprimentos acabando aos poucos, eles entraram em um estado crioestático em uma última tentativa de sobreviver até que o resgate pudesse ser feito. Mas o resgate nunca veio. Anos depois quando a câmera criogênica foi finalmente descoberta, Mei, ainda em hibernação, foi a única sobrevivente. O mundo em que Mei acordou tinha passado por mudanças consideráveis: a Overwatch já não existia, os problemas climáticos haviam piorado e nenhum dos observatórios ecológicos estavam em operação. Todas as pistas que eles tinha descoberto haviam se perdido. Mei decidiu continuar seu trabalho sozinha. Equipada com uma versão portátil de sua tecnologia de manipulação climática, ela viaja ao redor do mundo, na esperança de reestabelecer a rede ecológica e rastrear as causas das ameaças ao ecossistema do planeta."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/reinhardt/reinhardt-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/sigma/sigma-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/wrecking-ball/wrecking-ball-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/mercy/mercy-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/zenyatta/zenyatta-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/orisa/orisa-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/zarya/zarya-icon.png", "category": "weak-against"}
+    ]
+}

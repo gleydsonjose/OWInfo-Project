@@ -1,0 +1,24 @@
+@mixin display_flex($display: flex, $direction: row, $wrap: nowrap, $justify-content: false, $align-items: false){
+    display: $display;
+    flex-flow: $direction $wrap;
+
+    @if $justify-content != false{
+        justify-content: $justify-content;
+    }
+
+    @if $align-items != false{
+        align-items: $align-items;
+    }
+}
+
+@mixin display_grid($grid-template-columns: false, $grid-template-rows: false){
+    display: grid;
+
+    @if $grid-template-columns != false{
+        grid-template-columns: $grid-template-columns;
+    }
+
+    @if $grid-template-rows != false{
+        grid-template-rows: $grid-template-rows;
+    }
+}

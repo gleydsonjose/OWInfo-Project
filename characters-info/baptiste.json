@@ -1,0 +1,166 @@
+{
+    "name": "Baptiste",
+    "mainImage": {
+        "img": "imagens/support/baptiste/baptiste-image.png",
+        "alt": "Baptiste image"
+    },
+    "difficulty": "3",
+    "role": {
+        "img": "imagens/suporte.png",
+        "alt": "Suporte icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "Baptiste carrega uma variedade de armas e dispositivos experimentais que mantêm os aliados vivos e eliminam as ameaças em condições ultra-adversas. Um médico calejado por muitas batalhas, ele é capaz de salvar vidas ao mesmo tempo que elimina o inimigo.",
+    "skills": [
+        {
+            "skillImg": "imagens/support/baptiste/exobotas.png",
+            "name": "Exobotas (Passiva)",
+            "description": "Baptiste se agacha e salta mais alto.",
+            "data": {
+                "stats": [
+                    "Distância máxima: 9.1 metros (carga completa)"
+                ],
+                "details": [
+                    "Leva 1 segundo para as botas carregarem completamente.",
+                    "Se o Baptiste deixar de agachar, as botas permanecerão carregadas por 1 segundo. No entanto, se a tecla de se abaixar for pressionada novamente durante esse período, ele redefinirá."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/baptiste/lancador-biotico.png",
+            "name": "Lançador Biótico",
+            "description": "O Lançador Biótico de disparo triplo de Baptiste concede precisão e controle de recuo com dano significativo. Ele funciona também como um dispositivo de cura cujos projéteis curam aliados próximos ao ponto de impacto.",
+            "data": {
+                "stats": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "Tipo: Burst fire | Hitscan",
+                    "Dano: entre 12.5 e 25 por bala | entre 37.5 e 75 por disparo",
+                    "Distância de queda: entre 25 e 45 metros",
+                    "Taxa de disparo: 1 burst por 0.56 segundos",
+                    "Munição: 45",
+                    "Uso de munição: 3 por disparo",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Headshot: Sim",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "Tipo: Projétil lançável",
+                    "Cura: 60",
+                    "Velocidade de projétil: 60 metros por segundo",
+                    "Área de efeito: Raio de 3 metros",
+                    "Taxa de disparo: 1 disparo por 0.8 segundos",
+                    "Munição: 12",
+                    "Tempo de recarga: 1.5 segundos | 0.95 segundos enquanto dispara continuamente"
+                ],
+                "details": [
+                    "<b style='color: #b63939;'>Disparo primário</b>",
+                    "A mira de Baptiste se move quando ele dispara.",
+                    "Recarregar o lançador biótico reabastece a munição para o disparo primário e secundário.",
+                    "<b style='color: #b63939;'>Disparo secundário</b>",
+                    "Não cura a si mesmo.",
+                    "Atravessa aliados com saúde máxima.",
+                    "Baptiste pode alternar entre os dois modos de disparo."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/baptiste/pulso-regenerador.png",
+            "name": "Pulso Regenerador",
+            "description": "Baptiste ativa um pulso regenerador intenso que cura a si e aos aliados próximos ao longo do tempo.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Cura: 30 por segundo | 150 total",
+                    "Área de efeito: Raio de 10 metros",
+                    "Tempo de ativação: 0.3 segundos",
+                    "Duração: 5 segundos",
+                    "Tempo de recarga: 15 segundos"
+                ],
+                "details": [
+                    "O efeito de cura ao longo do tempo é aplicado uma vez após a ativação. Aliados podem ficar fora de alcance e continuar sendo curados.",
+                    "Embora tenha um tempo de ativação de 0,3 segundos e animação antes do início da recarga, o efeito é aplicado no instante em que o botão é pressionado."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/baptiste/campo-de-imortalidade.png",
+            "name": "Campo de Imortalidade",
+            "description": "Baptiste usa um dispositivo para criar um campo que impede a morte de aliados. Esse gerador pode ser destruído.",
+            "data": {
+                "stats": [
+                    "Tipo: Projétil lançável | Área de efeito (campo)",
+                    "Vida: 200",
+                    "Cura: Qualquer déficit de 20% HP",
+                    "Velocidade de projétil: 60 metros por segundo",
+                    "Área de efeito: Raio de 6.5 metros",
+                    "Tempo de ativação: 0.8 segundos de animação",
+                    "Duração: 8 segundos (gerador) | 8,5 segundos (campo)",
+                    "Tempo de recarga: 20 segundos"
+                ],
+                "details": [
+                    "Impede que o HP do Baptiste e seus aliados caiam abaixo de 20%. Até evita a morte ambiental, mas curar o HP perdido dessa maneira não fornecerá carga a habilidade final.",
+                    "Heróis com HP abaixo de 20% serão curados instantaneamente para 20% ao entrar no campo. A granada biótica pode amplificar ou bloquear isso; se a cura for bloqueada, o campo da imortalidade ainda impedirá todo o dano recebido.",
+                    "O gerador pode ser jogado e ricocheteado nas paredes. O arco é idêntico ao do disparo secundário do lançador biótico, exceto o campo de imortalidade que colide com a skybox.",
+                    "Não afetado pela matriz de defesa, desviar e punho cinético.",
+                    "O campo requer linha de visão, mas tanto o gerador lançado quanto o campo ignoram barreiras.",
+                    "Uma vez implantado, o gerador pode ser hackeado e desativado pelo resto da sua duração. (Tecnicamente, o hackear dura 10 segundos, mas o gerador não dura tanto tempo.).",
+                    "Se o gerador expirar, o campo permanecerá por 0,5 segundos. Se o gerador for destruído, o campo ainda permanecerá, mas não por muito tempo.",
+                    "Embora a habilidade tenha uma animação de lançamento, o gerador é gerado no instante em que o botão é pressionado e, portanto, não pode ser cancelado no meio do elenco por um atordoamento ou hackear."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/baptiste/matriz-amplificadora.png",
+            "name": "Matriz Amplificadora (Habilidade Final)",
+            "description": "Baptiste cria uma matriz que dobra o dano e a cura dos projéteis de aliados que cruzam a área de ação.",
+            "data": {
+                "stats": [
+                    "Dano: +100% dano amplificado",
+                    "Cura: +100% cura amplificada",
+                    "Distância máxima: 35 metros",
+                    "Área de efeito: 5x5 metros quadrados | com 1 metro abaixo do solo",
+                    "Duração: 10 segundos",
+                    "Custo de habilidade final: 1960 pontos"
+                ],
+                "details": [
+                    "Baptiste gera passivamente 1% de habilidade final a cada 3,92 segundos.",
+                    "Antes de ser implantada, a orientação pode ser alterada pressionando a tecla da habilidade final novamente.",
+                    "Amplifica ataques de hitscan e projéteis, vindos de qualquer direção. Isso inclui habilidades como nevasca, dinamite e orbe biótico. (Observe que ele não altera o dano total / cura para orbe biótico, apenas a taxa de dano / cura.).",
+                    "Não amplifica o dano de projéteis à base de corpo a corpo como corrente de gancho ou disparo açoitador.",
+                    "Matriz amplificadora na verdade não duplica o dano. Quando combinados com outras habilidades de amplificação, eles são adicionados. Por exemplo, matriz amplificadora (+ 100%) e impulso de dano da Mercy (+ 30%) resultarão em + 130% de dano (230% do total de dano).",
+                    "Pode ser destruído pelo PEM."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Jean-Baptiste Augustin, Idade: 36 anos",
+        "Ocupação: Médico de combate",
+        "Base de operações: Tortuga, Haiti (anteriormente)",
+        "Afiliação: Coalizão Caribenha (anteriormente), Talon (anteriormente)",
+        "COMIGO POR PERTO, NINGUÉM MORRE",
+        "Baptiste é um médico de combate de elite e ex-agente da Talon que usa suas habilidades para ajudar vítimas da guerra. O menino Jean-Baptiste Augustine foi um dos 30 milhões de órfãos deixados pela Crise Ômnica. Diante da limitação de oportunidades e recursos, acabou se alistando na Coalizão Caribenha, uma força militar criada no arquipélago em resposta à crise. Guiado pelo desejo inato de ajudar o próximo, Baptiste seguiu em sua nova família como médico de combate, atuando no braço de elite das tropas de operações especiais da Coalizão. Ao se desligar da tropa, o socorrista não encontrou mercado para suas habilidades únicas e acabou recorrendo a uma das poucas saídas disponíveis: entrar para a Talon, uma das organizações mercenárias que aproveitaram para lucrar com o caos do pós-guerra. Pela primeira vez na vida, Baptiste teve algum sossego. Suas missões eram fáceis e bem remuneradas, o que lhe permitiu fazer planos de montar uma clínica médica em sua cidade natal. Mas, aos poucos, sua unidade ficou mais e mais brutal, com chacinas e baixas civis. Confrontado pela realidade cruel da equipe mercenária, o médico deu-se conta de que perpetuava o mesmo ciclo de violência que destruiu sua comunidade e abandonou o grupo, enojado pelos próprios atos e determinado a cimentar um novo caminho para si. A Talon, no entanto, não o deixaria partir. Baptiste sabia demais e precisava ser silenciado. O médico vagou então de cidade em cidade para não chamar atenção, sem nunca deixar de atuar em ações humanitárias pelo mundo inteiro. Muitos agentes, inclusive alguns de seus ex-colegas, revezaram-se na caçada, e os poucos que conseguiram rastreá-lo nunca mais foram vistos. Hoje, Baptiste trabalha por um mundo melhor, curando quando é possível e combatendo quando é preciso. O médico sabe que não pode mudar o próprio passado, mas o que importa é fazer a diferença aqui e agora."
+    ],
+    "counters": [
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/junkrat/junkrat-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/moira/moira-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/zarya/zarya-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/ashe/ashe-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/doomfist/doomfist-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/hanzo/hanzo-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mei/mei-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/orisa/orisa-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/soldado76/soldado76-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/wrecking-ball/wrecking-ball-icon.png", "category": "weak-against"}
+    ]
+}

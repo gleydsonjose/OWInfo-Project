@@ -1,0 +1,150 @@
+{
+    "name": "Roadhog",
+    "mainImage": {
+        "img": "imagens/tank/roadhog/roadhog-image.png",
+        "alt": "Roadhog image"
+    },
+    "difficulty": "1",
+    "role": {
+        "img": "imagens/tanque.png",
+        "alt": "Tank icon"
+    },
+    "life": [
+        "600"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "Roadhog usa sua famosa Corrente de Gancho para puxar seus inimigos para perto antes de estraçalhá-los com as explosões de sua Arma de Sucata. Ele é tanque o suficiente para suportar uma grande quantidade de dano e pode recuperar sua vida com uma respiração.",
+    "skills": [
+        {
+            "skillImg": "imagens/tank/roadhog/arma-de-sucata.png",
+            "name": "Arma de Sucata",
+            "description": "A Arma de Sucata de Roadhog dispara explosões de estilhaços de curto alcance com grande difusão. Como alternativa, ela pode disparar uma bola de estilhaços que detona mais longe, arremeçando fragmentos de metal a partir do ponto de impacto.",
+            "data": {
+                "stats": [
+                    "<b style='color: #b63939;'>Tiro primário</b>",
+                    "Tipo: Projétil",
+                    "Dano: 1.8 á 6 por bala | entre 45 e 150 por disparo",
+                    "Distância de queda: 15 á 30 metros",
+                    "Espalhamento do disparo: Constante: 20.1 graus",
+                    "Velocidade do projétil: 80 metros por segundos",
+                    "Número de balas por disparo: 25 balas por disparo",
+                    "Taxa de disparo: 1 disparo a cada 0.7 segundos á 1.43 disparos por segundos",
+                    "Munição: 6",
+                    "Tempo de recarga: 2 segundos",
+                    "Headshot: Sim",
+                    "<b style='color: #b63939;'>Tiro secundário</b>",
+                    "Tipo: Pre-detonação: Projétil, Pós-detonação: Projéteis espalhados",
+                    "Dano: Pre-detonação: 50, Pós-detonação: 1.8 á 6 por bala | 45 - 150 por disparo",
+                    "Distância da queda: 23 a 38 metros",
+                    "Velocidade do projétil : 80 metros por segundo",
+                    "Distância máxima: 8 metros",
+                    "Número de balas por disparo: Pós-detonação: 25 balas",
+                    "Taxa de disparo: 1 disparo a cada 0.7 segundos até 1.43 disparos por segundo",
+                    "Munição: 6",
+                    "Tempo de recarga: 2 segundos",
+                    "Tempo até a ativação: 0.143 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": [
+                    "<b style='color: #b63939;'>Tiro secundário</b>",
+                    "Roadhog inicialmente dispara um único projétil que explode em 25 balas depois de viajar 8 metros."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/roadhog/pegando-folego.png",
+            "name": "Pegando Fôlego",
+            "description": "Roadhog recupera partes de sua vida depois de um breve período de tempo.",
+            "data": {
+                "stats": [
+                    "Cura: 300",
+                    "Redução de dano: 50%",
+                    "Tempo até a ativação: 0.5 segundos",
+                    "Tempo até terminar o uso: 2 segundos",
+                    "Tempo de recarga: 8 segundos",
+                    "Duração da cura: 1 segundo"
+                ],
+                "details": [
+                    "Esta é uma habilidade canalizada; Roadhog só pode se mover enquanto estiver sendo usado, e atordoamentos podem interromper o efeito de cura.",
+                    "Toda a animação do pegando fôlego dura 2 segundos, a parte em que a cura ocorre dura apenas 1 segundo.",
+                    "O Pegando fôlego pode ser usado para cancelar a animação de recarga do Roadhog e reduzir meio segundo de seu tempo de recarga."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/roadhog/corrente-de-gancho.png",
+            "name": "Corrente de Gancho",
+            "description": "Roadhog lança sua corrente em um alvo, se ela acerta, ele o puxa para perto.",
+            "data": {
+                "stats": [
+                    "Dano: 30",
+                    "Velocidade de projétil: 40 metros por segundo",
+                    "Distância máxima: 20 metros",
+                    "Tempo até a ativação: 0.3 segundos",
+                    "Tempo de recarga: 8 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "O corrente de gancho não pode puxar alvos aliados.",
+                    "Corrente de gancho pode ser usado para interromper habilidades canalizadas, incluindo habilidades finais. Por exemplo, enganchar uma Pharah enquanto ela estiver usando o bombardeiro cancelará sua habilidade final, desperdiçando o efeito; ao conectar um Reinhardt no meio do uso da investida, a investida será cancelada e não permitirá que ele inflija seu efeito pinned.",
+                    "O dano da corrente de gancho é infligido no instante em que ele cai. Se esse dano for suficiente para matar o alvo, o gancho retornará instantaneamente ao Roadhog sem segurá-lo no lugar, como costuma acontecer em um golpe.",
+                    "Alvos agarrados pelo gancho são liberados se deixarem a linha de visão de Roadhog antes de serem puxados.",
+                    "A linha de visão verifica a posição de Roadhog, não o gancho."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/tank/roadhog/cair-matando.png",
+            "name": "Cair Matando (Habilidade Final)",
+            "description": "Depois de amontoar um carregador superior em sua Arma de Sucata, Roadhog despeja munição. Por um curto período de tempo, ele é capaz de de lançar um fluxo de estilhaços que arremessa os inimigos para trás.",
+            "data": {
+                "stats": [
+                    "Tipo: Hitscan",
+                    "Dano: 7 por disparo, 4928 no total",
+                    "Velocidade de movimento: -25% de penalidade",
+                    "Taxa de disparo: 128 balas por segundo",
+                    "Tempo até a ativação: 0.5 segundos",
+                    "Duração: 5.5 segundos",
+                    "Headshot: Sim",
+                    "Custo da habilidade final: 2240 pontos"
+                ],
+                "details": [
+                    "O RoadHog gera passivamente 1% de habilidade final a cada 4,48 segundos.",
+                    "Roadhog não pode controlar seus disparos ou usar outras habilidades durante a habilidade final; a arma de sucata simplesmente dispara mesmo sem pressionar um botão.",
+                    "A munição da arma de sucata é recarregada por esta habilidade final - ele pode ser ativado com a arma de sucata vazia e a contagem de munição estará cheia novamente quando o final terminar.",
+                    "Enquanto a habilidade final estiver em uso, as balas do Roadhog terão linhas traçadoras vermelhas na visão inimiga",
+                    "Todos disparos da habilidade final repele inimigos a uma velocidade de até 10 metros por segundos."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Mako Rutledge, Idade: 48",
+        "Ocupação: Executor (anteriormente), Guarda-costas",
+        "Base de operações: Junkertown, Austrália (anteriormente)",
+        "Afiliação: Junkers (anteriormente)",
+        "EU SOU UM APOCALIPSE DE UM HOMEM SÓ",
+        "Roadhog é um matador sanguinário com uma reputação merecida por crueldade e destruição gratuita. Após a Crise Ômnica, oficiais do governo entregaram o omnium australiano e as terras nos arredores aos ômnicos que quase destruíram o país, na esperança de estabelecer um acordo de paz duradouro. Esse acordo de paz desalojou permanentemente Mako Rutledge e um grande número de residentes da área: um conjunto de sobreviventes, fazendeiros solares e pessoas que só queriam ficar em paz. Furiosos com a perda de seus lares, Mako e outros residentes recorreram a uma rebelião violenta. Eles formaram a Frente de Liberação Australiana e atacaram o omnium e sua população robô para tomar de volta as terras que tinham sido roubadas deles. Os eventos continuaram a ganhar maiores proporções até que a FLA sabotou o núcleo de fusão do omnium, resultando em uma explosão que destruiu o omnium, irradiou os arredores e sucateou o Deserto Australiano com metal retorcido e destroços por quilômetros. Mako viu seu lar se tornar uma terra devastada apocalíptica e isso o mudou para sempre. Adaptando-se a seu ambiente, ele pôs uma máscara e partiu pelas autoestradas quebradas do Deserto Australiano em sua moto decrépita. Aos poucos, sua humanidade foi esquecida. Os últimos vestígios de Mako desapareceram e nasceu o matador impiedoso, Roadhog."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/lucio/lucio-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/mccree/mccree-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/mercy/mercy-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/sigma/sigma-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/soldado76/soldado76-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/wrecking-ball/wrecking-ball-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/mei/mei-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/zarya/zarya-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/support/zenyatta/zenyatta-icon.png", "category": "weak-against"}
+    ]
+}

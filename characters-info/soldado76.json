@@ -1,0 +1,129 @@
+{
+    "name": "Soldado 76",
+    "mainImage": {
+        "img": "imagens/damage/soldado76/soldado76-image.png",
+        "alt": "Soldado76 image"
+    },
+    "difficulty": "1",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [],
+    "shield": [],
+    "description": "Equipado com armamentos de ponta, incluindo um Rifle de Pulso experimental que também é capaz de disparar poderosas espirais de Foguetes Hélix, o Soldado: 76 tem a velocidade e o suporte da sabedoria de um soldado altamente treinado.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/soldado76/rifle-de-pulso-pesado.png",
+            "name": "Rifle de Pulso Pesado",
+            "description": "O rifle do Soldado: 76 permanece relativamente estável enquanto descarrega pulsos completamente automáticos.",
+            "data": {
+                "stats": [
+                    "Tipo: Hitscan",
+                    "Dano: entre 10 e 20",
+                    "Distância de queda: entre 30 e 50 metros",
+                    "Espalhamento de disparo: máximo de 2.4 graus",
+                    "Taxa de disparo: 9 balas por segundo",
+                    "Munição: 25",
+                    "Tempo de recarga: 1.55 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": [
+                    "A arma é a mais precisa para os três primeiros tiros, incentivando o jogador a dispará-la em rajadas curtas, em vez de fluxo contínuo. A recuperação do espalhamento tem um pequeno atraso.",
+                    "Espalhamento começa a acontecer após 9 disparos."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/soldado76/foguetes-helix.png",
+            "name": "Foguetes Hélix",
+            "description": "Pequenos foguetes saem do Rifle de Pulso de Soldado: 76 de uma única vez. A explosão do foguete inflige dano aos inimigos em curto alcance.",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis",
+                    "Dano: acerto direto são 120 | dano de explosão é entre 40 e 80 | dano a si próprio é entre 20 e 40",
+                    "Velocidade de projétil: 50 metros por segundo",
+                    "Área de efeito: Raio de 3 metros",
+                    "Tempo de recarga: 8 segundos",
+                    "Headshot: Não"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/damage/soldado76/disparada.png",
+            "name": "Disparada",
+            "description": "Caso ele precise fugir de um tiroteio ou voltar para um, Soldado: 76 pode avançar com uma explosão de velocidade. Sua corrida termina se ele realizar outra ação além de avançar para frente.",
+            "data": {
+                "stats": [
+                    "Velocidade de movimento: +50% buff",
+                    "Duração: Até ser cancelada"
+                ],
+                "details": [
+                    "Após o cancelamento da disparada, ocorre um período de recuperação de 0,3 segundo em que o Soldier 76 não pode disparar ou recarregar.<br><span style='padding-left: 2.4%'>O campo biótico pode cancelar a disparada sem a animação de recuperação.</span>",
+                    "A ativação da habilidade pode ser personalizada entre manter pressionado o botão e alternar com um único toque."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/soldado76/campo-biotico.png",
+            "name": "Campo Biótico",
+            "description": "O Soldado: 76 instala um emissor biótico no chão. Sua projeção energética restaura a vida de 76 e quaisquer membros de sua equipe no campo.",
+            "data": {
+                "stats": [
+                    "Cura: 40 por segundo | 204 no total",
+                    "Área de efeito: Raio de 4.5 metros",
+                    "Duração: 5 segundos",
+                    "Tempo de recarga: 15 segundos"
+                ],
+                "details": [
+                    "Não pode ser destruído.",
+                    "Vários campos não são empilhado."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/soldado76/visor-tatico.png",
+            "name": "Visor Tático (Habilidade Final)",
+            "description": "O visor tático de localização do Soldado: 76 fixa sua mira no alvo mais próximo. Se um inimigo deixa seu campo de visão, Soldado 76 pode rapidamente trocar para outro alvo.",
+            "data": {
+                "stats": [
+                    "Tempo de recarga: 0.65 segundos",
+                    "Tempo de ativação: 1.2 segundos",
+                    "Duração: 6 segundos",
+                    "Custo da habilidade final: 2310 pontos"
+                ],
+                "details": [
+                    "Soldado 76 gera passivamente 1% de habilidade final a cada 4,62 segundos.",
+                    "A ativação do visor tático reabastece instantaneamente a munição do rifle de pulso pesado.",
+                    "O tempo de recarga e a recarga do rifle de pulso pesado é bastante reduzido.",
+                    "A visor tático tem como alvo os heróis inimigos, o pneu da morte e o campo da imortalidade.",
+                    "Soldado 76 não pode levar um tiro na cabeça enquanto o visor tático estiver ativo.",
+                    "O bloqueio da mira não se aplica aos foguetes hélix."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Desconhecido, Idade: Desconhecida",
+        "Ocupação: Vigilante",
+        "Base de operações: Desconhecida",
+        "Afiliação: Overwatch (anteriormente)",
+        "SOMOS TODOS SOLDADOS AGORA",
+        "Atualmente o alvo de uma caçada internacional, o vigilante conhecido como Soldado: 76 trava uma guerra pessoal para expor a verdade por trás do colapso da Overwatch. Soldado: 76 se revelou em uma série de ataques ao redor do mundo, que tinham como alvo instituições financeiras, corporações sombrias e instalações da Overwatch. Apesar de para o mundo suas motivações serem desconhecidas, há quem afirme que ele é um ex-agente da Overwatch, determinado a trazer à tona a conspiração que derrubou a organização. Sua identidade continua um mistério, mas acredita-se que ele foi treinado como um membro do 'programa de aprimoramento de soldados' dos Estados Unidos. Ele possui capacidades físicas que excedem as de um soldado convencional, assim como outros aprimoramentos que fazem dele um combatente sem rival. Ele também possui um arsenal de ponta, do qual grande parte foi roubada da Overwatch em suas invasões. Implacável em sua busca para encontrar aqueles responsáveis pela queda da Overwatch, Soldado: 76 não parará por nada até trazê-los à justiça."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/bastion/bastion-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/mercy/mercy-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/orisa/orisa-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/reinhardt/reinhardt-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"}
+    ]
+}

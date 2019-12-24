@@ -1,0 +1,162 @@
+{
+    "name": "Bastion",
+    "mainImage": {
+        "img": "imagens/damage/bastion/bastion-image.png",
+        "alt": "Bastion image"
+    },
+    "difficulty": "1",
+    "role": {
+        "img": "imagens/dano.png",
+        "alt": "Damage icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [
+        "100"
+    ],
+    "shield": [],
+    "description": "Protocolos de reparação e a habilidade de se transformar entre as configurações de um modo de Ataque fixo, um módulo de Reconhecimento móvel e um Tanque devastador garantem a Bastion uma alta probabilidade de vitória.",
+    "skills": [
+        {
+            "skillImg": "imagens/damage/bastion/ironclad.png",
+            "name": "Ironclad (Passiva)",
+            "description": "Reduz o dano recebido enquanto transformado.",
+            "data": {
+                "stats": [
+                    "Redução de dano: 20%"
+                ],
+                "details": [
+                    "Aplica-se às configurações sentinela e tanque após sua transformação completa.",
+                    "A redução de dano é aplicada antes da armadura."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/bastion/modo-reconhecimento.png",
+            "name": "Configuração: Reconhecimento",
+            "description": "Em modo Reconhecimento, Bastion fica completamente móvel e equipado com uma submetralhadora que dispara séries consistentes de balas, a um alcance médio.",
+            "data": {
+                "stats": [
+                    "Tipo: Hitscan",
+                    "Dano: entre 10 e 20",
+                    "Distância de queda: entre 25 e 45 metros",
+                    "Espalhamento de disparo: Max: 1.25 graus",
+                    "Taxa de disparo: 8 balas por segundo",
+                    "Munição: 35",
+                    "Tempo de recarga: 1.5 segundos",
+                    "Headshot: Sim"
+                ],
+                "details": []
+            }
+        },
+        {
+            "skillImg": "imagens/damage/bastion/modo-sentinela.png",
+            "name": "Configuração: Sentinela",
+            "description": "Em modo Sentinela, Bastion vira uma usina de força estacionária, protegido por uma barreira frontal e equipado com uma Gatling capaz de disparar uma chuva de balas. É possível “andar” com a mira da arma por múltiplos alvos, causando dano devastador de curta à média distância.",
+            "data": {
+                "stats": [
+                    "Tipo: Hitscan",
+                    "Dano: entre 7.5 e 15",
+                    "Distância de queda: entre 30 e 50 metros",
+                    "Espalhamento de disparo: entre 2.00 e 3.00 graus",
+                    "Velocidade de movimento: 0",
+                    "Taxa de disparo: 30 balas por segundo",
+                    "Munição: 300",
+                    "Tempo de recarga: 2.1 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "Torna o Bastion imune a efeitos repulsivos e ao parados da Orisa.",
+                    "Bastião tem uma caixa azul brilhante nas costas que pode ser atingida por dano de tiro na cabeça.",
+                    "O espalhamento dos disparos do Bastion diminui continuamente durante o disparo, até 33% após 2 segundos.",
+                    "Bastion sai da Configuração: Sentinela se for hackeado, slept, pinned, hooked ou derrubado."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/bastion/reconfigurar.png",
+            "name": "Reconfigurar",
+            "description": "Bastion se transforma entre seus dois modos primários de combate para se adaptar às condições de batalha.",
+            "data": {
+                "stats": [
+                    "Tempo de ativação: 1 segundo (No modo sentinela) | 0.5 segundos (No modo reconhecimento)",
+                    "Tempo de recarga: Não tem"
+                ],
+                "details": [
+                    "Pode ser usado no ar.",
+                    "Após 1,5 segundos em um modo, a outro modo é recarregada automaticamente."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/bastion/auto-reparar.png",
+            "name": "Auto Reparo",
+            "description": "Bastion recupera sua vida, porém, ele não pode utilizar suas armas enquanto o processo de reparo estiver em efeito.",
+            "data": {
+                "stats": [
+                    "Cura: 75 por segundo",
+                    "Tempo de ativação: Atraso de 0.5 segundos",
+                    "Duração: Até 4 segundos",
+                    "Tempo de recarga: 1 segundo | 7 segundos recarregando"
+                ],
+                "details": [
+                    "O Bastion não pode ativar o auto reparo quando o medidor de recursos estiver abaixo de 20%.",
+                    "Há um tempo de recuperação de 0,25 segundo entre os reparos.",
+                    "Não consome recursos se o Bastion estiver com a saúde completa."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/damage/bastion/modo-tanque.png",
+            "name": "Configuração: Tanque (Habilidade Final)",
+            "description": "No modo Tanque, Bastion expõe esteiras e um canhão poderoso de longo alcance. Os cartuchos explosivos do canhão detonam alvos em um grande raio, mas Bastion só pode permanecer neste modo por um curto período.",
+            "data": {
+                "stats": [
+                    "Tipo: Projéteis",
+                    "Dano: Acerto direto: 205 | Explosão próxima: entre 42 e 140 | A si próprio: entre 10.5 e 35 (Torna-se entre 8.4 e 28 devido ao Ironclad)",
+                    "Velocidade de projétil: 60 metros por segundo",
+                    "Área de efeito: Raio de 4 metros",
+                    "Taxa de disparo: 1 disparo por segundo",
+                    "Munição: Infinita",
+                    "Tempo de ativação: 1.5 segundos",
+                    "Duração: 8 segundos",
+                    "Headshot: Não",
+                    "Custo da habilidade final: 2310"
+                ],
+                "details": [
+                    "Bastion gera passivamente 1% de habilidade final a cada 4,62 segundos.",
+                    "Bastion não pode receber tiros na cabeça, pois a cabeça e a caixa azul estão cobertas.",
+                    "Independentemente de qual modo o Bastion estava ao entrar no modo tanque, o Bastion entra no modo reconhecimento ao sair.",
+                    "Munição do modo de reconhecimento é restaurado imediatamente após a ativação."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Nome verdadeiro: Autômato de Cerco E54 dos Laboratórios SST, 'Bastion' , Idade: 30",
+        "Ocupação: Autômato de batalha",
+        "Base de operações: Desconhecida",
+        "Afiliação: Nenhuma",
+        "Outrora combatente na linha de frente na devastadora Crise Ômnica, esta curiosa unidade Bastion agora explora o mundo, fascinada pela natureza, porém cautelosa com uma humanidade temível. Originalmente criadas para propósitos de manutenção da paz, as unidades robóticas Bastion possuíam a habilidade única de se reconfigurar rapidamente em um modo de canhão de ataque. Porém, durante a Crise Ômnica, elas foram postas contra seus criadores humanos, dando volume ao exército rebelde de ômnicos. Após a resolução da crise, quase todas elas foram destruídas ou desmontadas. Até hoje, as unidades Bastion ainda simbolizam os horrores do conflito. Uma unidade Bastion singular, altamente danificada nas batalhas finais da guerra, ficou esquecida por mais de uma década. Ela esteve adormecida, exposta aos elementos e enferrujando enquanto a natureza lentamente a reclamava. Coberto por cipós e raízes, e servindo de ninho para pequenos animais, o robô permaneceu inerte, aparentemente desapercebido da passagem do tempo. Isso até um dia fatídico, quando se reativou inesperadamente. Com sua programação de combate perdida, ele demonstrara curiosidade intensa sobre o mundo natural e seus habitantes. Esta inquisitiva unidade Bastion saiu à explorar seus arredores, em busca de seus propósitos em um planeta devastado pela guerra. Apesar de 'Bastion' parecer gentil — ou até inofensivo, por vezes — sua programação de combate central assume o controle quando a unidade sente perigo, utilizando seu arsenal completo para eliminar qualquer coisa que perceba como ameaça. Isso gerou situações de conflito com os poucos humanos que encontrou, levando-o a evitar áreas povoadas, favorecendo as regiões selvagens e inexploradas do mundo."
+    ],
+    "counters": [
+        { "urlImage": "imagens/support/baptiste/baptiste-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/reinhardt/reinhardt-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/winston/winston-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/wrecking-ball/wrecking-ball-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/zarya/zarya-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/support/ana/ana-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/ashe/ashe-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/hanzo/hanzo-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/junkrat/junkrat-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/tank/roadhog/roadhog-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/soldado76/soldado76-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/tracer/tracer-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/support/zenyatta/zenyatta-icon.png", "category": "weak-against"}
+    ]
+}

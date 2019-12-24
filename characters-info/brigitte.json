@@ -1,0 +1,174 @@
+{
+    "name": "Brigitte",
+    "mainImage": {
+        "img": "imagens/support/brigitte/brigitte-image.png",
+        "alt": "Brigitte image"
+    },
+    "difficulty": "1",
+    "role": {
+        "img": "imagens/suporte.png",
+        "alt": "Suporte icon"
+    },
+    "life": [
+        "200"
+    ],
+    "armour": [
+        "50"
+    ],
+    "shield": [],
+    "description": "Brigitte é especialista em armaduras. Além de jogar Kits de Reparos para curar os aliados, ela pode causar dano com o Mangual para curar quem estiver por perto. Também pode desferir um golpe amplo para atingir vários inimigos ou realizar o Disparo Açoitador para atordoar um adversário de longe. Quando entra na batalha, a Barreira de Escudo oferece defesa pessoal e permite rechaçar os inimigos com o Golpe de Escudo. A habilidade suprema de Brigitte, que se chama Reagrupar, aumenta bastante a velocidade dela e concede armadura duradoura a todos os aliados próximos.",
+    "skills": [
+        {
+            "skillImg": "imagens/support/brigitte/inspire.png",
+            "name": "Inspire (Passiva)",
+            "description": "Quando Brigitte atinge um inimigo com seu mangual, todos os aliados dentro do alcance são curados ao longo do tempo.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Cura: 21.667 por segundo (aliados) | 10.833 por segundo (a si próprio)",
+                    "Área de efeito: Raio de 20 metros",
+                    "Duração: 6 segundos",
+                    "Tempo de recarga: 1 segundo"
+                ],
+                "details": [
+                    "Ativado pelo mangual a jato ou disparo açoitador, não pelo golpe de escudo.",
+                    "Se acionado, há um tempo de recarga de 1 segundo antes que possa ser acionado novamente.",
+                    "Não se acumula com ele mesmo. Em vez disso, a duração é redefinida.",
+                    "Não cura aliados atrás de barreiras ou superfícies inimigas que bloqueiam a linha de visão.",
+                    "Aplica um efeito de cura ao longo do tempo aos aliados, o que significa que eles não precisam permanecer continuamente no alcance."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/brigitte/mangual-a-jato.png",
+            "name": "Mangual a Jato",
+            "description": "A arma de combate corpo a corpo de Brigitte tem alcance aumentado, podendo acertar vários inimigos com um só golpe.",
+            "data": {
+                "stats": [
+                    "Tipo: Corpo a corpo",
+                    "Dano: 35",
+                    "Distância máxima: 6 metros",
+                    "Taxa de disparo: 1 balanço por 0.6 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "A 5-6 metros de distância, o mangual da Brigitte tem um alcance horizontal de 3 metros no lado em que ela balança e 2 metros no lado oposto."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/brigitte/kit-de-reparos.png",
+            "name": "Kit de Reparos",
+            "description": "Brigitte joga um Kit de Reparos para curar um aliado. Qualquer cura acima do máximo de vida concede armadura.",
+            "data": {
+                "stats": [
+                    "Cura: 120 pontos de vida em 2 segundos | até 75 de armadura acima do máximo de pontos de vida",
+                    "Velocidade do projétil: 30 metros por segundo",
+                    "Distância do disparo: 30 metros",
+                    "Munição: 3",
+                    "Duração: 2 segundos para a cura | 5 segundos para armadura bônus",
+                    "Tempo de recarga: 6 segundos por kit, 3 kits no total"
+                ],
+                "details": [
+                    "Se vários kits de reparo forem lançados no mesmo alvo, a duração da cura é simplesmente aumentada em 2 segundos.",
+                    "A recarga mínima para essa habilidade é de 1,5 segundos, independentemente das configurações do jogo."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/brigitte/disparo-acoitador.png",
+            "name": "Disparo Açoitador",
+            "description": "Brigitte arremessa o mangual a uma longa distância, causando dano e empurrando um inimigo para longe dela.",
+            "data": {
+                "stats": [
+                    "Dano: 70",
+                    "Velocidade de movimento: -50% de penalidade",
+                    "Velocidade de projétil: 80 metros por segundo",
+                    "Distância máxima: 20 metros",
+                    "Tempo de recarga: 4 segundos",
+                    "Headshot: Não"
+                ],
+                "details": [
+                    "O disparo açoitador lançar o inimigo numa distância de 5 a 10 metros para trás.",
+                    "A todo o comprimento, são necessários 0,3 segundos para que o açoite se retraia."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/brigitte/barreira-de-escudo.png",
+            "name": "Barreira de Escudo",
+            "description": "Brigitte cria uma barreira de energia à frente, absorvendo uma quantidade limitada de dano.",
+            "data": {
+                "stats": [
+                    "Vida: 200 de escudo",
+                    "Cura: Recupera 100 de escudo por segundo | depois de ter removido a barreira por 2 segundos",
+                    "Velocidade de movimento: -30% de penalidade",
+                    "Tempo de recarga: 3 segundos depois de quebrado"
+                ],
+                "details": [
+                    "O escudo tem a forma de um retângulo vertical curvado nas laterais inferiores.",
+                    "A orientação da barreira de escudo pode ser alterada movendo o mouse."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/brigitte/golpe-de-escudo.png",
+            "name": "Golpe de Escudo",
+            "description": "Ao acionar a Barreira de Escudo, Brigitte pode dar uma arremetida para atordoar um inimigo.",
+            "data": {
+                "stats": [
+                    "Dano: 5",
+                    "Velocidade de movimento: +500% de buff | que se torna + 470% devido à penalidade do golpe de escudo",
+                    "Distância máxima: 6.85 metros",
+                    "Área de efeito: Raio de um ângulo de cone frontal de 60°",
+                    "Duração: 0.75 segundos de atordoamento",
+                    "Tempo de recarga: 7 segundos"
+                ],
+                "details": [
+                    "Golpe de escudo não apenas atordoa o alvo atingido, mas também causa uma pequena quantidade de repulsão.",
+                    "Golpe de escudo não pode atordoar através de barreiras.",
+                    "Se o golpe de escudo colidir com a investida, soco foguete, B.O.B ou outro golpe de escudo ambos os participantes serão derrubados por 2 segundos.",
+                    "Golpe de escudo ignora o desviar do Genji."
+                ]
+            }
+        },
+        {
+            "skillImg": "imagens/support/brigitte/reagrupar.png",
+            "name": "Reagrupar (Habilidade Final)",
+            "description": "Brigitte anda mais rápido e concede a todos os aliados próximos uma armadura que dura até ser destruída por dano.",
+            "data": {
+                "stats": [
+                    "Tipo: Área de efeito",
+                    "Cura: 15 de armadura por 0.5 segundos | até 100 de armadura em si próprio e aliados",
+                    "Velocidade de movimento: +30% buff",
+                    "Área de efeito: Raio de 8.5 metros",
+                    "Duração: 10 segundos | Armadura dura 30 segundos",
+                    "Custo da habilidade final: 2800 pontos"
+                ],
+                "details": [
+                    "Brigitte gera passivamente 1% de habilidade final a cada 5,60 segundos."
+                ]
+            }
+        }
+    ],
+    "biography": [
+        "Jean-Baptiste Augustin, Idade: 36 anos",
+        "Ocupação: Médico de combate",
+        "Base de operações: Tortuga, Haiti (anteriormente)",
+        "Afiliação: Coalizão Caribenha (anteriormente), Talon (anteriormente)",
+        "COMIGO POR PERTO, NINGUÉM MORRE",
+        "Baptiste é um médico de combate de elite e ex-agente da Talon que usa suas habilidades para ajudar vítimas da guerra. O menino Jean-Baptiste Augustine foi um dos 30 milhões de órfãos deixados pela Crise Ômnica. Diante da limitação de oportunidades e recursos, acabou se alistando na Coalizão Caribenha, uma força militar criada no arquipélago em resposta à crise. Guiado pelo desejo inato de ajudar o próximo, Baptiste seguiu em sua nova família como médico de combate, atuando no braço de elite das tropas de operações especiais da Coalizão. Ao se desligar da tropa, o socorrista não encontrou mercado para suas habilidades únicas e acabou recorrendo a uma das poucas saídas disponíveis: entrar para a Talon, uma das organizações mercenárias que aproveitaram para lucrar com o caos do pós-guerra. Pela primeira vez na vida, Baptiste teve algum sossego. Suas missões eram fáceis e bem remuneradas, o que lhe permitiu fazer planos de montar uma clínica médica em sua cidade natal. Mas, aos poucos, sua unidade ficou mais e mais brutal, com chacinas e baixas civis. Confrontado pela realidade cruel da equipe mercenária, o médico deu-se conta de que perpetuava o mesmo ciclo de violência que destruiu sua comunidade e abandonou o grupo, enojado pelos próprios atos e determinado a cimentar um novo caminho para si. A Talon, no entanto, não o deixaria partir. Baptiste sabia demais e precisava ser silenciado. O médico vagou então de cidade em cidade para não chamar atenção, sem nunca deixar de atuar em ações humanitárias pelo mundo inteiro. Muitos agentes, inclusive alguns de seus ex-colegas, revezaram-se na caçada, e os poucos que conseguiram rastreá-lo nunca mais foram vistos. Hoje, Baptiste trabalha por um mundo melhor, curando quando é possível e combatendo quando é preciso. O médico sabe que não pode mudar o próprio passado, mas o que importa é fazer a diferença aqui e agora."
+    ],
+    "counters": [
+        { "urlImage": "imagens/tank/dva/dva-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/genji/genji-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/tracer/tracer-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/tank/wrecking-ball/wrecking-ball-icon.png", "category": "strong-against"},
+        { "urlImage": "imagens/damage/junkrat/junkrat-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/pharah/pharah-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/reaper/reaper-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/sombra/sombra-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/torbjorn/torbjorn-icon.png", "category": "weak-against"},
+        { "urlImage": "imagens/damage/windowmaker/windowmaker-icon.png", "category": "weak-against"}
+    ]
+}
